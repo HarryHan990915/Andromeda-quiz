@@ -108,7 +108,7 @@ Ray-casting polygon check: efficient and general solution for footprint-based fi
 
 ROS I/O handling: ensures reliable QoS for output and latched visualization of the footprint.
 
-### 3. What's next?
+### 4. What's next?
 
 I focused on completing Part A properly first, because it’s the core perception component and closest to real robotics work I’ve done before. Besides, I currently do not have a Linux system. With Windows system, I tried virtual machine and found its too laggy with Rviz, and made my debugging really slow and then I ended up with using WSL in Windows system. I spent about 5 hours on environment, so that I may only focus on Part A. I made sure the filtering logic was clean, testable outside ROS, supported live parameter updates, and followed reasonable ROS 2 QoS and node design patterns.
 
