@@ -108,11 +108,15 @@ Ray-casting polygon check: efficient and general solution for footprint-based fi
 
 ROS I/O handling: ensures reliable QoS for output and latched visualization of the footprint.
 
-### 4. What's next?
+### 4. Design trade offs
+
+The main trade-off I made was simplifying coordinate frames and motion assumptions in order to focus on correctness, testability, and a clean separation between ROS integration and core filtering logic. The node operates in a fixed map frame and assumes the incoming point cloud is already expressed near the robot reference frame, without explicitly handling TF transforms or robot pose updates. This avoids introducing TF dependencies and time-synchronization complexity in a take-home setting, while keeping the filtering behavior deterministic and easy to reason about. In a full robot system, the point cloud would typically be transformed into base_link before applying the footprint and FOV filtering. I also chose conservative QoS settings: SensorDataQoS for the input point cloud to match typical LiDAR behavior, Reliable for the filtered output to ensure downstream consumers such as planners or visualizers do not miss critical data, and Transient Local for the polygon footprint to support latched visualization. The trade-off is that reliable delivery can increase latency at very high publish rates, but this was an intentional choice favoring robustness and safety over minimal delay.
+
+### 5. What's next
 
 I focused on completing Part A properly first, because it’s the core perception component and closest to real robotics work I’ve done before. Besides, I currently do not have a Linux system. With Windows system, I tried virtual machine and found its too laggy with Rviz, and made my debugging really slow and then I ended up with using WSL in Windows system. I spent about 5 hours on environment, so that I may only focus on Part A. I made sure the filtering logic was clean, testable outside ROS, supported live parameter updates, and followed reasonable ROS 2 QoS and node design patterns.
 
 I didn’t get to Part B due to time, but the next thing I’d do is implement it as a small ROS-agnostic C++ utility with a simple state machine. I’d track how long the current stays over the limit using the provided timestep, enter a degraded state after a configurable duration, and reduce the effective limit. Once the load clears, I’d add a cooldown and gradually restore the limit step by step to avoid oscillation. I’d keep it deterministic and cover it with Catch2 tests for overload, recovery, and edge cases.
 
-I chose this order because Part A touches more on system integration and runtime behavior, while Part B is self-contained and can be added cleanly afterward without affecting the rest of the system. But if I have linux system, I would finish Part B with more depth and potentially made this application more realistic which can be used in our life.
+I chose this order because Part A touches more on system integration and runtime behavior, while Part B is self-contained and can be added cleanly afterward without affecting the rest of the system. But if I have linux system, I would finish Part B and improve part A's defects with more depth and potentially made this application more realistic which can be used in our life.
 
