@@ -29,12 +29,13 @@ separated from ROS. Without ROS, we can test that. The tested report is screensh
 colcon test --packages-select andromeda_proximity_filter
 colcon test-result --verbose
 ```
+![Proximity Filter Demo](test_result.png)
 
-Design Notes
+## Design Notes
 
 The Andromeda Proximity Filter is structured into two main component from the main.cpp, which is proximity_filter_lib.cpp and proximity_filter_node.cpp for object oriented design.
 
-1. proximity_filter_lib.cpp (Library)
+### 1. proximity_filter_lib.cpp (Library)
 
 Encapsulates the core filtering algorithm independent of ROS.
 
@@ -57,7 +58,7 @@ Distance filtering is done by comparing the squared distance of each point to th
 
 FOV filtering converts the point coordinates to polar angles and removes points outside the configured angular range.
 
-2. proximity_filter_node.cpp (ROS Node)
+### 2. proximity_filter_node.cpp (ROS Node)
 
 Handles ROS I/O and wiring:
 
@@ -83,7 +84,7 @@ Pointclouds are generated in a fixed "map" frame, while the robot’s footprint 
 
 Input pointclouds are simulated around the robot in 360° or partial coverage, so the FOV and angle parameters are configurable.
 
-3. Launch and Testing
+### 3. Launch and Testing
 
 proximity_filter_launch.py binds the publisher and filter node for easy testing.
 
