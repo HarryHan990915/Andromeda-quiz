@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="andromeda_proximity_filter.pep257"
+  tests="2"
+  errors="0"
+  failures="0"
+  time="0.077"
+>
+  <testcase
+    name="./launch/proximity_filter_launch.py"
+    classname="andromeda_proximity_filter.pep257"/>
+  <testcase
+    name="./scripts/test_pointcloud_pub.py"
+    classname="andromeda_proximity_filter.pep257"/>
+  <system-out>Checked files:
+* ./launch/proximity_filter_launch.py
+* ./scripts/test_pointcloud_pub.py</system-out>
+</testsuite>

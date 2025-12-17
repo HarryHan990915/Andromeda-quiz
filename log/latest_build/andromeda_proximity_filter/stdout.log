@@ -1,0 +1,33 @@
+[ 14%] [32mBuilding CXX object CMakeFiles/proximity_filter_lib.dir/src/proximity_filter_lib.cpp.o[0m
+[ 28%] [32m[1mLinking CXX static library libproximity_filter_lib.a[0m
+[ 28%] Built target proximity_filter_lib
+[35m[1mConsolidate compiler generated dependencies of target proximity_filter_node[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/test_filter_lib.dir/test/test_filter_lib.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/proximity_filter_node.dir/src/proximity_filter_node.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/proximity_filter_node.dir/src/main.cpp.o[0m
+[ 85%] [32m[1mLinking CXX executable test_filter_lib[0m
+[ 85%] Built target test_filter_lib
+[100%] [32m[1mLinking CXX executable proximity_filter_node[0m
+[100%] Built target proximity_filter_node
+-- Install configuration: ""
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter//launch
+-- Installing: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter//launch/proximity_filter_launch.py
+-- Installing: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/lib/andromeda_proximity_filter/proximity_filter_node
+-- Set runtime path of "/mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/lib/andromeda_proximity_filter/proximity_filter_node" to ""
+-- Installing: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/lib/andromeda_proximity_filter/libproximity_filter_lib.a
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/lib/andromeda_proximity_filter/test_pointcloud_pub.py
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/ament_index/resource_index/package_run_dependencies/andromeda_proximity_filter
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/ament_index/resource_index/parent_prefix_path/andromeda_proximity_filter
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/environment/ament_prefix_path.sh
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/environment/ament_prefix_path.dsv
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/environment/path.sh
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/environment/path.dsv
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/local_setup.bash
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/local_setup.sh
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/local_setup.zsh
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/local_setup.dsv
+-- Installing: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/package.dsv
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/ament_index/resource_index/packages/andromeda_proximity_filter
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/cmake/andromeda_proximity_filterConfig.cmake
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/cmake/andromeda_proximity_filterConfig-version.cmake
+-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/package.xml

@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4d5fa1044488986cf088.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "andromeda_proximity_filter",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "andromeda_proximity_filter_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-andromeda_proximity_filter_uninstall-8fdd45f2221bb3edd185.json",
+					"name" : "andromeda_proximity_filter_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "proximity_filter_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-proximity_filter_lib-dfdc199ee5a6768911cf.json",
+					"name" : "proximity_filter_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "proximity_filter_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-proximity_filter_node-9b68291d092c91be94b8.json",
+					"name" : "proximity_filter_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_filter_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_filter_lib-1e94cd83351fe6f13c69.json",
+					"name" : "test_filter_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-326511900a31101b3717.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter",
+		"source" : "/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

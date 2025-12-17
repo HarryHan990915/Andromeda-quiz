@@ -1,0 +1,2 @@
+/usr/bin/ar qc libproximity_filter_lib.a CMakeFiles/proximity_filter_lib.dir/src/proximity_filter_lib.cpp.o
+/usr/bin/ranlib libproximity_filter_lib.a

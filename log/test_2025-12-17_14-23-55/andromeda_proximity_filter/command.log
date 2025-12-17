@@ -1,0 +1,2 @@
+Invoking command in '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+Invoked command in '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter' returned '8': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

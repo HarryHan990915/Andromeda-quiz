@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="andromeda_proximity_filter.uncrustify"
+  tests="6"
+  failures="6"
+  errors="0"
+  time="0.097"
+>
+  <testcase
+    name="include/andromeda_proximity_filter/proximity_filter_lib.hpp"
+    classname="andromeda_proximity_filter.uncrustify"
+  >
+      <failure message="Diff with 85 lines"><![CDATA[--- include/andromeda_proximity_filter/proximity_filter_lib.hpp
++++ include/andromeda_proximity_filter/proximity_filter_lib.hpp.uncrustify
+@@ -11,6 +11,6 @@
+-    struct Point3D
+-    {
+-        double x;
+-        double y;
+-        double z;
+-    };
++  struct Point3D
++  {
++    double x;
++    double y;
++    double z;
++  };
+@@ -18 +18 @@
+-    ProximityFilterLib();
++  ProximityFilterLib();
+@@ -20,3 +20,4 @@
+-    // ---------------- Parameters ----------------
+-    void setPolygon(const std::vector<double>& x,
+-                    const std::vector<double>& y);
++  // ---------------- Parameters ----------------
++  void setPolygon(
++    const std::vector<double> & x,
++    const std::vector<double> & y);
+@@ -24,2 +25,3 @@
+-    void getPolygon(std::vector<double>& x,
+-                    std::vector<double>& y) const;
++  void getPolygon(
++    std::vector<double> & x,
++    std::vector<double> & y) const;
+@@ -27 +29 @@
+-    void setMaxRange(double range);
++  void setMaxRange(double range);
+@@ -29,3 +31,3 @@
+-    // center_deg: FOV center angle (deg)
+-    // width_deg : total FOV width (deg)
+-    void setFov(double center_deg, double width_deg);
++  // center_deg: FOV center angle (deg)
++  // width_deg : total FOV width (deg)
++  void setFov(double center_deg, double width_deg);
+@@ -33,3 +35,3 @@
+-    // ---------------- Core filtering ----------------
+-    std::vector<Point3D>
+-    filterPoints(const std::vector<Point3D>& points) const;
++  // ---------------- Core filtering ----------------
++  std::vector<Point3D>
++  filterPoints(const std::vector<Point3D> & points) const;
+@@ -37,2 +39,2 @@
+-    sensor_msgs::msg::PointCloud2
+-    filterPointCloud(const sensor_msgs::msg::PointCloud2& cloud) const;
++  sensor_msgs::msg::PointCloud2
++  filterPointCloud(const sensor_msgs::msg::PointCloud2 & cloud) const;
+@@ -41,3 +43,3 @@
+-    // ---------------- Geometry helpers ----------------
+-    bool rayCasting(double x, double y) const;
+-    bool inFov(double x, double y) const;
++  // ---------------- Geometry helpers ----------------
++  bool rayCasting(double x, double y) const;
++  bool inFov(double x, double y) const;
+@@ -45,3 +47,3 @@
+-    // index-based filtering (CRITICAL for PointCloud2 correctness)
+-    std::vector<size_t>
+-    filterPointIndices(const std::vector<Point3D>& points) const;
++  // index-based filtering (CRITICAL for PointCloud2 correctness)
++  std::vector<size_t>
++  filterPointIndices(const std::vector<Point3D> & points) const;
+@@ -49,3 +51,3 @@
+-    // ---------------- Parameters ----------------
+-    std::vector<double> polygon_x_;
+-    std::vector<double> polygon_y_;
++  // ---------------- Parameters ----------------
++  std::vector<double> polygon_x_;
++  std::vector<double> polygon_y_;
+@@ -53,2 +55,2 @@
+-    double max_range_;
+-    double max_range_sq_;
++  double max_range_;
++  double max_range_sq_;
+@@ -56,2 +58,2 @@
+-    double fov_center_rad_;
+-    double fov_half_width_rad_;
++  double fov_center_rad_;
++  double fov_half_width_rad_;
+]]></failure>
+  </testcase>
+  <testcase
+    name="include/andromeda_proximity_filter/proximity_filter_node.hpp"
+    classname="andromeda_proximity_filter.uncrustify"
+  >
+      <failure message="Diff with 24 lines"><![CDATA[--- include/andromeda_proximity_filter/proximity_filter_node.hpp
++++ include/andromeda_proximity_filter/proximity_filter_node.hpp.uncrustify
+@@ -15 +15 @@
+-    ProximityFilterNode();
++  ProximityFilterNode();
+@@ -18 +18 @@
+-    void pointcloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg);
++  void pointcloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg);
+@@ -20 +20 @@
+-    ProximityFilterLib filter_lib_;
++  ProximityFilterLib filter_lib_;
+@@ -22,3 +22,3 @@
+-    rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_;
+-    rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr filtered_pub_;
+-    rclcpp::Publisher<geometry_msgs::msg::PolygonStamped>::SharedPtr polygon_pub_;
++  rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_;
++  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr filtered_pub_;
++  rclcpp::Publisher<geometry_msgs::msg::PolygonStamped>::SharedPtr polygon_pub_;
+@@ -26 +26 @@
+-    rclcpp::Time last_processed_time_;
++  rclcpp::Time last_processed_time_;
+@@ -28 +28 @@
+-    rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr param_handle_;
++  rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr param_handle_;
+]]></failure>
+  </testcase>
+  <testcase
+    name="src/main.cpp"
+    classname="andromeda_proximity_filter.uncrustify"
+  >
+      <failure message="Diff with 14 lines"><![CDATA[--- src/main.cpp
++++ src/main.cpp.uncrustify
+@@ -4 +4 @@
+-int main(int argc, char** argv)
++int main(int argc, char ** argv)
+@@ -6,4 +6,4 @@
+-    rclcpp::init(argc, argv);
+-    rclcpp::spin(std::make_shared<ProximityFilterNode>());
+-    rclcpp::shutdown();
+-    return 0;
++  rclcpp::init(argc, argv);
++  rclcpp::spin(std::make_shared<ProximityFilterNode>());
++  rclcpp::shutdown();
++  return 0;
+]]></failure>
+  </testcase>
+  <testcase
+    name="src/proximity_filter_lib.cpp"
+    classname="andromeda_proximity_filter.uncrustify"
+  >
+      <failure message="Diff with 268 lines"><![CDATA[--- src/proximity_filter_lib.cpp
++++ src/proximity_filter_lib.cpp.uncrustify
+@@ -10,4 +10,4 @@
+-    : max_range_(1.5),
+-      max_range_sq_(1.5 * 1.5),
+-      fov_center_rad_(0.0),
+-      fov_half_width_rad_(M_PI)
++: max_range_(1.5),
++  max_range_sq_(1.5 * 1.5),
++  fov_center_rad_(0.0),
++  fov_half_width_rad_(M_PI)
+@@ -15,3 +15,3 @@
+-    // Default hexagon body footprint
+-    polygon_x_ = { 0.5,  0.25, -0.25, -0.5, -0.25,  0.25 };
+-    polygon_y_ = { 0.0,  0.433, 0.433, 0.0, -0.433, -0.433 };
++  // Default hexagon body footprint
++  polygon_x_ = {0.5, 0.25, -0.25, -0.5, -0.25, 0.25};
++  polygon_y_ = {0.0, 0.433, 0.433, 0.0, -0.433, -0.433};
+@@ -23,2 +23,3 @@
+-void ProximityFilterLib::setPolygon(const std::vector<double>& x,
+-                                   const std::vector<double>& y)
++void ProximityFilterLib::setPolygon(
++  const std::vector<double> & x,
++  const std::vector<double> & y)
+@@ -26,2 +27,2 @@
+-    polygon_x_ = x;
+-    polygon_y_ = y;
++  polygon_x_ = x;
++  polygon_y_ = y;
+@@ -30,2 +31,3 @@
+-void ProximityFilterLib::getPolygon(std::vector<double>& x,
+-                                   std::vector<double>& y) const
++void ProximityFilterLib::getPolygon(
++  std::vector<double> & x,
++  std::vector<double> & y) const
+@@ -33,2 +35,2 @@
+-    x = polygon_x_;
+-    y = polygon_y_;
++  x = polygon_x_;
++  y = polygon_y_;
+@@ -39,2 +41,2 @@
+-    max_range_ = range;
+-    max_range_sq_ = range * range;
++  max_range_ = range;
++  max_range_sq_ = range * range;
+@@ -45,2 +47,2 @@
+-    fov_center_rad_     = center_deg * M_PI / 180.0;
+-    fov_half_width_rad_ = (width_deg * M_PI / 180.0) * 0.5;
++  fov_center_rad_ = center_deg * M_PI / 180.0;
++  fov_half_width_rad_ = (width_deg * M_PI / 180.0) * 0.5;
+@@ -54,2 +56,2 @@
+-    bool inside = false;
+-    const size_t n = polygon_x_.size();
++  bool inside = false;
++  const size_t n = polygon_x_.size();
+@@ -57,5 +59,5 @@
+-    for (size_t i = 0, j = n - 1; i < n; j = i++) {
+-        double x1 = polygon_x_[i];
+-        double y1 = polygon_y_[i];
+-        double x2 = polygon_x_[j];
+-        double y2 = polygon_y_[j];
++  for (size_t i = 0, j = n - 1; i < n; j = i++) {
++    double x1 = polygon_x_[i];
++    double y1 = polygon_y_[i];
++    double x2 = polygon_x_[j];
++    double y2 = polygon_y_[j];
+@@ -63 +65 @@
+-        if (y1 == y2) continue;
++    if (y1 == y2) {continue;}
+@@ -65,2 +67,2 @@
+-        bool crosses = ((y1 > y) != (y2 > y));
+-        if (!crosses) continue;
++    bool crosses = ((y1 > y) != (y2 > y));
++    if (!crosses) {continue;}
+@@ -68,2 +70,2 @@
+-        double x_intersect =
+-            x1 + (x2 - x1) * (y - y1) / (y2 - y1);
++    double x_intersect =
++      x1 + (x2 - x1) * (y - y1) / (y2 - y1);
+@@ -71,3 +73,2 @@
+-        if (x < x_intersect) {
+-            inside = !inside;
+-        }
++    if (x < x_intersect) {
++      inside = !inside;
+@@ -74,0 +76 @@
++  }
+@@ -76,3 +78,3 @@
+-    // Treat edge points as "inside body" → filtered out
+-    for (size_t i = 0; i < n; ++i) {
+-        size_t j = (i + 1) % n;
++  // Treat edge points as "inside body" → filtered out
++  for (size_t i = 0; i < n; ++i) {
++    size_t j = (i + 1) % n;
+@@ -80,4 +82,4 @@
+-        double x1 = polygon_x_[i];
+-        double y1 = polygon_y_[i];
+-        double x2 = polygon_x_[j];
+-        double y2 = polygon_y_[j];
++    double x1 = polygon_x_[i];
++    double y1 = polygon_y_[i];
++    double x2 = polygon_x_[j];
++    double y2 = polygon_y_[j];
+@@ -85,2 +87,2 @@
+-        double dx = x - x1;
+-        double dy = y - y1;
++    double dx = x - x1;
++    double dy = y - y1;
+@@ -88,2 +90,2 @@
+-        double dx_edge = x2 - x1;
+-        double dy_edge = y2 - y1;
++    double dx_edge = x2 - x1;
++    double dy_edge = y2 - y1;
+@@ -91,8 +93,7 @@
+-        double cross = dx * dy_edge - dy * dx_edge;
+-        if (std::fabs(cross) < 1e-6) {
+-            double dot = dx * dx_edge + dy * dy_edge;
+-            double len_sq = dx_edge * dx_edge + dy_edge * dy_edge;
+-            if (dot >= 0 && dot <= len_sq) {
+-                return true;
+-            }
+-        }
++    double cross = dx * dy_edge - dy * dx_edge;
++    if (std::fabs(cross) < 1e-6) {
++      double dot = dx * dx_edge + dy * dy_edge;
++      double len_sq = dx_edge * dx_edge + dy_edge * dy_edge;
++      if (dot >= 0 && dot <= len_sq) {
++        return true;
++      }
+@@ -99,0 +101 @@
++  }
+@@ -101 +103 @@
+-    return inside;
++  return inside;
+@@ -106,2 +108,2 @@
+-    double angle = std::atan2(y, x);
+-    double diff  = angle - fov_center_rad_;
++  double angle = std::atan2(y, x);
++  double diff = angle - fov_center_rad_;
+@@ -109,2 +111,2 @@
+-    while (diff > M_PI)  diff -= 2.0 * M_PI;
+-    while (diff < -M_PI) diff += 2.0 * M_PI;
++  while (diff > M_PI) {diff -= 2.0 * M_PI;}
++  while (diff < -M_PI) {diff += 2.0 * M_PI;}
+@@ -112 +114 @@
+-    return std::fabs(diff) <= fov_half_width_rad_;
++  return std::fabs(diff) <= fov_half_width_rad_;
+@@ -120 +122 @@
+-    const std::vector<Point3D>& points) const
++  const std::vector<Point3D> & points) const
+@@ -122,2 +124,2 @@
+-    std::vector<size_t> indices;
+-    indices.reserve(points.size());
++  std::vector<size_t> indices;
++  indices.reserve(points.size());
+@@ -125,2 +127,2 @@
+-    for (size_t i = 0; i < points.size(); ++i) {
+-        const auto& p = points[i];
++  for (size_t i = 0; i < points.size(); ++i) {
++    const auto & p = points[i];
+@@ -128,3 +130,3 @@
+-        if ((p.x * p.x + p.y * p.y + p.z * p.z) > max_range_sq_) continue;
+-        if (!inFov(p.x, p.y)) continue;
+-        if (rayCasting(p.x, p.y)) continue;
++    if ((p.x * p.x + p.y * p.y + p.z * p.z) > max_range_sq_) {continue;}
++    if (!inFov(p.x, p.y)) {continue;}
++    if (rayCasting(p.x, p.y)) {continue;}
+@@ -132,3 +134,3 @@
+-        indices.push_back(i);
+-    }
+-    return indices;
++    indices.push_back(i);
++  }
++  return indices;
+@@ -139 +141 @@
+-    const std::vector<Point3D>& points) const
++  const std::vector<Point3D> & points) const
+@@ -141,2 +143,2 @@
+-    std::vector<Point3D> result;
+-    auto indices = filterPointIndices(points);
++  std::vector<Point3D> result;
++  auto indices = filterPointIndices(points);
+@@ -144,5 +146,5 @@
+-    result.reserve(indices.size());
+-    for (auto idx : indices) {
+-        result.push_back(points[idx]);
+-    }
+-    return result;
++  result.reserve(indices.size());
++  for (auto idx : indices) {
++    result.push_back(points[idx]);
++  }
++  return result;
+@@ -156 +158 @@
+-    const sensor_msgs::msg::PointCloud2& cloud) const
++  const sensor_msgs::msg::PointCloud2 & cloud) const
+@@ -158,4 +160,4 @@
+-    sensor_msgs::msg::PointCloud2 filtered = cloud;
+-    filtered.data.clear();
+-    filtered.width  = 0;
+-    filtered.height = 1;
++  sensor_msgs::msg::PointCloud2 filtered = cloud;
++  filtered.data.clear();
++  filtered.width = 0;
++  filtered.height = 1;
+@@ -163,9 +165,9 @@
+-    int x_off = -1, y_off = -1, z_off = -1;
+-    for (const auto& f : cloud.fields) {
+-        if (f.name == "x") x_off = f.offset;
+-        if (f.name == "y") y_off = f.offset;
+-        if (f.name == "z") z_off = f.offset;
+-    }
+-    if (x_off < 0 || y_off < 0 || z_off < 0) {
+-        return filtered;
+-    }
++  int x_off = -1, y_off = -1, z_off = -1;
++  for (const auto & f : cloud.fields) {
++    if (f.name == "x") {x_off = f.offset;}
++    if (f.name == "y") {y_off = f.offset;}
++    if (f.name == "z") {z_off = f.offset;}
++  }
++  if (x_off < 0 || y_off < 0 || z_off < 0) {
++    return filtered;
++  }
+@@ -173,2 +175,2 @@
+-    const size_t point_step = cloud.point_step;
+-    const size_t num_points = cloud.width * cloud.height;
++  const size_t point_step = cloud.point_step;
++  const size_t num_points = cloud.width * cloud.height;
+@@ -176,2 +178,2 @@
+-    std::vector<Point3D> points;
+-    points.reserve(num_points);
++  std::vector<Point3D> points;
++  points.reserve(num_points);
+@@ -179,7 +181,7 @@
+-    for (size_t i = 0; i < num_points; ++i) {
+-        const uint8_t* ptr = &cloud.data[i * point_step];
+-        float x = *reinterpret_cast<const float*>(ptr + x_off);
+-        float y = *reinterpret_cast<const float*>(ptr + y_off);
+-        float z = *reinterpret_cast<const float*>(ptr + z_off);
+-        points.push_back({x, y, z});
+-    }
++  for (size_t i = 0; i < num_points; ++i) {
++    const uint8_t * ptr = &cloud.data[i * point_step];
++    float x = *reinterpret_cast<const float *>(ptr + x_off);
++    float y = *reinterpret_cast<const float *>(ptr + y_off);
++    float z = *reinterpret_cast<const float *>(ptr + z_off);
++    points.push_back({x, y, z});
++  }
+@@ -187 +189 @@
+-    auto indices = filterPointIndices(points);
++  auto indices = filterPointIndices(points);
+@@ -189,5 +191,5 @@
+-    for (auto idx : indices) {
+-        const uint8_t* ptr = &cloud.data[idx * point_step];
+-        filtered.data.insert(filtered.data.end(), ptr, ptr + point_step);
+-        filtered.width++;
+-    }
++  for (auto idx : indices) {
++    const uint8_t * ptr = &cloud.data[idx * point_step];
++    filtered.data.insert(filtered.data.end(), ptr, ptr + point_step);
++    filtered.width++;
++  }
+@@ -195,2 +197,2 @@
+-    filtered.row_step = filtered.width * point_step;
+-    return filtered;
++  filtered.row_step = filtered.width * point_step;
++  return filtered;
+]]></failure>
+  </testcase>
+  <testcase
+    name="src/proximity_filter_node.cpp"
+    classname="andromeda_proximity_filter.uncrustify"
+  >
+      <failure message="Diff with 194 lines"><![CDATA[--- src/proximity_filter_node.cpp
++++ src/proximity_filter_node.cpp.uncrustify
+@@ -4 +4 @@
+-    : Node("proximity_filter")
++: Node("proximity_filter")
+@@ -6,9 +6,11 @@
+-    // Parameters initialisation
+-    this->declare_parameter<std::vector<double>>("polygon_x", {0.5,0.25,-0.25,-0.5,-0.25,0.25});
+-    this->declare_parameter<std::vector<double>>("polygon_y", {0.0,0.433,0.433,0.0,-0.433,-0.433});
+-    this->declare_parameter<double>("max_range", 1.5);
+-    this->declare_parameter<double>("fov_center_deg", 0.0);
+-    this->declare_parameter<double>("fov_width_deg", 180.0);
+-    this->declare_parameter<std::string>("input_topic", "/points/raw");
+-    this->declare_parameter<std::string>("output_topic", "/points/filtered");
+-    this->declare_parameter<std::string>("polygon_topic", "/points/filter_polygon");
++  // Parameters initialisation
++  this->declare_parameter<std::vector<double>>("polygon_x", {0.5, 0.25, -0.25, -0.5, -0.25, 0.25});
++  this->declare_parameter<std::vector<double>>(
++    "polygon_y",
++    {0.0, 0.433, 0.433, 0.0, -0.433, -0.433});
++  this->declare_parameter<double>("max_range", 1.5);
++  this->declare_parameter<double>("fov_center_deg", 0.0);
++  this->declare_parameter<double>("fov_width_deg", 180.0);
++  this->declare_parameter<std::string>("input_topic", "/points/raw");
++  this->declare_parameter<std::string>("output_topic", "/points/filtered");
++  this->declare_parameter<std::string>("polygon_topic", "/points/filter_polygon");
+@@ -16,3 +18,3 @@
+-    rcl_interfaces::msg::ParameterDescriptor rate_desc;
+-    rate_desc.description = "Processing frequency in Hz";
+-    this->declare_parameter<int>("subscription_rate", 20, rate_desc);
++  rcl_interfaces::msg::ParameterDescriptor rate_desc;
++  rate_desc.description = "Processing frequency in Hz";
++  this->declare_parameter<int>("subscription_rate", 20, rate_desc);
+@@ -20,5 +22,5 @@
+-    // Subscription
+-    subscription_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
+-        this->get_parameter("input_topic").as_string(),
+-        rclcpp::SensorDataQoS(),
+-        std::bind(&ProximityFilterNode::pointcloudCallback, this, std::placeholders::_1));
++  // Subscription
++  subscription_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
++    this->get_parameter("input_topic").as_string(),
++    rclcpp::SensorDataQoS(),
++    std::bind(&ProximityFilterNode::pointcloudCallback, this, std::placeholders::_1));
+@@ -26 +28 @@
+-    // Publishers
++  // Publishers
+@@ -28,13 +30,6 @@
+-    // Filtered point cloud publisher
+-    // Use a queue size of 10 and Reliable QoS to ensure that all filtered points
+-    // are delivered to subscribers. Reliability is important for downstream processing
+-    // where missing points could affect algorithms.
+-    filtered_pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(
+-        this->get_parameter("output_topic").as_string(), rclcpp::QoS(10).reliable());
+-    
+-    // Polygon publisher
+-    // Use a queue size of 1 and Transient Local QoS so that any new subscribers
+-    // immediately receive the latest polygon, even if it was published before
+-    // they connected. This is suitable for low-frequency configuration or visualization data.
+-    polygon_pub_ = this->create_publisher<geometry_msgs::msg::PolygonStamped>(
+-        this->get_parameter("polygon_topic").as_string(), rclcpp::QoS(1).transient_local());
++  // Filtered point cloud publisher
++  // Use a queue size of 10 and Reliable QoS to ensure that all filtered points
++  // are delivered to subscribers. Reliability is important for downstream processing
++  // where missing points could affect algorithms.
++  filtered_pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(
++    this->get_parameter("output_topic").as_string(), rclcpp::QoS(10).reliable());
+@@ -42 +37,6 @@
+-    last_processed_time_ = this->now();
++  // Polygon publisher
++  // Use a queue size of 1 and Transient Local QoS so that any new subscribers
++  // immediately receive the latest polygon, even if it was published before
++  // they connected. This is suitable for low-frequency configuration or visualization data.
++  polygon_pub_ = this->create_publisher<geometry_msgs::msg::PolygonStamped>(
++    this->get_parameter("polygon_topic").as_string(), rclcpp::QoS(1).transient_local());
+@@ -44,8 +44,11 @@
+-    param_handle_ = this->add_on_set_parameters_callback(
+-    [this](const std::vector<rclcpp::Parameter>& params){
+-        bool updated = false;
+-        for (const auto& p : params) {
+-            if (p.get_name() == "polygon_x" || p.get_name() == "polygon_y" ||
+-                p.get_name() == "max_range" || p.get_name() == "fov_center_deg" || p.get_name() == "fov_width_deg") {
+-                updated = true;
+-            }
++  last_processed_time_ = this->now();
++
++  param_handle_ = this->add_on_set_parameters_callback(
++    [this](const std::vector<rclcpp::Parameter> & params) {
++      bool updated = false;
++      for (const auto & p : params) {
++        if (p.get_name() == "polygon_x" || p.get_name() == "polygon_y" ||
++        p.get_name() == "max_range" || p.get_name() == "fov_center_deg" ||
++        p.get_name() == "fov_width_deg")
++        {
++          updated = true;
+@@ -53,9 +56,12 @@
+-        if (updated) {
+-            // Live update
+-            filter_lib_.setPolygon(this->get_parameter("polygon_x").as_double_array(),
+-                                   this->get_parameter("polygon_y").as_double_array());
+-            filter_lib_.setMaxRange(this->get_parameter("max_range").as_double());
+-            filter_lib_.setFov(this->get_parameter("fov_center_deg").as_double(),
+-                               this->get_parameter("fov_width_deg").as_double());
+-            RCLCPP_INFO(this->get_logger(), "Parameters updated live.");
+-        }
++      }
++      if (updated) {
++        // Live update
++        filter_lib_.setPolygon(
++          this->get_parameter("polygon_x").as_double_array(),
++          this->get_parameter("polygon_y").as_double_array());
++        filter_lib_.setMaxRange(this->get_parameter("max_range").as_double());
++        filter_lib_.setFov(
++          this->get_parameter("fov_center_deg").as_double(),
++          this->get_parameter("fov_width_deg").as_double());
++        RCLCPP_INFO(this->get_logger(), "Parameters updated live.");
++      }
+@@ -63,3 +69,3 @@
+-        rcl_interfaces::msg::SetParametersResult result;
+-        result.successful = true;
+-        return result;
++      rcl_interfaces::msg::SetParametersResult result;
++      result.successful = true;
++      return result;
+@@ -69,2 +75 @@
+-
+-    RCLCPP_INFO(this->get_logger(), "ProximityFilterNode started");
++  RCLCPP_INFO(this->get_logger(), "ProximityFilterNode started");
+@@ -76,6 +81,6 @@
+-    // Throttle
+-    int rate_hz = this->get_parameter("subscription_rate").as_int();
+-    double min_dt = 1.0 / rate_hz;
+-    rclcpp::Time now = this->now();
+-    if ((now - last_processed_time_).seconds() < min_dt) return;
+-    last_processed_time_ = now;
++  // Throttle
++  int rate_hz = this->get_parameter("subscription_rate").as_int();
++  double min_dt = 1.0 / rate_hz;
++  rclcpp::Time now = this->now();
++  if ((now - last_processed_time_).seconds() < min_dt) {return;}
++  last_processed_time_ = now;
+@@ -83,6 +88,8 @@
+-    // Update lib parameters
+-    filter_lib_.setPolygon(this->get_parameter("polygon_x").as_double_array(),
+-                           this->get_parameter("polygon_y").as_double_array());
+-    filter_lib_.setMaxRange(this->get_parameter("max_range").as_double());
+-    filter_lib_.setFov(this->get_parameter("fov_center_deg").as_double(),
+-                       this->get_parameter("fov_width_deg").as_double());
++  // Update lib parameters
++  filter_lib_.setPolygon(
++    this->get_parameter("polygon_x").as_double_array(),
++    this->get_parameter("polygon_y").as_double_array());
++  filter_lib_.setMaxRange(this->get_parameter("max_range").as_double());
++  filter_lib_.setFov(
++    this->get_parameter("fov_center_deg").as_double(),
++    this->get_parameter("fov_width_deg").as_double());
+@@ -90,11 +97,11 @@
+-    // Publish polygon for visualization
+-    std::vector<double> poly_x, poly_y;
+-    filter_lib_.getPolygon(poly_x, poly_y);
+-    geometry_msgs::msg::PolygonStamped poly_msg;
+-    poly_msg.header = msg->header;
+-    for (size_t i=0;i<poly_x.size();++i){
+-        geometry_msgs::msg::Point32 p;
+-        p.x = poly_x[i]; p.y = poly_y[i]; p.z = 0.0f;
+-        poly_msg.polygon.points.push_back(p);
+-    }
+-    polygon_pub_->publish(poly_msg);
++  // Publish polygon for visualization
++  std::vector<double> poly_x, poly_y;
++  filter_lib_.getPolygon(poly_x, poly_y);
++  geometry_msgs::msg::PolygonStamped poly_msg;
++  poly_msg.header = msg->header;
++  for (size_t i = 0; i < poly_x.size(); ++i) {
++    geometry_msgs::msg::Point32 p;
++    p.x = poly_x[i]; p.y = poly_y[i]; p.z = 0.0f;
++    poly_msg.polygon.points.push_back(p);
++  }
++  polygon_pub_->publish(poly_msg);
+@@ -102,3 +109,3 @@
+-    // Filter point cloud
+-    sensor_msgs::msg::PointCloud2 filtered = filter_lib_.filterPointCloud(*msg);
+-    filtered_pub_->publish(filtered);
++  // Filter point cloud
++  sensor_msgs::msg::PointCloud2 filtered = filter_lib_.filterPointCloud(*msg);
++  filtered_pub_->publish(filtered);
+@@ -106,3 +113,4 @@
+-    RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 2000,
+-                          "Filtered cloud: %zu -> %u points",
+-                          msg->width*msg->height, filtered.width);
++  RCLCPP_INFO_THROTTLE(
++    this->get_logger(), *this->get_clock(), 2000,
++    "Filtered cloud: %zu -> %u points",
++    msg->width * msg->height, filtered.width);
+]]></failure>
+  </testcase>
+  <testcase
+    name="test/test_filter_lib.cpp"
+    classname="andromeda_proximity_filter.uncrustify"
+  >
+      <failure message="Diff with 40 lines"><![CDATA[--- test/test_filter_lib.cpp
++++ test/test_filter_lib.cpp.uncrustify
+@@ -6 +6 @@
+-    ProximityFilterLib filter;
++  ProximityFilterLib filter;
+@@ -8,4 +8,4 @@
+-    // square: (0,0) -> (1,1)
+-    filter.setPolygon({0, 1, 1, 0}, {0, 0, 1, 1});
+-    filter.setMaxRange(2.0);
+-    filter.setFov(0.0, 180.0);
++  // square: (0,0) -> (1,1)
++  filter.setPolygon({0, 1, 1, 0}, {0, 0, 1, 1});
++  filter.setMaxRange(2.0);
++  filter.setFov(0.0, 180.0);
+@@ -13,6 +13,6 @@
+-    std::vector<ProximityFilterLib::Point3D> points = {
+-        {0.5,  0.5, 0.0},  // inside polygon → filtered OUT
+-        {1.5,  0.5, 0.0},  // outside polygon → kept
+-        {0.2, -0.2, 0.0},  // outside polygon → kept
+-        {2.0,  0.0, 0.0}   // on range boundary → kept
+-    };
++  std::vector<ProximityFilterLib::Point3D> points = {
++    {0.5, 0.5, 0.0},       // inside polygon → filtered OUT
++    {1.5, 0.5, 0.0},       // outside polygon → kept
++    {0.2, -0.2, 0.0},      // outside polygon → kept
++    {2.0, 0.0, 0.0}        // on range boundary → kept
++  };
+@@ -20 +20 @@
+-    auto filtered = filter.filterPoints(points);
++  auto filtered = filter.filterPoints(points);
+@@ -22 +22 @@
+-    ASSERT_EQ(filtered.size(), 3);
++  ASSERT_EQ(filtered.size(), 3);
+@@ -24,3 +24,3 @@
+-    EXPECT_DOUBLE_EQ(filtered[0].x, 1.5);
+-    EXPECT_DOUBLE_EQ(filtered[1].x, 0.2);
+-    EXPECT_DOUBLE_EQ(filtered[2].x, 2.0);
++  EXPECT_DOUBLE_EQ(filtered[0].x, 1.5);
++  EXPECT_DOUBLE_EQ(filtered[1].x, 0.2);
++  EXPECT_DOUBLE_EQ(filtered[2].x, 2.0);
+]]></failure>
+  </testcase>
+  <system-out>Checked files:
+* include/andromeda_proximity_filter/proximity_filter_lib.hpp
+* include/andromeda_proximity_filter/proximity_filter_node.hpp
+* src/main.cpp
+* src/proximity_filter_lib.cpp
+* src/proximity_filter_node.cpp
+* test/test_filter_lib.cpp</system-out>
+</testsuite>

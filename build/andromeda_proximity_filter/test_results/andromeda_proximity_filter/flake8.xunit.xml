@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="andromeda_proximity_filter.flake8"
+  tests="28"
+  errors="0"
+  failures="28"
+  time="0.121"
+>
+  <testcase
+    name="F401 (./launch/proximity_filter_launch.py:3:1)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="'launch.actions.ExecuteProcess' imported but unused:&#10;from launch.actions import ExecuteProcess&#10;"/>
+  </testcase>
+  <testcase
+    name="E302 (./launch/proximity_filter_launch.py:6:1)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="expected 2 blank lines, found 1:&#10;def generate_launch_description():&#10;"/>
+  </testcase>
+  <testcase
+    name="F841 (./launch/proximity_filter_launch.py:7:5)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="local variable 'pkg_dir' is assigned to but never used:&#10;    pkg_dir = os.path.join(os.getenv('COLCON_PREFIX_PATH').split(':')[0], 'andromeda_proximity_filter')&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/proximity_filter_launch.py:7:100)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="line too long (103 &gt; 99 characters):&#10;    pkg_dir = os.path.join(os.getenv('COLCON_PREFIX_PATH').split(':')[0], 'andromeda_proximity_filter')&#10;"/>
+  </testcase>
+  <testcase
+    name="E302 (./scripts/test_pointcloud_pub.py:9:1)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="expected 2 blank lines, found 1:&#10;class RealisticLidarPublisher(Node):&#10;"/>
+  </testcase>
+  <testcase
+    name="W291 (./scripts/test_pointcloud_pub.py:15:69)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="trailing whitespace:&#10;        self.timer = self.create_timer(0.2, self.publish_pointcloud) &#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./scripts/test_pointcloud_pub.py:16:1)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;        &#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./scripts/test_pointcloud_pub.py:19:1)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;       &#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./scripts/test_pointcloud_pub.py:20:9)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;        self.num_points = 500       &#10;"/>
+  </testcase>
+  <testcase
+    name="W291 (./scripts/test_pointcloud_pub.py:20:30)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="trailing whitespace:&#10;        self.num_points = 500       &#10;"/>
+  </testcase>
+  <testcase
+    name="W291 (./scripts/test_pointcloud_pub.py:21:29)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="trailing whitespace:&#10;        self.max_range = 3.0        &#10;"/>
+  </testcase>
+  <testcase
+    name="W291 (./scripts/test_pointcloud_pub.py:22:29)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="trailing whitespace:&#10;        self.fov_deg = 180.0        &#10;"/>
+  </testcase>
+  <testcase
+    name="W291 (./scripts/test_pointcloud_pub.py:23:34)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="trailing whitespace:&#10;        self.fov_center_deg = 0.0   &#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./scripts/test_pointcloud_pub.py:25:1)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;        &#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./scripts/test_pointcloud_pub.py:26:9)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;        self.hex_center = (0, 0)  &#10;"/>
+  </testcase>
+  <testcase
+    name="W291 (./scripts/test_pointcloud_pub.py:26:33)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="trailing whitespace:&#10;        self.hex_center = (0, 0)  &#10;"/>
+  </testcase>
+  <testcase
+    name="E201 (./scripts/test_pointcloud_pub.py:28:14)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="whitespace after '(':&#10;            ( 0.5,   0.0),&#10;"/>
+  </testcase>
+  <testcase
+    name="E201 (./scripts/test_pointcloud_pub.py:29:14)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="whitespace after '(':&#10;            ( 0.25,  0.433),&#10;"/>
+  </testcase>
+  <testcase
+    name="E201 (./scripts/test_pointcloud_pub.py:33:14)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="whitespace after '(':&#10;            ( 0.25, -0.433),&#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./scripts/test_pointcloud_pub.py:46:1)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;            &#10;"/>
+  </testcase>
+  <testcase
+    name="W291 (./scripts/test_pointcloud_pub.py:48:56)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="trailing whitespace:&#10;            r = random.uniform(0.0, self.max_range * 2)  &#10;"/>
+  </testcase>
+  <testcase
+    name="W291 (./scripts/test_pointcloud_pub.py:52:43)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="trailing whitespace:&#10;            z = random.uniform(-0.05, 0.2) &#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./scripts/test_pointcloud_pub.py:54:1)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;            &#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./scripts/test_pointcloud_pub.py:55:13)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;            if random.random() &lt; 0.1: &#10;"/>
+  </testcase>
+  <testcase
+    name="W291 (./scripts/test_pointcloud_pub.py:55:38)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="trailing whitespace:&#10;            if random.random() &lt; 0.1: &#10;"/>
+  </testcase>
+  <testcase
+    name="E302 (./scripts/test_pointcloud_pub.py:85:1)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="expected 2 blank lines, found 1:&#10;def main():&#10;"/>
+  </testcase>
+  <testcase
+    name="E305 (./scripts/test_pointcloud_pub.py:91:1)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="expected 2 blank lines after class or function definition, found 1:&#10;if __name__ == '__main__':&#10;"/>
+  </testcase>
+  <testcase
+    name="W391 (./scripts/test_pointcloud_pub.py:93:1)"
+    classname="andromeda_proximity_filter.flake8"
+  >
+      <failure message="blank line at end of file:&#10;&#10;"/>
+  </testcase>
+  <system-out>Checked files:
+* ./launch/proximity_filter_launch.py
+* ./scripts/test_pointcloud_pub.py</system-out>
+</testsuite>

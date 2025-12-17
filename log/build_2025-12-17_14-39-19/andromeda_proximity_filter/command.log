@@ -1,0 +1,4 @@
+Invoking command in '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter -- -j16 -l16
+Invoked command in '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter -- -j16 -l16
+Invoking command in '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter
+Invoked command in '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter

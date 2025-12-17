@@ -1,0 +1,142 @@
+-- run_test.py: invoking following command in '/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter':
+ - /opt/ros/humble/bin/ament_flake8 --xunit-file /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/flake8.xunit.xml
+
+from launch.actions import ExecuteProcess
+^
+def generate_launch_description():
+^
+    pkg_dir = os.path.join(os.getenv('COLCON_PREFIX_PATH').split(':')[0], 'andromeda_proximity_filter')
+    ^
+    pkg_dir = os.path.join(os.getenv('COLCON_PREFIX_PATH').split(':')[0], 'andromeda_proximity_filter')
+                                                                                                   ^
+class RealisticLidarPublisher(Node):
+^
+        self.timer = self.create_timer(0.2, self.publish_pointcloud) 
+                                                                    ^
+        
+^
+       
+^
+        self.num_points = 500       
+        ^
+        self.num_points = 500       
+                             ^
+        self.max_range = 3.0        
+                            ^
+        self.fov_deg = 180.0        
+                            ^
+        self.fov_center_deg = 0.0   
+                                 ^
+        
+^
+        self.hex_center = (0, 0)  
+        ^
+        self.hex_center = (0, 0)  
+                                ^
+            ( 0.5,   0.0),
+             ^
+            ( 0.25,  0.433),
+             ^
+            ( 0.25, -0.433),
+             ^
+            
+^
+            r = random.uniform(0.0, self.max_range * 2)  
+                                                       ^
+            z = random.uniform(-0.05, 0.2) 
+                                          ^
+            
+^
+            if random.random() < 0.1: 
+            ^
+            if random.random() < 0.1: 
+                                     ^
+def main():
+^
+if __name__ == '__main__':
+^
+
+^
+3     E201 whitespace after '('
+3     E302 expected 2 blank lines, found 1
+3     E303 too many blank lines (2)
+1     E305 expected 2 blank lines after class or function definition, found 1
+1     E501 line too long (103 > 99 characters)
+1     F401 'launch.actions.ExecuteProcess' imported but unused
+1     F841 local variable 'pkg_dir' is assigned to but never used
+9     W291 trailing whitespace
+5     W293 blank line contains whitespace
+1     W391 blank line at end of file
+
+./launch/proximity_filter_launch.py:3:1: F401 'launch.actions.ExecuteProcess' imported but unused
+
+./launch/proximity_filter_launch.py:6:1: E302 expected 2 blank lines, found 1
+
+./launch/proximity_filter_launch.py:7:5: F841 local variable 'pkg_dir' is assigned to but never used
+
+./launch/proximity_filter_launch.py:7:100: E501 line too long (103 > 99 characters)
+
+./scripts/test_pointcloud_pub.py:9:1: E302 expected 2 blank lines, found 1
+
+./scripts/test_pointcloud_pub.py:15:69: W291 trailing whitespace
+
+./scripts/test_pointcloud_pub.py:16:1: W293 blank line contains whitespace
+
+./scripts/test_pointcloud_pub.py:19:1: W293 blank line contains whitespace
+
+./scripts/test_pointcloud_pub.py:20:9: E303 too many blank lines (2)
+
+./scripts/test_pointcloud_pub.py:20:30: W291 trailing whitespace
+
+./scripts/test_pointcloud_pub.py:21:29: W291 trailing whitespace
+
+./scripts/test_pointcloud_pub.py:22:29: W291 trailing whitespace
+
+./scripts/test_pointcloud_pub.py:23:34: W291 trailing whitespace
+
+./scripts/test_pointcloud_pub.py:25:1: W293 blank line contains whitespace
+
+./scripts/test_pointcloud_pub.py:26:9: E303 too many blank lines (2)
+
+./scripts/test_pointcloud_pub.py:26:33: W291 trailing whitespace
+
+./scripts/test_pointcloud_pub.py:28:14: E201 whitespace after '('
+
+./scripts/test_pointcloud_pub.py:29:14: E201 whitespace after '('
+
+./scripts/test_pointcloud_pub.py:33:14: E201 whitespace after '('
+
+./scripts/test_pointcloud_pub.py:46:1: W293 blank line contains whitespace
+
+./scripts/test_pointcloud_pub.py:48:56: W291 trailing whitespace
+
+./scripts/test_pointcloud_pub.py:52:43: W291 trailing whitespace
+
+./scripts/test_pointcloud_pub.py:54:1: W293 blank line contains whitespace
+
+./scripts/test_pointcloud_pub.py:55:13: E303 too many blank lines (2)
+
+./scripts/test_pointcloud_pub.py:55:38: W291 trailing whitespace
+
+./scripts/test_pointcloud_pub.py:85:1: E302 expected 2 blank lines, found 1
+
+./scripts/test_pointcloud_pub.py:91:1: E305 expected 2 blank lines after class or function definition, found 1
+
+./scripts/test_pointcloud_pub.py:93:1: W391 blank line at end of file
+
+
+2 files checked
+28 errors
+
+'E'-type errors: 11
+'F'-type errors: 2
+'W'-type errors: 15
+
+Checked files:
+
+* ./launch/proximity_filter_launch.py
+* ./scripts/test_pointcloud_pub.py
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/flake8.xunit.xml'

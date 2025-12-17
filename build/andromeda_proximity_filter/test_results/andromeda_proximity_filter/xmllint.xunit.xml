@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="andromeda_proximity_filter.xmllint"
+  tests="1"
+  errors="0"
+  failures="0"
+  time="0.880"
+>
+  <testcase
+    name="package.xml"
+    classname="andromeda_proximity_filter.xmllint"/>
+  <system-out>Checked files:
+* package.xml</system-out>
+</testsuite>

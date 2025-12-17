@@ -1,0 +1,39 @@
+[0.096s] Invoking command in '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter -- -j16 -l16
+[0.242s] [35m[1mConsolidate compiler generated dependencies of target proximity_filter_lib[0m
+[0.371s] gmake[2]: Warning: File 'CMakeFiles/proximity_filter_lib.dir/compiler_depend.make' has modification time 0.43 s in the future
+[0.383s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.400s] [ 28%] Built target proximity_filter_lib
+[0.445s] [35m[1mConsolidate compiler generated dependencies of target test_filter_lib[0m
+[0.452s] [35m[1mConsolidate compiler generated dependencies of target proximity_filter_node[0m
+[0.787s] gmake[2]: Warning: File 'CMakeFiles/test_filter_lib.dir/compiler_depend.make' has modification time 0.36 s in the future
+[0.828s] [ 42%] [32mBuilding CXX object CMakeFiles/test_filter_lib.dir/test/test_filter_lib.cpp.o[0m
+[0.892s] gmake[2]: Warning: File 'CMakeFiles/proximity_filter_node.dir/compiler_depend.make' has modification time 0.25 s in the future
+[0.910s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.934s] [ 85%] Built target proximity_filter_node
+[2.169s] [100%] [32m[1mLinking CXX executable test_filter_lib[0m
+[2.778s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.794s] [100%] Built target test_filter_lib
+[2.839s] Invoked command in '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter -- -j16 -l16
+[2.866s] Invoking command in '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter
+[2.878s] -- Install configuration: ""
+[2.884s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter//launch
+[2.904s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter//launch/proximity_filter_launch.py
+[2.940s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/lib/andromeda_proximity_filter/proximity_filter_node
+[2.976s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/lib/andromeda_proximity_filter/libproximity_filter_lib.a
+[2.986s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/lib/andromeda_proximity_filter/test_pointcloud_pub.py
+[3.011s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/ament_index/resource_index/package_run_dependencies/andromeda_proximity_filter
+[3.041s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/ament_index/resource_index/parent_prefix_path/andromeda_proximity_filter
+[3.054s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/environment/ament_prefix_path.sh
+[3.071s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/environment/ament_prefix_path.dsv
+[3.084s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/environment/path.sh
+[3.101s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/environment/path.dsv
+[3.116s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/local_setup.bash
+[3.129s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/local_setup.sh
+[3.145s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/local_setup.zsh
+[3.159s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/local_setup.dsv
+[3.171s] -- Installing: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/package.dsv
+[3.226s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/ament_index/resource_index/packages/andromeda_proximity_filter
+[3.244s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/cmake/andromeda_proximity_filterConfig.cmake
+[3.256s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/cmake/andromeda_proximity_filterConfig-version.cmake
+[3.270s] -- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/package.xml
+[3.289s] Invoked command in '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter

@@ -1,0 +1,902 @@
+[0.193s] Invoking command in '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.194s] UpdateCTestConfiguration  from :/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/CTestConfiguration.ini
+[0.195s] Parse Config file:/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/CTestConfiguration.ini
+[0.195s]    Site: DESKTOP-P55GQSG
+[0.196s]    Build name: (empty)
+[0.197s]  Add coverage exclude regular expressions.
+[0.201s] Create new tag: 20251217-0329 - Experimental
+[0.201s] UpdateCTestConfiguration  from :/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/CTestConfiguration.ini
+[0.202s] Parse Config file:/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/CTestConfiguration.ini
+[0.203s] Test project /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter
+[0.208s] Constructing a list of tests
+[0.211s] Done constructing a list of tests
+[0.212s] Updating test list for fixtures
+[0.213s] Added 0 tests to meet fixture requirements
+[0.214s] Checking test dependency graph...
+[0.215s] Checking test dependency graph end
+[0.215s] test 1
+[0.216s]     Start 1: FilterLibTest
+[0.217s] 
+[0.217s] 1: Test command: /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_filter_lib
+[0.218s] 1: Test timeout computed to be: 10000000
+[0.221s] 1: Running main() from ./googletest/src/gtest_main.cc
+[0.221s] 1: [==========] Running 1 test from 1 test suite.
+[0.222s] 1: [----------] Global test environment set-up.
+[0.223s] 1: [----------] 1 test from ProximityFilterLibTest
+[0.223s] 1: [ RUN      ] ProximityFilterLibTest.SimplePolygon
+[0.224s] 1: [       OK ] ProximityFilterLibTest.SimplePolygon (0 ms)
+[0.224s] 1: [----------] 1 test from ProximityFilterLibTest (0 ms total)
+[0.226s] 1: 
+[0.226s] 1: [----------] Global test environment tear-down
+[0.227s] 1: [==========] 1 test from 1 test suite ran. (0 ms total)
+[0.227s] 1: [  PASSED  ] 1 test.
+[0.228s] 1/7 Test #1: FilterLibTest ....................   Passed    0.01 sec
+[0.228s] test 2
+[0.229s]     Start 2: cppcheck
+[0.229s] 
+[0.230s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/cppcheck.xunit.xml" "--package-name" "andromeda_proximity_filter" "--output-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/cppcheck.xunit.xml" "--include_dirs" "/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter/include" "/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter/include"
+[0.231s] 2: Test timeout computed to be: 300
+[0.286s] 2: -- run_test.py: invoking following command in '/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter':
+[0.287s] 2:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/cppcheck.xunit.xml --include_dirs /mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter/include /mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter/include
+[0.367s] 2: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+[0.379s] 2: -- run_test.py: return code 0
+[0.384s] 2: -- run_test.py: verify result file '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/cppcheck.xunit.xml'
+[0.396s] 2/7 Test #2: cppcheck .........................   Passed    0.17 sec
+[0.399s] test 3
+[0.400s]     Start 3: flake8
+[0.400s] 
+[0.401s] 3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/flake8.xunit.xml" "--package-name" "andromeda_proximity_filter" "--output-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/ament_flake8/flake8.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/flake8.xunit.xml"
+[0.401s] 3: Test timeout computed to be: 60
+[0.449s] 3: -- run_test.py: invoking following command in '/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter':
+[0.450s] 3:  - /opt/ros/humble/bin/ament_flake8 --xunit-file /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/flake8.xunit.xml
+[0.647s] 3: from launch.actions import ExecuteProcess
+[0.648s] 3: ^
+[0.649s] 3: def generate_launch_description():
+[0.649s] 3: ^
+[0.650s] 3:     pkg_dir = os.path.join(os.getenv('COLCON_PREFIX_PATH').split(':')[0], 'andromeda_proximity_filter')
+[0.650s] 3:     ^
+[0.651s] 3:     pkg_dir = os.path.join(os.getenv('COLCON_PREFIX_PATH').split(':')[0], 'andromeda_proximity_filter')
+[0.652s] 3:                                                                                                    ^
+[0.652s] 3: class RealisticLidarPublisher(Node):
+[0.653s] 3: ^
+[0.654s] 3:         self.timer = self.create_timer(0.2, self.publish_pointcloud) 
+[0.654s] 3:                                                                     ^
+[0.655s] 3:         
+[0.655s] 3: ^
+[0.656s] 3:        
+[0.657s] 3: ^
+[0.657s] 3:         self.num_points = 500       
+[0.658s] 3:         ^
+[0.659s] 3:         self.num_points = 500       
+[0.660s] 3:                              ^
+[0.660s] 3:         self.max_range = 3.0        
+[0.661s] 3:                             ^
+[0.662s] 3:         self.fov_deg = 180.0        
+[0.663s] 3:                             ^
+[0.664s] 3:         self.fov_center_deg = 0.0   
+[0.665s] 3:                                  ^
+[0.666s] 3:         
+[0.666s] 3: ^
+[0.667s] 3:         self.hex_center = (0, 0)  
+[0.668s] 3:         ^
+[0.668s] 3:         self.hex_center = (0, 0)  
+[0.669s] 3:                                 ^
+[0.669s] 3:             ( 0.5,   0.0),
+[0.670s] 3:              ^
+[0.671s] 3:             ( 0.25,  0.433),
+[0.671s] 3:              ^
+[0.672s] 3:             ( 0.25, -0.433),
+[0.673s] 3:              ^
+[0.673s] 3:             
+[0.674s] 3: ^
+[0.675s] 3:             r = random.uniform(0.0, self.max_range * 2)  
+[0.676s] 3:                                                        ^
+[0.677s] 3:             z = random.uniform(-0.05, 0.2) 
+[0.677s] 3:                                           ^
+[0.678s] 3:             
+[0.679s] 3: ^
+[0.679s] 3:             if random.random() < 0.1: 
+[0.680s] 3:             ^
+[0.680s] 3:             if random.random() < 0.1: 
+[0.681s] 3:                                      ^
+[0.682s] 3: def main():
+[0.682s] 3: ^
+[0.683s] 3: if __name__ == '__main__':
+[0.683s] 3: ^
+[0.684s] 3: 
+[0.685s] 3: ^
+[0.685s] 3: 3     E201 whitespace after '('
+[0.686s] 3: 3     E302 expected 2 blank lines, found 1
+[0.687s] 3: 3     E303 too many blank lines (2)
+[0.688s] 3: 1     E305 expected 2 blank lines after class or function definition, found 1
+[0.689s] 3: 1     E501 line too long (103 > 99 characters)
+[0.689s] 3: 1     F401 'launch.actions.ExecuteProcess' imported but unused
+[0.690s] 3: 1     F841 local variable 'pkg_dir' is assigned to but never used
+[0.691s] 3: 9     W291 trailing whitespace
+[0.691s] 3: 5     W293 blank line contains whitespace
+[0.692s] 3: 1     W391 blank line at end of file
+[0.692s] 3: 
+[0.693s] 3: ./launch/proximity_filter_launch.py:3:1: F401 'launch.actions.ExecuteProcess' imported but unused
+[0.693s] 3: 
+[0.694s] 3: ./launch/proximity_filter_launch.py:6:1: E302 expected 2 blank lines, found 1
+[0.694s] 3: 
+[0.695s] 3: ./launch/proximity_filter_launch.py:7:5: F841 local variable 'pkg_dir' is assigned to but never used
+[0.695s] 3: 
+[0.696s] 3: ./launch/proximity_filter_launch.py:7:100: E501 line too long (103 > 99 characters)
+[0.696s] 3: 
+[0.697s] 3: ./scripts/test_pointcloud_pub.py:9:1: E302 expected 2 blank lines, found 1
+[0.697s] 3: 
+[0.697s] 3: ./scripts/test_pointcloud_pub.py:15:69: W291 trailing whitespace
+[0.698s] 3: 
+[0.699s] 3: ./scripts/test_pointcloud_pub.py:16:1: W293 blank line contains whitespace
+[0.699s] 3: 
+[0.700s] 3: ./scripts/test_pointcloud_pub.py:19:1: W293 blank line contains whitespace
+[0.700s] 3: 
+[0.701s] 3: ./scripts/test_pointcloud_pub.py:20:9: E303 too many blank lines (2)
+[0.701s] 3: 
+[0.702s] 3: ./scripts/test_pointcloud_pub.py:20:30: W291 trailing whitespace
+[0.702s] 3: 
+[0.703s] 3: ./scripts/test_pointcloud_pub.py:21:29: W291 trailing whitespace
+[0.703s] 3: 
+[0.704s] 3: ./scripts/test_pointcloud_pub.py:22:29: W291 trailing whitespace
+[0.705s] 3: 
+[0.705s] 3: ./scripts/test_pointcloud_pub.py:23:34: W291 trailing whitespace
+[0.706s] 3: 
+[0.706s] 3: ./scripts/test_pointcloud_pub.py:25:1: W293 blank line contains whitespace
+[0.707s] 3: 
+[0.708s] 3: ./scripts/test_pointcloud_pub.py:26:9: E303 too many blank lines (2)
+[0.708s] 3: 
+[0.709s] 3: ./scripts/test_pointcloud_pub.py:26:33: W291 trailing whitespace
+[0.709s] 3: 
+[0.710s] 3: ./scripts/test_pointcloud_pub.py:28:14: E201 whitespace after '('
+[0.710s] 3: 
+[0.711s] 3: ./scripts/test_pointcloud_pub.py:29:14: E201 whitespace after '('
+[0.711s] 3: 
+[0.712s] 3: ./scripts/test_pointcloud_pub.py:33:14: E201 whitespace after '('
+[0.712s] 3: 
+[0.713s] 3: ./scripts/test_pointcloud_pub.py:46:1: W293 blank line contains whitespace
+[0.713s] 3: 
+[0.714s] 3: ./scripts/test_pointcloud_pub.py:48:56: W291 trailing whitespace
+[0.715s] 3: 
+[0.715s] 3: ./scripts/test_pointcloud_pub.py:52:43: W291 trailing whitespace
+[0.716s] 3: 
+[0.716s] 3: ./scripts/test_pointcloud_pub.py:54:1: W293 blank line contains whitespace
+[0.717s] 3: 
+[0.718s] 3: ./scripts/test_pointcloud_pub.py:55:13: E303 too many blank lines (2)
+[0.718s] 3: 
+[0.719s] 3: ./scripts/test_pointcloud_pub.py:55:38: W291 trailing whitespace
+[0.719s] 3: 
+[0.720s] 3: ./scripts/test_pointcloud_pub.py:85:1: E302 expected 2 blank lines, found 1
+[0.720s] 3: 
+[0.721s] 3: ./scripts/test_pointcloud_pub.py:91:1: E305 expected 2 blank lines after class or function definition, found 1
+[0.721s] 3: 
+[0.722s] 3: ./scripts/test_pointcloud_pub.py:93:1: W391 blank line at end of file
+[0.723s] 3: 
+[0.723s] 3: 
+[0.724s] 3: 2 files checked
+[0.724s] 3: 28 errors
+[0.725s] 3: 
+[0.725s] 3: 'E'-type errors: 11
+[0.726s] 3: 'F'-type errors: 2
+[0.726s] 3: 'W'-type errors: 15
+[0.727s] 3: 
+[0.728s] 3: Checked files:
+[0.728s] 3: 
+[0.729s] 3: * ./launch/proximity_filter_launch.py
+[0.730s] 3: * ./scripts/test_pointcloud_pub.py
+[0.731s] 3: -- run_test.py: return code 1
+[0.732s] 3: -- run_test.py: verify result file '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/flake8.xunit.xml'
+[0.733s] 3/7 Test #3: flake8 ...........................***Failed    0.28 sec
+[0.733s] test 4
+[0.734s]     Start 4: lint_cmake
+[0.735s] 
+[0.736s] 4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/lint_cmake.xunit.xml" "--package-name" "andromeda_proximity_filter" "--output-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/lint_cmake.xunit.xml"
+[0.737s] 4: Test timeout computed to be: 60
+[0.742s] 4: -- run_test.py: invoking following command in '/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter':
+[0.743s] 4:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/lint_cmake.xunit.xml
+[0.820s] 4: 
+[0.820s] 4: No problems found
+[0.827s] 4: -- run_test.py: return code 0
+[0.831s] 4: -- run_test.py: verify result file '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/lint_cmake.xunit.xml'
+[0.844s] 4/7 Test #4: lint_cmake .......................   Passed    0.15 sec
+[0.846s] test 5
+[0.847s]     Start 5: pep257
+[0.848s] 
+[0.848s] 5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/pep257.xunit.xml" "--package-name" "andromeda_proximity_filter" "--output-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/pep257.xunit.xml"
+[0.848s] 5: Test timeout computed to be: 60
+[0.897s] 5: -- run_test.py: invoking following command in '/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter':
+[0.898s] 5:  - /opt/ros/humble/bin/ament_pep257 --xunit-file /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/pep257.xunit.xml
+[1.060s] 5: checking ./launch/proximity_filter_launch.py
+[1.060s] 5: checking ./scripts/test_pointcloud_pub.py
+[1.061s] 5: No problems found
+[1.072s] 5: -- run_test.py: return code 0
+[1.077s] 5: -- run_test.py: verify result file '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/pep257.xunit.xml'
+[1.090s] 5/7 Test #5: pep257 ...........................   Passed    0.24 sec
+[1.092s] test 6
+[1.093s]     Start 6: uncrustify
+[1.094s] 
+[1.094s] 6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/uncrustify.xunit.xml" "--package-name" "andromeda_proximity_filter" "--output-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/uncrustify.xunit.xml"
+[1.095s] 6: Test timeout computed to be: 60
+[1.144s] 6: -- run_test.py: invoking following command in '/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter':
+[1.145s] 6:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/uncrustify.xunit.xml
+[1.290s] 6: Code style divergence in file 'include/andromeda_proximity_filter/proximity_filter_lib.hpp':
+[1.291s] 6: 
+[1.292s] 6: --- include/andromeda_proximity_filter/proximity_filter_lib.hpp
+[1.293s] 6: +++ include/andromeda_proximity_filter/proximity_filter_lib.hpp.uncrustify
+[1.294s] 6: @@ -11,6 +11,6 @@
+[1.295s] 6: -    struct Point3D
+[1.296s] 6: -    {
+[1.297s] 6: -        double x;
+[1.298s] 6: -        double y;
+[1.298s] 6: -        double z;
+[1.299s] 6: -    };
+[1.299s] 6: +  struct Point3D
+[1.300s] 6: +  {
+[1.301s] 6: +    double x;
+[1.302s] 6: +    double y;
+[1.302s] 6: +    double z;
+[1.303s] 6: +  };
+[1.304s] 6: @@ -18 +18 @@
+[1.304s] 6: -    ProximityFilterLib();
+[1.305s] 6: +  ProximityFilterLib();
+[1.306s] 6: @@ -20,3 +20,4 @@
+[1.306s] 6: -    // ---------------- Parameters ----------------
+[1.307s] 6: -    void setPolygon(const std::vector<double>& x,
+[1.307s] 6: -                    const std::vector<double>& y);
+[1.308s] 6: +  // ---------------- Parameters ----------------
+[1.309s] 6: +  void setPolygon(
+[1.309s] 6: +    const std::vector<double> & x,
+[1.310s] 6: +    const std::vector<double> & y);
+[1.311s] 6: @@ -24,2 +25,3 @@
+[1.311s] 6: -    void getPolygon(std::vector<double>& x,
+[1.312s] 6: -                    std::vector<double>& y) const;
+[1.313s] 6: +  void getPolygon(
+[1.313s] 6: +    std::vector<double> & x,
+[1.314s] 6: +    std::vector<double> & y) const;
+[1.315s] 6: @@ -27 +29 @@
+[1.315s] 6: -    void setMaxRange(double range);
+[1.316s] 6: +  void setMaxRange(double range);
+[1.317s] 6: @@ -29,3 +31,3 @@
+[1.317s] 6: -    // center_deg: FOV center angle (deg)
+[1.318s] 6: -    // width_deg : total FOV width (deg)
+[1.319s] 6: -    void setFov(double center_deg, double width_deg);
+[1.319s] 6: +  // center_deg: FOV center angle (deg)
+[1.320s] 6: +  // width_deg : total FOV width (deg)
+[1.321s] 6: +  void setFov(double center_deg, double width_deg);
+[1.321s] 6: @@ -33,3 +35,3 @@
+[1.322s] 6: -    // ---------------- Core filtering ----------------
+[1.322s] 6: -    std::vector<Point3D>
+[1.323s] 6: -    filterPoints(const std::vector<Point3D>& points) const;
+[1.324s] 6: +  // ---------------- Core filtering ----------------
+[1.324s] 6: +  std::vector<Point3D>
+[1.325s] 6: +  filterPoints(const std::vector<Point3D> & points) const;
+[1.326s] 6: @@ -37,2 +39,2 @@
+[1.326s] 6: -    sensor_msgs::msg::PointCloud2
+[1.327s] 6: -    filterPointCloud(const sensor_msgs::msg::PointCloud2& cloud) const;
+[1.327s] 6: +  sensor_msgs::msg::PointCloud2
+[1.328s] 6: +  filterPointCloud(const sensor_msgs::msg::PointCloud2 & cloud) const;
+[1.329s] 6: @@ -41,3 +43,3 @@
+[1.329s] 6: -    // ---------------- Geometry helpers ----------------
+[1.330s] 6: -    bool rayCasting(double x, double y) const;
+[1.331s] 6: -    bool inFov(double x, double y) const;
+[1.332s] 6: +  // ---------------- Geometry helpers ----------------
+[1.332s] 6: +  bool rayCasting(double x, double y) const;
+[1.333s] 6: +  bool inFov(double x, double y) const;
+[1.334s] 6: @@ -45,3 +47,3 @@
+[1.334s] 6: -    // index-based filtering (CRITICAL for PointCloud2 correctness)
+[1.335s] 6: -    std::vector<size_t>
+[1.336s] 6: -    filterPointIndices(const std::vector<Point3D>& points) const;
+[1.336s] 6: +  // index-based filtering (CRITICAL for PointCloud2 correctness)
+[1.337s] 6: +  std::vector<size_t>
+[1.338s] 6: +  filterPointIndices(const std::vector<Point3D> & points) const;
+[1.338s] 6: @@ -49,3 +51,3 @@
+[1.339s] 6: -    // ---------------- Parameters ----------------
+[1.340s] 6: -    std::vector<double> polygon_x_;
+[1.340s] 6: -    std::vector<double> polygon_y_;
+[1.341s] 6: +  // ---------------- Parameters ----------------
+[1.341s] 6: +  std::vector<double> polygon_x_;
+[1.342s] 6: +  std::vector<double> polygon_y_;
+[1.343s] 6: @@ -53,2 +55,2 @@
+[1.343s] 6: -    double max_range_;
+[1.344s] 6: -    double max_range_sq_;
+[1.345s] 6: +  double max_range_;
+[1.345s] 6: +  double max_range_sq_;
+[1.346s] 6: @@ -56,2 +58,2 @@
+[1.347s] 6: -    double fov_center_rad_;
+[1.347s] 6: -    double fov_half_width_rad_;
+[1.348s] 6: +  double fov_center_rad_;
+[1.349s] 6: +  double fov_half_width_rad_;
+[1.349s] 6: 
+[1.350s] 6: Code style divergence in file 'include/andromeda_proximity_filter/proximity_filter_node.hpp':
+[1.350s] 6: 
+[1.351s] 6: --- include/andromeda_proximity_filter/proximity_filter_node.hpp
+[1.352s] 6: +++ include/andromeda_proximity_filter/proximity_filter_node.hpp.uncrustify
+[1.352s] 6: @@ -15 +15 @@
+[1.353s] 6: -    ProximityFilterNode();
+[1.353s] 6: +  ProximityFilterNode();
+[1.354s] 6: @@ -18 +18 @@
+[1.354s] 6: -    void pointcloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg);
+[1.355s] 6: +  void pointcloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg);
+[1.355s] 6: @@ -20 +20 @@
+[1.356s] 6: -    ProximityFilterLib filter_lib_;
+[1.357s] 6: +  ProximityFilterLib filter_lib_;
+[1.357s] 6: @@ -22,3 +22,3 @@
+[1.358s] 6: -    rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_;
+[1.358s] 6: -    rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr filtered_pub_;
+[1.359s] 6: -    rclcpp::Publisher<geometry_msgs::msg::PolygonStamped>::SharedPtr polygon_pub_;
+[1.360s] 6: +  rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_;
+[1.360s] 6: +  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr filtered_pub_;
+[1.361s] 6: +  rclcpp::Publisher<geometry_msgs::msg::PolygonStamped>::SharedPtr polygon_pub_;
+[1.361s] 6: @@ -26 +26 @@
+[1.362s] 6: -    rclcpp::Time last_processed_time_;
+[1.362s] 6: +  rclcpp::Time last_processed_time_;
+[1.363s] 6: @@ -28 +28 @@
+[1.363s] 6: -    rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr param_handle_;
+[1.364s] 6: +  rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr param_handle_;
+[1.365s] 6: 
+[1.365s] 6: Code style divergence in file 'src/main.cpp':
+[1.366s] 6: 
+[1.366s] 6: --- src/main.cpp
+[1.367s] 6: +++ src/main.cpp.uncrustify
+[1.368s] 6: @@ -4 +4 @@
+[1.368s] 6: -int main(int argc, char** argv)
+[1.369s] 6: +int main(int argc, char ** argv)
+[1.369s] 6: @@ -6,4 +6,4 @@
+[1.370s] 6: -    rclcpp::init(argc, argv);
+[1.371s] 6: -    rclcpp::spin(std::make_shared<ProximityFilterNode>());
+[1.371s] 6: -    rclcpp::shutdown();
+[1.372s] 6: -    return 0;
+[1.372s] 6: +  rclcpp::init(argc, argv);
+[1.373s] 6: +  rclcpp::spin(std::make_shared<ProximityFilterNode>());
+[1.373s] 6: +  rclcpp::shutdown();
+[1.374s] 6: +  return 0;
+[1.375s] 6: 
+[1.375s] 6: Code style divergence in file 'src/proximity_filter_lib.cpp':
+[1.376s] 6: 
+[1.376s] 6: --- src/proximity_filter_lib.cpp
+[1.377s] 6: +++ src/proximity_filter_lib.cpp.uncrustify
+[1.378s] 6: @@ -10,4 +10,4 @@
+[1.378s] 6: -    : max_range_(1.5),
+[1.379s] 6: -      max_range_sq_(1.5 * 1.5),
+[1.379s] 6: -      fov_center_rad_(0.0),
+[1.380s] 6: -      fov_half_width_rad_(M_PI)
+[1.380s] 6: +: max_range_(1.5),
+[1.381s] 6: +  max_range_sq_(1.5 * 1.5),
+[1.382s] 6: +  fov_center_rad_(0.0),
+[1.382s] 6: +  fov_half_width_rad_(M_PI)
+[1.383s] 6: @@ -15,3 +15,3 @@
+[1.383s] 6: -    // Default hexagon body footprint
+[1.384s] 6: -    polygon_x_ = { 0.5,  0.25, -0.25, -0.5, -0.25,  0.25 };
+[1.385s] 6: -    polygon_y_ = { 0.0,  0.433, 0.433, 0.0, -0.433, -0.433 };
+[1.385s] 6: +  // Default hexagon body footprint
+[1.386s] 6: +  polygon_x_ = {0.5, 0.25, -0.25, -0.5, -0.25, 0.25};
+[1.386s] 6: +  polygon_y_ = {0.0, 0.433, 0.433, 0.0, -0.433, -0.433};
+[1.387s] 6: @@ -23,2 +23,3 @@
+[1.388s] 6: -void ProximityFilterLib::setPolygon(const std::vector<double>& x,
+[1.388s] 6: -                                   const std::vector<double>& y)
+[1.389s] 6: +void ProximityFilterLib::setPolygon(
+[1.389s] 6: +  const std::vector<double> & x,
+[1.390s] 6: +  const std::vector<double> & y)
+[1.390s] 6: @@ -26,2 +27,2 @@
+[1.391s] 6: -    polygon_x_ = x;
+[1.391s] 6: -    polygon_y_ = y;
+[1.392s] 6: +  polygon_x_ = x;
+[1.393s] 6: +  polygon_y_ = y;
+[1.393s] 6: @@ -30,2 +31,3 @@
+[1.394s] 6: -void ProximityFilterLib::getPolygon(std::vector<double>& x,
+[1.394s] 6: -                                   std::vector<double>& y) const
+[1.395s] 6: +void ProximityFilterLib::getPolygon(
+[1.396s] 6: +  std::vector<double> & x,
+[1.397s] 6: +  std::vector<double> & y) const
+[1.397s] 6: @@ -33,2 +35,2 @@
+[1.398s] 6: -    x = polygon_x_;
+[1.398s] 6: -    y = polygon_y_;
+[1.399s] 6: +  x = polygon_x_;
+[1.399s] 6: +  y = polygon_y_;
+[1.400s] 6: @@ -39,2 +41,2 @@
+[1.401s] 6: -    max_range_ = range;
+[1.402s] 6: -    max_range_sq_ = range * range;
+[1.402s] 6: +  max_range_ = range;
+[1.403s] 6: +  max_range_sq_ = range * range;
+[1.403s] 6: @@ -45,2 +47,2 @@
+[1.404s] 6: -    fov_center_rad_     = center_deg * M_PI / 180.0;
+[1.405s] 6: -    fov_half_width_rad_ = (width_deg * M_PI / 180.0) * 0.5;
+[1.405s] 6: +  fov_center_rad_ = center_deg * M_PI / 180.0;
+[1.406s] 6: +  fov_half_width_rad_ = (width_deg * M_PI / 180.0) * 0.5;
+[1.407s] 6: @@ -54,2 +56,2 @@
+[1.408s] 6: -    bool inside = false;
+[1.408s] 6: -    const size_t n = polygon_x_.size();
+[1.409s] 6: +  bool inside = false;
+[1.409s] 6: +  const size_t n = polygon_x_.size();
+[1.410s] 6: @@ -57,5 +59,5 @@
+[1.411s] 6: -    for (size_t i = 0, j = n - 1; i < n; j = i++) {
+[1.412s] 6: -        double x1 = polygon_x_[i];
+[1.412s] 6: -        double y1 = polygon_y_[i];
+[1.413s] 6: -        double x2 = polygon_x_[j];
+[1.414s] 6: -        double y2 = polygon_y_[j];
+[1.414s] 6: +  for (size_t i = 0, j = n - 1; i < n; j = i++) {
+[1.415s] 6: +    double x1 = polygon_x_[i];
+[1.416s] 6: +    double y1 = polygon_y_[i];
+[1.416s] 6: +    double x2 = polygon_x_[j];
+[1.417s] 6: +    double y2 = polygon_y_[j];
+[1.418s] 6: @@ -63 +65 @@
+[1.418s] 6: -        if (y1 == y2) continue;
+[1.419s] 6: +    if (y1 == y2) {continue;}
+[1.419s] 6: @@ -65,2 +67,2 @@
+[1.420s] 6: -        bool crosses = ((y1 > y) != (y2 > y));
+[1.420s] 6: -        if (!crosses) continue;
+[1.421s] 6: +    bool crosses = ((y1 > y) != (y2 > y));
+[1.422s] 6: +    if (!crosses) {continue;}
+[1.422s] 6: @@ -68,2 +70,2 @@
+[1.423s] 6: -        double x_intersect =
+[1.423s] 6: -            x1 + (x2 - x1) * (y - y1) / (y2 - y1);
+[1.424s] 6: +    double x_intersect =
+[1.424s] 6: +      x1 + (x2 - x1) * (y - y1) / (y2 - y1);
+[1.425s] 6: @@ -71,3 +73,2 @@
+[1.426s] 6: -        if (x < x_intersect) {
+[1.426s] 6: -            inside = !inside;
+[1.427s] 6: -        }
+[1.427s] 6: +    if (x < x_intersect) {
+[1.428s] 6: +      inside = !inside;
+[1.428s] 6: @@ -74,0 +76 @@
+[1.429s] 6: +  }
+[1.429s] 6: @@ -76,3 +78,3 @@
+[1.430s] 6: -    // Treat edge points as "inside body" → filtered out
+[1.430s] 6: -    for (size_t i = 0; i < n; ++i) {
+[1.431s] 6: -        size_t j = (i + 1) % n;
+[1.431s] 6: +  // Treat edge points as "inside body" → filtered out
+[1.432s] 6: +  for (size_t i = 0; i < n; ++i) {
+[1.432s] 6: +    size_t j = (i + 1) % n;
+[1.433s] 6: @@ -80,4 +82,4 @@
+[1.433s] 6: -        double x1 = polygon_x_[i];
+[1.434s] 6: -        double y1 = polygon_y_[i];
+[1.434s] 6: -        double x2 = polygon_x_[j];
+[1.435s] 6: -        double y2 = polygon_y_[j];
+[1.435s] 6: +    double x1 = polygon_x_[i];
+[1.436s] 6: +    double y1 = polygon_y_[i];
+[1.436s] 6: +    double x2 = polygon_x_[j];
+[1.437s] 6: +    double y2 = polygon_y_[j];
+[1.437s] 6: @@ -85,2 +87,2 @@
+[1.438s] 6: -        double dx = x - x1;
+[1.438s] 6: -        double dy = y - y1;
+[1.439s] 6: +    double dx = x - x1;
+[1.439s] 6: +    double dy = y - y1;
+[1.440s] 6: @@ -88,2 +90,2 @@
+[1.440s] 6: -        double dx_edge = x2 - x1;
+[1.441s] 6: -        double dy_edge = y2 - y1;
+[1.441s] 6: +    double dx_edge = x2 - x1;
+[1.442s] 6: +    double dy_edge = y2 - y1;
+[1.442s] 6: @@ -91,8 +93,7 @@
+[1.443s] 6: -        double cross = dx * dy_edge - dy * dx_edge;
+[1.443s] 6: -        if (std::fabs(cross) < 1e-6) {
+[1.444s] 6: -            double dot = dx * dx_edge + dy * dy_edge;
+[1.444s] 6: -            double len_sq = dx_edge * dx_edge + dy_edge * dy_edge;
+[1.444s] 6: -            if (dot >= 0 && dot <= len_sq) {
+[1.445s] 6: -                return true;
+[1.445s] 6: -            }
+[1.446s] 6: -        }
+[1.446s] 6: +    double cross = dx * dy_edge - dy * dx_edge;
+[1.447s] 6: +    if (std::fabs(cross) < 1e-6) {
+[1.447s] 6: +      double dot = dx * dx_edge + dy * dy_edge;
+[1.448s] 6: +      double len_sq = dx_edge * dx_edge + dy_edge * dy_edge;
+[1.449s] 6: +      if (dot >= 0 && dot <= len_sq) {
+[1.449s] 6: +        return true;
+[1.450s] 6: +      }
+[1.451s] 6: @@ -99,0 +101 @@
+[1.452s] 6: +  }
+[1.453s] 6: @@ -101 +103 @@
+[1.453s] 6: -    return inside;
+[1.454s] 6: +  return inside;
+[1.454s] 6: @@ -106,2 +108,2 @@
+[1.455s] 6: -    double angle = std::atan2(y, x);
+[1.456s] 6: -    double diff  = angle - fov_center_rad_;
+[1.457s] 6: +  double angle = std::atan2(y, x);
+[1.457s] 6: +  double diff = angle - fov_center_rad_;
+[1.458s] 6: @@ -109,2 +111,2 @@
+[1.458s] 6: -    while (diff > M_PI)  diff -= 2.0 * M_PI;
+[1.459s] 6: -    while (diff < -M_PI) diff += 2.0 * M_PI;
+[1.460s] 6: +  while (diff > M_PI) {diff -= 2.0 * M_PI;}
+[1.460s] 6: +  while (diff < -M_PI) {diff += 2.0 * M_PI;}
+[1.461s] 6: @@ -112 +114 @@
+[1.461s] 6: -    return std::fabs(diff) <= fov_half_width_rad_;
+[1.462s] 6: +  return std::fabs(diff) <= fov_half_width_rad_;
+[1.462s] 6: @@ -120 +122 @@
+[1.463s] 6: -    const std::vector<Point3D>& points) const
+[1.463s] 6: +  const std::vector<Point3D> & points) const
+[1.464s] 6: @@ -122,2 +124,2 @@
+[1.464s] 6: -    std::vector<size_t> indices;
+[1.465s] 6: -    indices.reserve(points.size());
+[1.466s] 6: +  std::vector<size_t> indices;
+[1.466s] 6: +  indices.reserve(points.size());
+[1.467s] 6: @@ -125,2 +127,2 @@
+[1.467s] 6: -    for (size_t i = 0; i < points.size(); ++i) {
+[1.468s] 6: -        const auto& p = points[i];
+[1.468s] 6: +  for (size_t i = 0; i < points.size(); ++i) {
+[1.468s] 6: +    const auto & p = points[i];
+[1.469s] 6: @@ -128,3 +130,3 @@
+[1.470s] 6: -        if ((p.x * p.x + p.y * p.y + p.z * p.z) > max_range_sq_) continue;
+[1.470s] 6: -        if (!inFov(p.x, p.y)) continue;
+[1.471s] 6: -        if (rayCasting(p.x, p.y)) continue;
+[1.471s] 6: +    if ((p.x * p.x + p.y * p.y + p.z * p.z) > max_range_sq_) {continue;}
+[1.472s] 6: +    if (!inFov(p.x, p.y)) {continue;}
+[1.472s] 6: +    if (rayCasting(p.x, p.y)) {continue;}
+[1.473s] 6: @@ -132,3 +134,3 @@
+[1.474s] 6: -        indices.push_back(i);
+[1.474s] 6: -    }
+[1.475s] 6: -    return indices;
+[1.475s] 6: +    indices.push_back(i);
+[1.476s] 6: +  }
+[1.477s] 6: +  return indices;
+[1.477s] 6: @@ -139 +141 @@
+[1.478s] 6: -    const std::vector<Point3D>& points) const
+[1.478s] 6: +  const std::vector<Point3D> & points) const
+[1.479s] 6: @@ -141,2 +143,2 @@
+[1.479s] 6: -    std::vector<Point3D> result;
+[1.480s] 6: -    auto indices = filterPointIndices(points);
+[1.481s] 6: +  std::vector<Point3D> result;
+[1.481s] 6: +  auto indices = filterPointIndices(points);
+[1.482s] 6: @@ -144,5 +146,5 @@
+[1.482s] 6: -    result.reserve(indices.size());
+[1.483s] 6: -    for (auto idx : indices) {
+[1.484s] 6: -        result.push_back(points[idx]);
+[1.484s] 6: -    }
+[1.485s] 6: -    return result;
+[1.485s] 6: +  result.reserve(indices.size());
+[1.486s] 6: +  for (auto idx : indices) {
+[1.487s] 6: +    result.push_back(points[idx]);
+[1.487s] 6: +  }
+[1.488s] 6: +  return result;
+[1.488s] 6: @@ -156 +158 @@
+[1.489s] 6: -    const sensor_msgs::msg::PointCloud2& cloud) const
+[1.489s] 6: +  const sensor_msgs::msg::PointCloud2 & cloud) const
+[1.490s] 6: @@ -158,4 +160,4 @@
+[1.491s] 6: -    sensor_msgs::msg::PointCloud2 filtered = cloud;
+[1.491s] 6: -    filtered.data.clear();
+[1.492s] 6: -    filtered.width  = 0;
+[1.492s] 6: -    filtered.height = 1;
+[1.493s] 6: +  sensor_msgs::msg::PointCloud2 filtered = cloud;
+[1.493s] 6: +  filtered.data.clear();
+[1.494s] 6: +  filtered.width = 0;
+[1.494s] 6: +  filtered.height = 1;
+[1.495s] 6: @@ -163,9 +165,9 @@
+[1.495s] 6: -    int x_off = -1, y_off = -1, z_off = -1;
+[1.496s] 6: -    for (const auto& f : cloud.fields) {
+[1.496s] 6: -        if (f.name == "x") x_off = f.offset;
+[1.497s] 6: -        if (f.name == "y") y_off = f.offset;
+[1.497s] 6: -        if (f.name == "z") z_off = f.offset;
+[1.498s] 6: -    }
+[1.498s] 6: -    if (x_off < 0 || y_off < 0 || z_off < 0) {
+[1.499s] 6: -        return filtered;
+[1.499s] 6: -    }
+[1.500s] 6: +  int x_off = -1, y_off = -1, z_off = -1;
+[1.500s] 6: +  for (const auto & f : cloud.fields) {
+[1.501s] 6: +    if (f.name == "x") {x_off = f.offset;}
+[1.501s] 6: +    if (f.name == "y") {y_off = f.offset;}
+[1.502s] 6: +    if (f.name == "z") {z_off = f.offset;}
+[1.502s] 6: +  }
+[1.503s] 6: +  if (x_off < 0 || y_off < 0 || z_off < 0) {
+[1.503s] 6: +    return filtered;
+[1.504s] 6: +  }
+[1.505s] 6: @@ -173,2 +175,2 @@
+[1.505s] 6: -    const size_t point_step = cloud.point_step;
+[1.506s] 6: -    const size_t num_points = cloud.width * cloud.height;
+[1.507s] 6: +  const size_t point_step = cloud.point_step;
+[1.507s] 6: +  const size_t num_points = cloud.width * cloud.height;
+[1.508s] 6: @@ -176,2 +178,2 @@
+[1.508s] 6: -    std::vector<Point3D> points;
+[1.509s] 6: -    points.reserve(num_points);
+[1.510s] 6: +  std::vector<Point3D> points;
+[1.510s] 6: +  points.reserve(num_points);
+[1.511s] 6: @@ -179,7 +181,7 @@
+[1.512s] 6: -    for (size_t i = 0; i < num_points; ++i) {
+[1.512s] 6: -        const uint8_t* ptr = &cloud.data[i * point_step];
+[1.513s] 6: -        float x = *reinterpret_cast<const float*>(ptr + x_off);
+[1.513s] 6: -        float y = *reinterpret_cast<const float*>(ptr + y_off);
+[1.514s] 6: -        float z = *reinterpret_cast<const float*>(ptr + z_off);
+[1.515s] 6: -        points.push_back({x, y, z});
+[1.515s] 6: -    }
+[1.516s] 6: +  for (size_t i = 0; i < num_points; ++i) {
+[1.516s] 6: +    const uint8_t * ptr = &cloud.data[i * point_step];
+[1.517s] 6: +    float x = *reinterpret_cast<const float *>(ptr + x_off);
+[1.518s] 6: +    float y = *reinterpret_cast<const float *>(ptr + y_off);
+[1.518s] 6: +    float z = *reinterpret_cast<const float *>(ptr + z_off);
+[1.519s] 6: +    points.push_back({x, y, z});
+[1.519s] 6: +  }
+[1.520s] 6: @@ -187 +189 @@
+[1.520s] 6: -    auto indices = filterPointIndices(points);
+[1.521s] 6: +  auto indices = filterPointIndices(points);
+[1.522s] 6: @@ -189,5 +191,5 @@
+[1.522s] 6: -    for (auto idx : indices) {
+[1.523s] 6: -        const uint8_t* ptr = &cloud.data[idx * point_step];
+[1.524s] 6: -        filtered.data.insert(filtered.data.end(), ptr, ptr + point_step);
+[1.524s] 6: -        filtered.width++;
+[1.525s] 6: -    }
+[1.526s] 6: +  for (auto idx : indices) {
+[1.526s] 6: +    const uint8_t * ptr = &cloud.data[idx * point_step];
+[1.527s] 6: +    filtered.data.insert(filtered.data.end(), ptr, ptr + point_step);
+[1.527s] 6: +    filtered.width++;
+[1.528s] 6: +  }
+[1.529s] 6: @@ -195,2 +197,2 @@
+[1.529s] 6: -    filtered.row_step = filtered.width * point_step;
+[1.530s] 6: -    return filtered;
+[1.531s] 6: +  filtered.row_step = filtered.width * point_step;
+[1.531s] 6: +  return filtered;
+[1.532s] 6: 
+[1.532s] 6: Code style divergence in file 'src/proximity_filter_node.cpp':
+[1.533s] 6: 
+[1.533s] 6: --- src/proximity_filter_node.cpp
+[1.534s] 6: +++ src/proximity_filter_node.cpp.uncrustify
+[1.535s] 6: @@ -4 +4 @@
+[1.535s] 6: -    : Node("proximity_filter")
+[1.536s] 6: +: Node("proximity_filter")
+[1.536s] 6: @@ -6,9 +6,11 @@
+[1.537s] 6: -    // Parameters initialisation
+[1.538s] 6: -    this->declare_parameter<std::vector<double>>("polygon_x", {0.5,0.25,-0.25,-0.5,-0.25,0.25});
+[1.538s] 6: -    this->declare_parameter<std::vector<double>>("polygon_y", {0.0,0.433,0.433,0.0,-0.433,-0.433});
+[1.539s] 6: -    this->declare_parameter<double>("max_range", 1.5);
+[1.539s] 6: -    this->declare_parameter<double>("fov_center_deg", 0.0);
+[1.540s] 6: -    this->declare_parameter<double>("fov_width_deg", 180.0);
+[1.541s] 6: -    this->declare_parameter<std::string>("input_topic", "/points/raw");
+[1.541s] 6: -    this->declare_parameter<std::string>("output_topic", "/points/filtered");
+[1.542s] 6: -    this->declare_parameter<std::string>("polygon_topic", "/points/filter_polygon");
+[1.542s] 6: +  // Parameters initialisation
+[1.543s] 6: +  this->declare_parameter<std::vector<double>>("polygon_x", {0.5, 0.25, -0.25, -0.5, -0.25, 0.25});
+[1.544s] 6: +  this->declare_parameter<std::vector<double>>(
+[1.544s] 6: +    "polygon_y",
+[1.545s] 6: +    {0.0, 0.433, 0.433, 0.0, -0.433, -0.433});
+[1.545s] 6: +  this->declare_parameter<double>("max_range", 1.5);
+[1.546s] 6: +  this->declare_parameter<double>("fov_center_deg", 0.0);
+[1.547s] 6: +  this->declare_parameter<double>("fov_width_deg", 180.0);
+[1.547s] 6: +  this->declare_parameter<std::string>("input_topic", "/points/raw");
+[1.548s] 6: +  this->declare_parameter<std::string>("output_topic", "/points/filtered");
+[1.548s] 6: +  this->declare_parameter<std::string>("polygon_topic", "/points/filter_polygon");
+[1.549s] 6: @@ -16,3 +18,3 @@
+[1.549s] 6: -    rcl_interfaces::msg::ParameterDescriptor rate_desc;
+[1.550s] 6: -    rate_desc.description = "Processing frequency in Hz";
+[1.550s] 6: -    this->declare_parameter<int>("subscription_rate", 20, rate_desc);
+[1.551s] 6: +  rcl_interfaces::msg::ParameterDescriptor rate_desc;
+[1.551s] 6: +  rate_desc.description = "Processing frequency in Hz";
+[1.552s] 6: +  this->declare_parameter<int>("subscription_rate", 20, rate_desc);
+[1.552s] 6: @@ -20,5 +22,5 @@
+[1.552s] 6: -    // Subscription
+[1.553s] 6: -    subscription_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
+[1.553s] 6: -        this->get_parameter("input_topic").as_string(),
+[1.554s] 6: -        rclcpp::SensorDataQoS(),
+[1.554s] 6: -        std::bind(&ProximityFilterNode::pointcloudCallback, this, std::placeholders::_1));
+[1.555s] 6: +  // Subscription
+[1.555s] 6: +  subscription_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
+[1.556s] 6: +    this->get_parameter("input_topic").as_string(),
+[1.557s] 6: +    rclcpp::SensorDataQoS(),
+[1.558s] 6: +    std::bind(&ProximityFilterNode::pointcloudCallback, this, std::placeholders::_1));
+[1.558s] 6: @@ -26 +28 @@
+[1.559s] 6: -    // Publishers
+[1.559s] 6: +  // Publishers
+[1.560s] 6: @@ -28,13 +30,6 @@
+[1.560s] 6: -    // Filtered point cloud publisher
+[1.560s] 6: -    // Use a queue size of 10 and Reliable QoS to ensure that all filtered points
+[1.561s] 6: -    // are delivered to subscribers. Reliability is important for downstream processing
+[1.561s] 6: -    // where missing points could affect algorithms.
+[1.562s] 6: -    filtered_pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(
+[1.562s] 6: -        this->get_parameter("output_topic").as_string(), rclcpp::QoS(10).reliable());
+[1.563s] 6: -    
+[1.563s] 6: -    // Polygon publisher
+[1.564s] 6: -    // Use a queue size of 1 and Transient Local QoS so that any new subscribers
+[1.564s] 6: -    // immediately receive the latest polygon, even if it was published before
+[1.565s] 6: -    // they connected. This is suitable for low-frequency configuration or visualization data.
+[1.565s] 6: -    polygon_pub_ = this->create_publisher<geometry_msgs::msg::PolygonStamped>(
+[1.566s] 6: -        this->get_parameter("polygon_topic").as_string(), rclcpp::QoS(1).transient_local());
+[1.566s] 6: +  // Filtered point cloud publisher
+[1.567s] 6: +  // Use a queue size of 10 and Reliable QoS to ensure that all filtered points
+[1.567s] 6: +  // are delivered to subscribers. Reliability is important for downstream processing
+[1.568s] 6: +  // where missing points could affect algorithms.
+[1.568s] 6: +  filtered_pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(
+[1.569s] 6: +    this->get_parameter("output_topic").as_string(), rclcpp::QoS(10).reliable());
+[1.569s] 6: @@ -42 +37,6 @@
+[1.570s] 6: -    last_processed_time_ = this->now();
+[1.570s] 6: +  // Polygon publisher
+[1.571s] 6: +  // Use a queue size of 1 and Transient Local QoS so that any new subscribers
+[1.571s] 6: +  // immediately receive the latest polygon, even if it was published before
+[1.572s] 6: +  // they connected. This is suitable for low-frequency configuration or visualization data.
+[1.572s] 6: +  polygon_pub_ = this->create_publisher<geometry_msgs::msg::PolygonStamped>(
+[1.573s] 6: +    this->get_parameter("polygon_topic").as_string(), rclcpp::QoS(1).transient_local());
+[1.573s] 6: @@ -44,8 +44,11 @@
+[1.574s] 6: -    param_handle_ = this->add_on_set_parameters_callback(
+[1.574s] 6: -    [this](const std::vector<rclcpp::Parameter>& params){
+[1.575s] 6: -        bool updated = false;
+[1.575s] 6: -        for (const auto& p : params) {
+[1.576s] 6: -            if (p.get_name() == "polygon_x" || p.get_name() == "polygon_y" ||
+[1.576s] 6: -                p.get_name() == "max_range" || p.get_name() == "fov_center_deg" || p.get_name() == "fov_width_deg") {
+[1.577s] 6: -                updated = true;
+[1.577s] 6: -            }
+[1.578s] 6: +  last_processed_time_ = this->now();
+[1.578s] 6: +
+[1.579s] 6: +  param_handle_ = this->add_on_set_parameters_callback(
+[1.579s] 6: +    [this](const std::vector<rclcpp::Parameter> & params) {
+[1.579s] 6: +      bool updated = false;
+[1.580s] 6: +      for (const auto & p : params) {
+[1.580s] 6: +        if (p.get_name() == "polygon_x" || p.get_name() == "polygon_y" ||
+[1.581s] 6: +        p.get_name() == "max_range" || p.get_name() == "fov_center_deg" ||
+[1.581s] 6: +        p.get_name() == "fov_width_deg")
+[1.582s] 6: +        {
+[1.582s] 6: +          updated = true;
+[1.583s] 6: @@ -53,9 +56,12 @@
+[1.583s] 6: -        if (updated) {
+[1.584s] 6: -            // Live update
+[1.584s] 6: -            filter_lib_.setPolygon(this->get_parameter("polygon_x").as_double_array(),
+[1.585s] 6: -                                   this->get_parameter("polygon_y").as_double_array());
+[1.585s] 6: -            filter_lib_.setMaxRange(this->get_parameter("max_range").as_double());
+[1.585s] 6: -            filter_lib_.setFov(this->get_parameter("fov_center_deg").as_double(),
+[1.586s] 6: -                               this->get_parameter("fov_width_deg").as_double());
+[1.587s] 6: -            RCLCPP_INFO(this->get_logger(), "Parameters updated live.");
+[1.587s] 6: -        }
+[1.588s] 6: +      }
+[1.588s] 6: +      if (updated) {
+[1.589s] 6: +        // Live update
+[1.589s] 6: +        filter_lib_.setPolygon(
+[1.590s] 6: +          this->get_parameter("polygon_x").as_double_array(),
+[1.590s] 6: +          this->get_parameter("polygon_y").as_double_array());
+[1.591s] 6: +        filter_lib_.setMaxRange(this->get_parameter("max_range").as_double());
+[1.591s] 6: +        filter_lib_.setFov(
+[1.592s] 6: +          this->get_parameter("fov_center_deg").as_double(),
+[1.592s] 6: +          this->get_parameter("fov_width_deg").as_double());
+[1.593s] 6: +        RCLCPP_INFO(this->get_logger(), "Parameters updated live.");
+[1.593s] 6: +      }
+[1.594s] 6: @@ -63,3 +69,3 @@
+[1.594s] 6: -        rcl_interfaces::msg::SetParametersResult result;
+[1.595s] 6: -        result.successful = true;
+[1.595s] 6: -        return result;
+[1.596s] 6: +      rcl_interfaces::msg::SetParametersResult result;
+[1.596s] 6: +      result.successful = true;
+[1.596s] 6: +      return result;
+[1.597s] 6: @@ -69,2 +75 @@
+[1.597s] 6: -
+[1.598s] 6: -    RCLCPP_INFO(this->get_logger(), "ProximityFilterNode started");
+[1.598s] 6: +  RCLCPP_INFO(this->get_logger(), "ProximityFilterNode started");
+[1.599s] 6: @@ -76,6 +81,6 @@
+[1.600s] 6: -    // Throttle
+[1.600s] 6: -    int rate_hz = this->get_parameter("subscription_rate").as_int();
+[1.601s] 6: -    double min_dt = 1.0 / rate_hz;
+[1.601s] 6: -    rclcpp::Time now = this->now();
+[1.602s] 6: -    if ((now - last_processed_time_).seconds() < min_dt) return;
+[1.602s] 6: -    last_processed_time_ = now;
+[1.603s] 6: +  // Throttle
+[1.604s] 6: +  int rate_hz = this->get_parameter("subscription_rate").as_int();
+[1.604s] 6: +  double min_dt = 1.0 / rate_hz;
+[1.605s] 6: +  rclcpp::Time now = this->now();
+[1.605s] 6: +  if ((now - last_processed_time_).seconds() < min_dt) {return;}
+[1.605s] 6: +  last_processed_time_ = now;
+[1.606s] 6: @@ -83,6 +88,8 @@
+[1.606s] 6: -    // Update lib parameters
+[1.607s] 6: -    filter_lib_.setPolygon(this->get_parameter("polygon_x").as_double_array(),
+[1.607s] 6: -                           this->get_parameter("polygon_y").as_double_array());
+[1.608s] 6: -    filter_lib_.setMaxRange(this->get_parameter("max_range").as_double());
+[1.608s] 6: -    filter_lib_.setFov(this->get_parameter("fov_center_deg").as_double(),
+[1.609s] 6: -                       this->get_parameter("fov_width_deg").as_double());
+[1.609s] 6: +  // Update lib parameters
+[1.610s] 6: +  filter_lib_.setPolygon(
+[1.610s] 6: +    this->get_parameter("polygon_x").as_double_array(),
+[1.611s] 6: +    this->get_parameter("polygon_y").as_double_array());
+[1.611s] 6: +  filter_lib_.setMaxRange(this->get_parameter("max_range").as_double());
+[1.612s] 6: +  filter_lib_.setFov(
+[1.612s] 6: +    this->get_parameter("fov_center_deg").as_double(),
+[1.613s] 6: +    this->get_parameter("fov_width_deg").as_double());
+[1.613s] 6: @@ -90,11 +97,11 @@
+[1.614s] 6: -    // Publish polygon for visualization
+[1.614s] 6: -    std::vector<double> poly_x, poly_y;
+[1.615s] 6: -    filter_lib_.getPolygon(poly_x, poly_y);
+[1.615s] 6: -    geometry_msgs::msg::PolygonStamped poly_msg;
+[1.616s] 6: -    poly_msg.header = msg->header;
+[1.616s] 6: -    for (size_t i=0;i<poly_x.size();++i){
+[1.617s] 6: -        geometry_msgs::msg::Point32 p;
+[1.617s] 6: -        p.x = poly_x[i]; p.y = poly_y[i]; p.z = 0.0f;
+[1.618s] 6: -        poly_msg.polygon.points.push_back(p);
+[1.618s] 6: -    }
+[1.619s] 6: -    polygon_pub_->publish(poly_msg);
+[1.619s] 6: +  // Publish polygon for visualization
+[1.620s] 6: +  std::vector<double> poly_x, poly_y;
+[1.620s] 6: +  filter_lib_.getPolygon(poly_x, poly_y);
+[1.621s] 6: +  geometry_msgs::msg::PolygonStamped poly_msg;
+[1.622s] 6: +  poly_msg.header = msg->header;
+[1.622s] 6: +  for (size_t i = 0; i < poly_x.size(); ++i) {
+[1.623s] 6: +    geometry_msgs::msg::Point32 p;
+[1.623s] 6: +    p.x = poly_x[i]; p.y = poly_y[i]; p.z = 0.0f;
+[1.624s] 6: +    poly_msg.polygon.points.push_back(p);
+[1.624s] 6: +  }
+[1.625s] 6: +  polygon_pub_->publish(poly_msg);
+[1.625s] 6: @@ -102,3 +109,3 @@
+[1.625s] 6: -    // Filter point cloud
+[1.626s] 6: -    sensor_msgs::msg::PointCloud2 filtered = filter_lib_.filterPointCloud(*msg);
+[1.626s] 6: -    filtered_pub_->publish(filtered);
+[1.627s] 6: +  // Filter point cloud
+[1.628s] 6: +  sensor_msgs::msg::PointCloud2 filtered = filter_lib_.filterPointCloud(*msg);
+[1.628s] 6: +  filtered_pub_->publish(filtered);
+[1.629s] 6: @@ -106,3 +113,4 @@
+[1.629s] 6: -    RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 2000,
+[1.630s] 6: -                          "Filtered cloud: %zu -> %u points",
+[1.630s] 6: -                          msg->width*msg->height, filtered.width);
+[1.631s] 6: +  RCLCPP_INFO_THROTTLE(
+[1.631s] 6: +    this->get_logger(), *this->get_clock(), 2000,
+[1.632s] 6: +    "Filtered cloud: %zu -> %u points",
+[1.632s] 6: +    msg->width * msg->height, filtered.width);
+[1.633s] 6: 
+[1.633s] 6: Code style divergence in file 'test/test_filter_lib.cpp':
+[1.634s] 6: 
+[1.634s] 6: --- test/test_filter_lib.cpp
+[1.635s] 6: +++ test/test_filter_lib.cpp.uncrustify
+[1.635s] 6: @@ -6 +6 @@
+[1.636s] 6: -    ProximityFilterLib filter;
+[1.636s] 6: +  ProximityFilterLib filter;
+[1.637s] 6: @@ -8,4 +8,4 @@
+[1.637s] 6: -    // square: (0,0) -> (1,1)
+[1.638s] 6: -    filter.setPolygon({0, 1, 1, 0}, {0, 0, 1, 1});
+[1.638s] 6: -    filter.setMaxRange(2.0);
+[1.639s] 6: -    filter.setFov(0.0, 180.0);
+[1.639s] 6: +  // square: (0,0) -> (1,1)
+[1.640s] 6: +  filter.setPolygon({0, 1, 1, 0}, {0, 0, 1, 1});
+[1.640s] 6: +  filter.setMaxRange(2.0);
+[1.641s] 6: +  filter.setFov(0.0, 180.0);
+[1.641s] 6: @@ -13,6 +13,6 @@
+[1.642s] 6: -    std::vector<ProximityFilterLib::Point3D> points = {
+[1.642s] 6: -        {0.5,  0.5, 0.0},  // inside polygon → filtered OUT
+[1.643s] 6: -        {1.5,  0.5, 0.0},  // outside polygon → kept
+[1.643s] 6: -        {0.2, -0.2, 0.0},  // outside polygon → kept
+[1.644s] 6: -        {2.0,  0.0, 0.0}   // on range boundary → kept
+[1.644s] 6: -    };
+[1.645s] 6: +  std::vector<ProximityFilterLib::Point3D> points = {
+[1.645s] 6: +    {0.5, 0.5, 0.0},       // inside polygon → filtered OUT
+[1.646s] 6: +    {1.5, 0.5, 0.0},       // outside polygon → kept
+[1.646s] 6: +    {0.2, -0.2, 0.0},      // outside polygon → kept
+[1.647s] 6: +    {2.0, 0.0, 0.0}        // on range boundary → kept
+[1.647s] 6: +  };
+[1.648s] 6: @@ -20 +20 @@
+[1.648s] 6: -    auto filtered = filter.filterPoints(points);
+[1.649s] 6: +  auto filtered = filter.filterPoints(points);
+[1.650s] 6: @@ -22 +22 @@
+[1.650s] 6: -    ASSERT_EQ(filtered.size(), 3);
+[1.651s] 6: +  ASSERT_EQ(filtered.size(), 3);
+[1.651s] 6: @@ -24,3 +24,3 @@
+[1.652s] 6: -    EXPECT_DOUBLE_EQ(filtered[0].x, 1.5);
+[1.652s] 6: -    EXPECT_DOUBLE_EQ(filtered[1].x, 0.2);
+[1.652s] 6: -    EXPECT_DOUBLE_EQ(filtered[2].x, 2.0);
+[1.653s] 6: +  EXPECT_DOUBLE_EQ(filtered[0].x, 1.5);
+[1.653s] 6: +  EXPECT_DOUBLE_EQ(filtered[1].x, 0.2);
+[1.654s] 6: +  EXPECT_DOUBLE_EQ(filtered[2].x, 2.0);
+[1.654s] 6: 
+[1.655s] 6: 6 files with code style divergence
+[1.655s] 6: -- run_test.py: return code 1
+[1.656s] 6: -- run_test.py: verify result file '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/uncrustify.xunit.xml'
+[1.656s] 6/7 Test #6: uncrustify .......................***Failed    0.31 sec
+[1.657s] test 7
+[1.657s]     Start 7: xmllint
+[1.658s] 
+[1.658s] 7: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/xmllint.xunit.xml" "--package-name" "andromeda_proximity_filter" "--output-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/xmllint.xunit.xml"
+[1.659s] 7: Test timeout computed to be: 60
+[1.659s] 7: -- run_test.py: invoking following command in '/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter':
+[1.660s] 7:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/xmllint.xunit.xml
+[2.391s] 7: File 'package.xml' is valid
+[2.392s] 7: 
+[2.393s] 7: No problems found
+[2.399s] 7: -- run_test.py: return code 0
+[2.403s] 7: -- run_test.py: verify result file '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/xmllint.xunit.xml'
+[2.416s] 7/7 Test #7: xmllint ..........................   Passed    1.01 sec
+[2.425s] 
+[2.426s] 71% tests passed[0;0m, [0;31m2 tests failed[0;0m out of 7
+[2.427s] 
+[2.428s] Label Time Summary:
+[2.428s] cppcheck      =   0.17 sec*proc (1 test)
+[2.429s] flake8        =   0.28 sec*proc (1 test)
+[2.429s] lint_cmake    =   0.15 sec*proc (1 test)
+[2.430s] linter        =   2.17 sec*proc (6 tests)
+[2.431s] pep257        =   0.24 sec*proc (1 test)
+[2.431s] uncrustify    =   0.31 sec*proc (1 test)
+[2.432s] xmllint       =   1.01 sec*proc (1 test)
+[2.432s] 
+[2.433s] Total Test time (real) =   2.22 sec
+[2.434s] 
+[2.434s] The following tests FAILED:
+[2.435s] 	[0;31m  3 - flake8 (Failed)[0;0m
+[2.435s] 	[0;31m  6 - uncrustify (Failed)[0;0m
+[2.445s] Errors while running CTest
+[2.446s] Output from these tests are in: /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/Testing/Temporary/LastTest.log
+[2.447s] Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+[2.448s] Invoked command in '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter' returned '8': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

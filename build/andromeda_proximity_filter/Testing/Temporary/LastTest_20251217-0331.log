@@ -1,0 +1,29 @@
+Start testing: Dec 17 14:31 AEDT
+----------------------------------------------------------
+1/1 Testing: FilterLibTest
+1/1 Test: FilterLibTest
+Command: "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_filter_lib"
+Directory: /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter
+"FilterLibTest" start time: Dec 17 14:31 AEDT
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ProximityFilterLibTest
+[ RUN      ] ProximityFilterLibTest.SimplePolygon
+[       OK ] ProximityFilterLibTest.SimplePolygon (0 ms)
+[----------] 1 test from ProximityFilterLibTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"FilterLibTest" end time: Dec 17 14:31 AEDT
+"FilterLibTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 17 14:31 AEDT

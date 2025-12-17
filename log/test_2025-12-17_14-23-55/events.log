@@ -1,0 +1,900 @@
+[0.000000] (-) TimerEvent: {}
+[0.000496] (andromeda_proximity_filter) JobQueued: {'identifier': 'andromeda_proximity_filter', 'dependencies': OrderedDict([('andromeda_proximity_filter', '/mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter')])}
+[0.000727] (andromeda_proximity_filter) JobStarted: {'identifier': 'andromeda_proximity_filter'}
+[0.098720] (-) TimerEvent: {}
+[0.198278] (andromeda_proximity_filter) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'harry'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/harry'), ('OLDPWD', '/mnt/c/Users/harry/ros_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/mnt/c/Users/harry/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'harry'), ('NAME', 'DESKTOP-P55GQSG'), ('WSL_INTEROP', '/run/WSL/568_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/ProgramData/LLVM for Renesas RISC-V 17.0.2.202407/bin:/mnt/c/ProgramData/LLVM for Renesas RL78 17.0.1.202412/bin:/mnt/c/ProgramData/GCC for Renesas RX 8.3.0.202411-GNURX-ELF/rx-elf/rx-elf/bin:/mnt/c/Program Files (x86)/Microchip/mplabc18/v3.46/mpasm:/mnt/c/Program Files (x86)/Microchip/mplabc18/v3.46/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2021b/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/IVI Foundation/IVI/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Microsoft SQL Server/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/ProgramData/LLVM for Renesas RISC-V 17.0.2.202407/bin:/mnt/c/ProgramData/LLVM for Renesas RL78 17.0.1.202412/bin:/mnt/c/ProgramData/GCC for Renesas RX 8.3.0.202411-GNURX-ELF/rx-elf/rx-elf/bin:/mnt/c/Users/harry/.cargo/bin:/mnt/c/Python/Python310/Scripts/:/mnt/c/Python/Python310/:/mnt/c/Program Files (x86)/Microchip/mplabc18/v3.46/mpasm:/mnt/c/Program Files (x86)/Microchip/mplabc18/v3.46/bin:/mnt/c/Users/harry/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/harry/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/harry/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/harry/AppData/Roaming/npm:/mnt/c/Users/harry/.dotnet/tools:/mnt/c/Program Files/JetBrains/PyCharm 2025.2.4/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter'), ('WSLENV', '')]), 'shell': False}
+[0.209602] (-) TimerEvent: {}
+[0.209909] (andromeda_proximity_filter) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/CTestConfiguration.ini\n'}
+[0.210966] (andromeda_proximity_filter) StdoutLine: {'line': b'Parse Config file:/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/CTestConfiguration.ini\n'}
+[0.211750] (andromeda_proximity_filter) StdoutLine: {'line': b'   Site: DESKTOP-P55GQSG\n'}
+[0.212477] (andromeda_proximity_filter) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.213878] (andromeda_proximity_filter) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.219424] (andromeda_proximity_filter) StdoutLine: {'line': b'Create new tag: 20251217-0323 - Experimental\n'}
+[0.220097] (andromeda_proximity_filter) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/CTestConfiguration.ini\n'}
+[0.220644] (andromeda_proximity_filter) StdoutLine: {'line': b'Parse Config file:/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/CTestConfiguration.ini\n'}
+[0.221562] (andromeda_proximity_filter) StdoutLine: {'line': b'Test project /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter\n'}
+[0.227171] (andromeda_proximity_filter) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.230714] (andromeda_proximity_filter) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.231489] (andromeda_proximity_filter) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.232271] (andromeda_proximity_filter) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.232843] (andromeda_proximity_filter) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.233425] (andromeda_proximity_filter) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.234009] (andromeda_proximity_filter) StdoutLine: {'line': b'test 1\n'}
+[0.234637] (andromeda_proximity_filter) StdoutLine: {'line': b'    Start 1: FilterLibTest\n'}
+[0.235523] (andromeda_proximity_filter) StdoutLine: {'line': b'\n'}
+[0.236089] (andromeda_proximity_filter) StdoutLine: {'line': b'1: Test command: /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_filter_lib\n'}
+[0.236746] (andromeda_proximity_filter) StdoutLine: {'line': b'1: Test timeout computed to be: 10000000\n'}
+[0.238531] (andromeda_proximity_filter) StdoutLine: {'line': b'1: [==========] Running 1 test from 1 test suite.\n'}
+[0.239129] (andromeda_proximity_filter) StdoutLine: {'line': b'1: [----------] Global test environment set-up.\n'}
+[0.239807] (andromeda_proximity_filter) StdoutLine: {'line': b'1: [----------] 1 test from ProximityFilterLibTest\n'}
+[0.240430] (andromeda_proximity_filter) StdoutLine: {'line': b'1: [ RUN      ] ProximityFilterLibTest.SimplePolygon\n'}
+[0.241052] (andromeda_proximity_filter) StdoutLine: {'line': b'1: /mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter/test/test_filter_lib.cpp:15: Failure\n'}
+[0.241603] (andromeda_proximity_filter) StdoutLine: {'line': b'1: Expected equality of these values:\n'}
+[0.242376] (andromeda_proximity_filter) StdoutLine: {'line': b'1:   filtered.size()\n'}
+[0.243027] (andromeda_proximity_filter) StdoutLine: {'line': b'1:     Which is: 3\n'}
+[0.243723] (andromeda_proximity_filter) StdoutLine: {'line': b'1:   2\n'}
+[0.244259] (andromeda_proximity_filter) StdoutLine: {'line': b'1: [  FAILED  ] ProximityFilterLibTest.SimplePolygon (0 ms)\n'}
+[0.244842] (andromeda_proximity_filter) StdoutLine: {'line': b'1: [----------] 1 test from ProximityFilterLibTest (0 ms total)\n'}
+[0.245464] (andromeda_proximity_filter) StdoutLine: {'line': b'1: \n'}
+[0.246024] (andromeda_proximity_filter) StdoutLine: {'line': b'1: [----------] Global test environment tear-down\n'}
+[0.246631] (andromeda_proximity_filter) StdoutLine: {'line': b'1: [==========] 1 test from 1 test suite ran. (0 ms total)\n'}
+[0.247237] (andromeda_proximity_filter) StdoutLine: {'line': b'1: [  PASSED  ] 0 tests.\n'}
+[0.247836] (andromeda_proximity_filter) StdoutLine: {'line': b'1: [  FAILED  ] 1 test, listed below:\n'}
+[0.248424] (andromeda_proximity_filter) StdoutLine: {'line': b'1: [  FAILED  ] ProximityFilterLibTest.SimplePolygon\n'}
+[0.249007] (andromeda_proximity_filter) StdoutLine: {'line': b'1: \n'}
+[0.249514] (andromeda_proximity_filter) StdoutLine: {'line': b'1:  1 FAILED TEST\n'}
+[0.250002] (andromeda_proximity_filter) StdoutLine: {'line': b'1/7 Test #1: FilterLibTest ....................***Failed    0.01 sec\n'}
+[0.250448] (andromeda_proximity_filter) StdoutLine: {'line': b'test 2\n'}
+[0.250953] (andromeda_proximity_filter) StdoutLine: {'line': b'    Start 2: cppcheck\n'}
+[0.251550] (andromeda_proximity_filter) StdoutLine: {'line': b'\n'}
+[0.251999] (andromeda_proximity_filter) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/cppcheck.xunit.xml" "--package-name" "andromeda_proximity_filter" "--output-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/cppcheck.xunit.xml" "--include_dirs" "/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter/include" "/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter/include"\n'}
+[0.252539] (andromeda_proximity_filter) StdoutLine: {'line': b'2: Test timeout computed to be: 300\n'}
+[0.309190] (andromeda_proximity_filter) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter':\n"}
+[0.309913] (-) TimerEvent: {}
+[0.310177] (andromeda_proximity_filter) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/cppcheck.xunit.xml --include_dirs /mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter/include /mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter/include\n'}
+[0.389222] (andromeda_proximity_filter) StdoutLine: {'line': b'2: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.\n'}
+[0.402588] (andromeda_proximity_filter) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[0.407209] (andromeda_proximity_filter) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/cppcheck.xunit.xml'\n"}
+[0.409998] (-) TimerEvent: {}
+[0.420568] (andromeda_proximity_filter) StdoutLine: {'line': b'2/7 Test #2: cppcheck .........................   Passed    0.18 sec\n'}
+[0.423559] (andromeda_proximity_filter) StdoutLine: {'line': b'test 3\n'}
+[0.424227] (andromeda_proximity_filter) StdoutLine: {'line': b'    Start 3: flake8\n'}
+[0.424771] (andromeda_proximity_filter) StdoutLine: {'line': b'\n'}
+[0.425264] (andromeda_proximity_filter) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/flake8.xunit.xml" "--package-name" "andromeda_proximity_filter" "--output-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/ament_flake8/flake8.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/flake8.xunit.xml"\n'}
+[0.425756] (andromeda_proximity_filter) StdoutLine: {'line': b'3: Test timeout computed to be: 60\n'}
+[0.473752] (andromeda_proximity_filter) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter':\n"}
+[0.474727] (andromeda_proximity_filter) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_flake8 --xunit-file /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/flake8.xunit.xml\n'}
+[0.510186] (-) TimerEvent: {}
+[0.611032] (-) TimerEvent: {}
+[0.707761] (andromeda_proximity_filter) StdoutLine: {'line': b'3: from launch.actions import ExecuteProcess\n'}
+[0.708906] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ^\n'}
+[0.709885] (andromeda_proximity_filter) StdoutLine: {'line': b'3: def generate_launch_description():\n'}
+[0.711044] (-) TimerEvent: {}
+[0.711498] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ^\n'}
+[0.712498] (andromeda_proximity_filter) StdoutLine: {'line': b"3:     pkg_dir = os.path.join(os.getenv('COLCON_PREFIX_PATH').split(':')[0], 'andromeda_proximity_filter')\n"}
+[0.713642] (andromeda_proximity_filter) StdoutLine: {'line': b'3:     ^\n'}
+[0.714665] (andromeda_proximity_filter) StdoutLine: {'line': b"3:     pkg_dir = os.path.join(os.getenv('COLCON_PREFIX_PATH').split(':')[0], 'andromeda_proximity_filter')\n"}
+[0.715701] (andromeda_proximity_filter) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[0.716898] (andromeda_proximity_filter) StdoutLine: {'line': b'3: class RealisticLidarPublisher(Node):\n'}
+[0.718206] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ^\n'}
+[0.719319] (andromeda_proximity_filter) StdoutLine: {'line': b'3:         self.timer = self.create_timer(0.2, self.publish_pointcloud) \n'}
+[0.720414] (andromeda_proximity_filter) StdoutLine: {'line': b'3:                                                                     ^\n'}
+[0.721203] (andromeda_proximity_filter) StdoutLine: {'line': b'3:         \n'}
+[0.721947] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ^\n'}
+[0.722610] (andromeda_proximity_filter) StdoutLine: {'line': b'3:        \n'}
+[0.723266] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ^\n'}
+[0.723952] (andromeda_proximity_filter) StdoutLine: {'line': b'3:         self.num_points = 500       \n'}
+[0.724651] (andromeda_proximity_filter) StdoutLine: {'line': b'3:         ^\n'}
+[0.725292] (andromeda_proximity_filter) StdoutLine: {'line': b'3:         self.num_points = 500       \n'}
+[0.725947] (andromeda_proximity_filter) StdoutLine: {'line': b'3:                              ^\n'}
+[0.726571] (andromeda_proximity_filter) StdoutLine: {'line': b'3:         self.max_range = 3.0        \n'}
+[0.727197] (andromeda_proximity_filter) StdoutLine: {'line': b'3:                             ^\n'}
+[0.727897] (andromeda_proximity_filter) StdoutLine: {'line': b'3:         self.fov_deg = 180.0        \n'}
+[0.728502] (andromeda_proximity_filter) StdoutLine: {'line': b'3:                             ^\n'}
+[0.729096] (andromeda_proximity_filter) StdoutLine: {'line': b'3:         self.fov_center_deg = 0.0   \n'}
+[0.729717] (andromeda_proximity_filter) StdoutLine: {'line': b'3:                                  ^\n'}
+[0.730316] (andromeda_proximity_filter) StdoutLine: {'line': b'3:         \n'}
+[0.730920] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ^\n'}
+[0.731641] (andromeda_proximity_filter) StdoutLine: {'line': b'3:         self.hex_center = (0, 0)  \n'}
+[0.732680] (andromeda_proximity_filter) StdoutLine: {'line': b'3:         ^\n'}
+[0.733296] (andromeda_proximity_filter) StdoutLine: {'line': b'3:         self.hex_center = (0, 0)  \n'}
+[0.733928] (andromeda_proximity_filter) StdoutLine: {'line': b'3:                                 ^\n'}
+[0.734583] (andromeda_proximity_filter) StdoutLine: {'line': b'3:             ( 0.5,   0.0),\n'}
+[0.735283] (andromeda_proximity_filter) StdoutLine: {'line': b'3:              ^\n'}
+[0.735920] (andromeda_proximity_filter) StdoutLine: {'line': b'3:             ( 0.25,  0.433),\n'}
+[0.736493] (andromeda_proximity_filter) StdoutLine: {'line': b'3:              ^\n'}
+[0.737089] (andromeda_proximity_filter) StdoutLine: {'line': b'3:             ( 0.25, -0.433),\n'}
+[0.737698] (andromeda_proximity_filter) StdoutLine: {'line': b'3:              ^\n'}
+[0.738335] (andromeda_proximity_filter) StdoutLine: {'line': b'3:             \n'}
+[0.738981] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ^\n'}
+[0.739589] (andromeda_proximity_filter) StdoutLine: {'line': b'3:             r = random.uniform(0.0, self.max_range * 2)  \n'}
+[0.740216] (andromeda_proximity_filter) StdoutLine: {'line': b'3:                                                        ^\n'}
+[0.740798] (andromeda_proximity_filter) StdoutLine: {'line': b'3:             z = random.uniform(-0.05, 0.2) \n'}
+[0.741419] (andromeda_proximity_filter) StdoutLine: {'line': b'3:                                           ^\n'}
+[0.742470] (andromeda_proximity_filter) StdoutLine: {'line': b'3:             \n'}
+[0.743050] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ^\n'}
+[0.743672] (andromeda_proximity_filter) StdoutLine: {'line': b'3:             if random.random() < 0.1: \n'}
+[0.744235] (andromeda_proximity_filter) StdoutLine: {'line': b'3:             ^\n'}
+[0.744855] (andromeda_proximity_filter) StdoutLine: {'line': b'3:             if random.random() < 0.1: \n'}
+[0.745417] (andromeda_proximity_filter) StdoutLine: {'line': b'3:                                      ^\n'}
+[0.745968] (andromeda_proximity_filter) StdoutLine: {'line': b'3: def main():\n'}
+[0.746528] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ^\n'}
+[0.747333] (andromeda_proximity_filter) StdoutLine: {'line': b"3: if __name__ == '__main__':\n"}
+[0.748030] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ^\n'}
+[0.748584] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.749156] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ^\n'}
+[0.749702] (andromeda_proximity_filter) StdoutLine: {'line': b"3: 3     E201 whitespace after '('\n"}
+[0.750337] (andromeda_proximity_filter) StdoutLine: {'line': b'3: 3     E302 expected 2 blank lines, found 1\n'}
+[0.751033] (andromeda_proximity_filter) StdoutLine: {'line': b'3: 3     E303 too many blank lines (2)\n'}
+[0.751806] (andromeda_proximity_filter) StdoutLine: {'line': b'3: 1     E305 expected 2 blank lines after class or function definition, found 1\n'}
+[0.752503] (andromeda_proximity_filter) StdoutLine: {'line': b'3: 1     E501 line too long (103 > 99 characters)\n'}
+[0.753094] (andromeda_proximity_filter) StdoutLine: {'line': b"3: 1     F401 'launch.actions.ExecuteProcess' imported but unused\n"}
+[0.753696] (andromeda_proximity_filter) StdoutLine: {'line': b"3: 1     F841 local variable 'pkg_dir' is assigned to but never used\n"}
+[0.754431] (andromeda_proximity_filter) StdoutLine: {'line': b'3: 9     W291 trailing whitespace\n'}
+[0.755633] (andromeda_proximity_filter) StdoutLine: {'line': b'3: 5     W293 blank line contains whitespace\n'}
+[0.756502] (andromeda_proximity_filter) StdoutLine: {'line': b'3: 1     W391 blank line at end of file\n'}
+[0.757250] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.757835] (andromeda_proximity_filter) StdoutLine: {'line': b"3: ./launch/proximity_filter_launch.py:3:1: F401 'launch.actions.ExecuteProcess' imported but unused\n"}
+[0.758320] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.758796] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./launch/proximity_filter_launch.py:6:1: E302 expected 2 blank lines, found 1\n'}
+[0.759561] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.760259] (andromeda_proximity_filter) StdoutLine: {'line': b"3: ./launch/proximity_filter_launch.py:7:5: F841 local variable 'pkg_dir' is assigned to but never used\n"}
+[0.760936] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.761672] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./launch/proximity_filter_launch.py:7:100: E501 line too long (103 > 99 characters)\n'}
+[0.762479] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.763336] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:9:1: E302 expected 2 blank lines, found 1\n'}
+[0.764246] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.765036] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:15:69: W291 trailing whitespace\n'}
+[0.765786] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.766555] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:16:1: W293 blank line contains whitespace\n'}
+[0.767269] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.768213] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:19:1: W293 blank line contains whitespace\n'}
+[0.768895] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.769472] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:20:9: E303 too many blank lines (2)\n'}
+[0.769996] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.770498] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:20:30: W291 trailing whitespace\n'}
+[0.771018] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.771576] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:21:29: W291 trailing whitespace\n'}
+[0.772087] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.772595] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:22:29: W291 trailing whitespace\n'}
+[0.773115] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.773723] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:23:34: W291 trailing whitespace\n'}
+[0.774272] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.774784] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:25:1: W293 blank line contains whitespace\n'}
+[0.775301] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.775854] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:26:9: E303 too many blank lines (2)\n'}
+[0.776514] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.777039] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:26:33: W291 trailing whitespace\n'}
+[0.777531] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.778011] (andromeda_proximity_filter) StdoutLine: {'line': b"3: ./scripts/test_pointcloud_pub.py:28:14: E201 whitespace after '('\n"}
+[0.778477] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.778953] (andromeda_proximity_filter) StdoutLine: {'line': b"3: ./scripts/test_pointcloud_pub.py:29:14: E201 whitespace after '('\n"}
+[0.779549] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.780089] (andromeda_proximity_filter) StdoutLine: {'line': b"3: ./scripts/test_pointcloud_pub.py:33:14: E201 whitespace after '('\n"}
+[0.780585] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.781101] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:46:1: W293 blank line contains whitespace\n'}
+[0.781681] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.782192] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:48:56: W291 trailing whitespace\n'}
+[0.782691] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.783190] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:52:43: W291 trailing whitespace\n'}
+[0.783749] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.784239] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:54:1: W293 blank line contains whitespace\n'}
+[0.784730] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.785265] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:55:13: E303 too many blank lines (2)\n'}
+[0.785774] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.786270] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:55:38: W291 trailing whitespace\n'}
+[0.786775] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.787300] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:85:1: E302 expected 2 blank lines, found 1\n'}
+[0.787796] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.788283] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:91:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[0.788788] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.789280] (andromeda_proximity_filter) StdoutLine: {'line': b'3: ./scripts/test_pointcloud_pub.py:93:1: W391 blank line at end of file\n'}
+[0.789776] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.790267] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.790923] (andromeda_proximity_filter) StdoutLine: {'line': b'3: 2 files checked\n'}
+[0.791522] (andromeda_proximity_filter) StdoutLine: {'line': b'3: 28 errors\n'}
+[0.792082] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.792650] (andromeda_proximity_filter) StdoutLine: {'line': b"3: 'E'-type errors: 11\n"}
+[0.793151] (andromeda_proximity_filter) StdoutLine: {'line': b"3: 'F'-type errors: 2\n"}
+[0.793781] (andromeda_proximity_filter) StdoutLine: {'line': b"3: 'W'-type errors: 15\n"}
+[0.794401] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.795035] (andromeda_proximity_filter) StdoutLine: {'line': b'3: Checked files:\n'}
+[0.795713] (andromeda_proximity_filter) StdoutLine: {'line': b'3: \n'}
+[0.796255] (andromeda_proximity_filter) StdoutLine: {'line': b'3: * ./launch/proximity_filter_launch.py\n'}
+[0.796872] (andromeda_proximity_filter) StdoutLine: {'line': b'3: * ./scripts/test_pointcloud_pub.py\n'}
+[0.797493] (andromeda_proximity_filter) StdoutLine: {'line': b'3: -- run_test.py: return code 1\n'}
+[0.798007] (andromeda_proximity_filter) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/flake8.xunit.xml'\n"}
+[0.798608] (andromeda_proximity_filter) StdoutLine: {'line': b'3/7 Test #3: flake8 ...........................***Failed    0.33 sec\n'}
+[0.799220] (andromeda_proximity_filter) StdoutLine: {'line': b'test 4\n'}
+[0.799945] (andromeda_proximity_filter) StdoutLine: {'line': b'    Start 4: lint_cmake\n'}
+[0.800636] (andromeda_proximity_filter) StdoutLine: {'line': b'\n'}
+[0.801271] (andromeda_proximity_filter) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/lint_cmake.xunit.xml" "--package-name" "andromeda_proximity_filter" "--output-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/lint_cmake.xunit.xml"\n'}
+[0.801901] (andromeda_proximity_filter) StdoutLine: {'line': b'4: Test timeout computed to be: 60\n'}
+[0.808191] (andromeda_proximity_filter) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter':\n"}
+[0.808966] (andromeda_proximity_filter) StdoutLine: {'line': b'4:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/lint_cmake.xunit.xml\n'}
+[0.811056] (-) TimerEvent: {}
+[0.875459] (andromeda_proximity_filter) StdoutLine: {'line': b'4: \n'}
+[0.876168] (andromeda_proximity_filter) StdoutLine: {'line': b'4: No problems found\n'}
+[0.882794] (andromeda_proximity_filter) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[0.886882] (andromeda_proximity_filter) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/lint_cmake.xunit.xml'\n"}
+[0.899771] (andromeda_proximity_filter) StdoutLine: {'line': b'4/7 Test #4: lint_cmake .......................   Passed    0.14 sec\n'}
+[0.902659] (andromeda_proximity_filter) StdoutLine: {'line': b'test 5\n'}
+[0.903278] (andromeda_proximity_filter) StdoutLine: {'line': b'    Start 5: pep257\n'}
+[0.903940] (andromeda_proximity_filter) StdoutLine: {'line': b'\n'}
+[0.904578] (andromeda_proximity_filter) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/pep257.xunit.xml" "--package-name" "andromeda_proximity_filter" "--output-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/pep257.xunit.xml"\n'}
+[0.905242] (andromeda_proximity_filter) StdoutLine: {'line': b'5: Test timeout computed to be: 60\n'}
+[0.911157] (-) TimerEvent: {}
+[0.957613] (andromeda_proximity_filter) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter':\n"}
+[0.958524] (andromeda_proximity_filter) StdoutLine: {'line': b'5:  - /opt/ros/humble/bin/ament_pep257 --xunit-file /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/pep257.xunit.xml\n'}
+[1.011273] (-) TimerEvent: {}
+[1.111829] (-) TimerEvent: {}
+[1.148791] (andromeda_proximity_filter) StdoutLine: {'line': b'5: checking ./launch/proximity_filter_launch.py\n'}
+[1.149587] (andromeda_proximity_filter) StdoutLine: {'line': b'5: checking ./scripts/test_pointcloud_pub.py\n'}
+[1.150161] (andromeda_proximity_filter) StdoutLine: {'line': b'5: No problems found\n'}
+[1.161770] (andromeda_proximity_filter) StdoutLine: {'line': b'5: -- run_test.py: return code 0\n'}
+[1.165535] (andromeda_proximity_filter) StdoutLine: {'line': b"5: -- run_test.py: verify result file '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/pep257.xunit.xml'\n"}
+[1.179541] (andromeda_proximity_filter) StdoutLine: {'line': b'5/7 Test #5: pep257 ...........................   Passed    0.28 sec\n'}
+[1.182660] (andromeda_proximity_filter) StdoutLine: {'line': b'test 6\n'}
+[1.183436] (andromeda_proximity_filter) StdoutLine: {'line': b'    Start 6: uncrustify\n'}
+[1.183980] (andromeda_proximity_filter) StdoutLine: {'line': b'\n'}
+[1.184443] (andromeda_proximity_filter) StdoutLine: {'line': b'6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/uncrustify.xunit.xml" "--package-name" "andromeda_proximity_filter" "--output-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/uncrustify.xunit.xml"\n'}
+[1.184900] (andromeda_proximity_filter) StdoutLine: {'line': b'6: Test timeout computed to be: 60\n'}
+[1.212016] (-) TimerEvent: {}
+[1.236598] (andromeda_proximity_filter) StdoutLine: {'line': b"6: -- run_test.py: invoking following command in '/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter':\n"}
+[1.237605] (andromeda_proximity_filter) StdoutLine: {'line': b'6:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/uncrustify.xunit.xml\n'}
+[1.312099] (-) TimerEvent: {}
+[1.368868] (andromeda_proximity_filter) StdoutLine: {'line': b"6: Code style divergence in file 'include/andromeda_proximity_filter/proximity_filter_lib.hpp':\n"}
+[1.370279] (andromeda_proximity_filter) StdoutLine: {'line': b'6: \n'}
+[1.371322] (andromeda_proximity_filter) StdoutLine: {'line': b'6: --- include/andromeda_proximity_filter/proximity_filter_lib.hpp\n'}
+[1.372093] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +++ include/andromeda_proximity_filter/proximity_filter_lib.hpp.uncrustify\n'}
+[1.372803] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -12,5 +12,6 @@\n'}
+[1.373517] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    struct Point3D {\n'}
+[1.374517] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double x;\n'}
+[1.375157] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double y;\n'}
+[1.375761] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double z;\n'}
+[1.376267] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    };\n'}
+[1.376881] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  struct Point3D\n'}
+[1.377365] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  {\n'}
+[1.377831] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double x;\n'}
+[1.378366] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double y;\n'}
+[1.378970] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double z;\n'}
+[1.379553] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  };\n'}
+[1.380078] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -18 +19 @@\n'}
+[1.380591] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    ProximityFilterLib();\n'}
+[1.381188] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  ProximityFilterLib();\n'}
+[1.381768] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -20,4 +21,4 @@\n'}
+[1.382360] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    void setPolygon(const std::vector<double>& x, const std::vector<double>& y);\n'}
+[1.382951] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    void setMaxRange(double range);\n'}
+[1.383554] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    void setFov(double center_deg, double width_deg);\n'}
+[1.384126] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    void getPolygon(std::vector<double>& x, std::vector<double>& y) const;\n'}
+[1.384652] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  void setPolygon(const std::vector<double> & x, const std::vector<double> & y);\n'}
+[1.385165] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  void setMaxRange(double range);\n'}
+[1.385673] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  void setFov(double center_deg, double width_deg);\n'}
+[1.386178] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  void getPolygon(std::vector<double> & x, std::vector<double> & y) const;\n'}
+[1.386766] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -25,3 +26,3 @@\n'}
+[1.387338] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // Filtering functions\n'}
+[1.387919] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    std::vector<Point3D> filterPoints(const std::vector<Point3D>& points) const;\n'}
+[1.388441] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    sensor_msgs::msg::PointCloud2 filterPointCloud(const sensor_msgs::msg::PointCloud2& cloud) const;\n'}
+[1.388934] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // Filtering functions\n'}
+[1.389424] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  std::vector<Point3D> filterPoints(const std::vector<Point3D> & points) const;\n'}
+[1.389913] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  sensor_msgs::msg::PointCloud2 filterPointCloud(const sensor_msgs::msg::PointCloud2 & cloud) const;\n'}
+[1.390662] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -30,2 +31,2 @@\n'}
+[1.391219] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    bool rayCasting(double x, double y) const;\n'}
+[1.391875] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    bool inFov(double x, double y) const;\n'}
+[1.392534] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  bool rayCasting(double x, double y) const;\n'}
+[1.393096] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  bool inFov(double x, double y) const;\n'}
+[1.393643] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -33,6 +34,6 @@\n'}
+[1.394212] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    std::vector<double> polygon_x_;\n'}
+[1.394839] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    std::vector<double> polygon_y_;\n'}
+[1.395541] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    double max_range_;\n'}
+[1.396148] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    double max_range_sq_;\n'}
+[1.396787] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    double fov_center_rad_;\n'}
+[1.397397] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    double fov_half_width_rad_;\n'}
+[1.398007] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  std::vector<double> polygon_x_;\n'}
+[1.398680] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  std::vector<double> polygon_y_;\n'}
+[1.399388] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  double max_range_;\n'}
+[1.400047] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  double max_range_sq_;\n'}
+[1.400642] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  double fov_center_rad_;\n'}
+[1.401269] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  double fov_half_width_rad_;\n'}
+[1.401910] (andromeda_proximity_filter) StdoutLine: {'line': b'6: \n'}
+[1.402499] (andromeda_proximity_filter) StdoutLine: {'line': b"6: Code style divergence in file 'include/andromeda_proximity_filter/proximity_filter_node.hpp':\n"}
+[1.403176] (andromeda_proximity_filter) StdoutLine: {'line': b'6: \n'}
+[1.403843] (andromeda_proximity_filter) StdoutLine: {'line': b'6: --- include/andromeda_proximity_filter/proximity_filter_node.hpp\n'}
+[1.404521] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +++ include/andromeda_proximity_filter/proximity_filter_node.hpp.uncrustify\n'}
+[1.405158] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -15 +15 @@\n'}
+[1.405860] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    ProximityFilterNode();\n'}
+[1.406465] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  ProximityFilterNode();\n'}
+[1.407151] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -18 +18 @@\n'}
+[1.407878] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    void pointcloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg);\n'}
+[1.408562] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  void pointcloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg);\n'}
+[1.409135] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -20 +20 @@\n'}
+[1.409718] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    ProximityFilterLib filter_lib_;\n'}
+[1.410330] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  ProximityFilterLib filter_lib_;\n'}
+[1.410966] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -22,3 +22,3 @@\n'}
+[1.411625] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_;\n'}
+[1.412290] (-) TimerEvent: {}
+[1.412596] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr filtered_pub_;\n'}
+[1.413287] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    rclcpp::Publisher<geometry_msgs::msg::PolygonStamped>::SharedPtr polygon_pub_;\n'}
+[1.413923] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_;\n'}
+[1.414558] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr filtered_pub_;\n'}
+[1.415209] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  rclcpp::Publisher<geometry_msgs::msg::PolygonStamped>::SharedPtr polygon_pub_;\n'}
+[1.415926] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -26 +26 @@\n'}
+[1.416501] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    rclcpp::Time last_processed_time_;\n'}
+[1.417050] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  rclcpp::Time last_processed_time_;\n'}
+[1.417551] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -28 +28 @@\n'}
+[1.418063] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr param_handle_;\n'}
+[1.418601] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr param_handle_;\n'}
+[1.419141] (andromeda_proximity_filter) StdoutLine: {'line': b'6: \n'}
+[1.419640] (andromeda_proximity_filter) StdoutLine: {'line': b"6: Code style divergence in file 'src/main.cpp':\n"}
+[1.420187] (andromeda_proximity_filter) StdoutLine: {'line': b'6: \n'}
+[1.420660] (andromeda_proximity_filter) StdoutLine: {'line': b'6: --- src/main.cpp\n'}
+[1.421317] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +++ src/main.cpp.uncrustify\n'}
+[1.422011] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -4 +4 @@\n'}
+[1.422572] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -int main(int argc, char** argv)\n'}
+[1.423159] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +int main(int argc, char ** argv)\n'}
+[1.423763] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -6,4 +6,4 @@\n'}
+[1.424362] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    rclcpp::init(argc, argv);\n'}
+[1.424926] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    rclcpp::spin(std::make_shared<ProximityFilterNode>());\n'}
+[1.425517] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    rclcpp::shutdown();\n'}
+[1.426120] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    return 0;\n'}
+[1.426694] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  rclcpp::init(argc, argv);\n'}
+[1.427388] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  rclcpp::spin(std::make_shared<ProximityFilterNode>());\n'}
+[1.428069] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  rclcpp::shutdown();\n'}
+[1.428791] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  return 0;\n'}
+[1.429437] (andromeda_proximity_filter) StdoutLine: {'line': b'6: \n'}
+[1.430139] (andromeda_proximity_filter) StdoutLine: {'line': b"6: Code style divergence in file 'src/proximity_filter_lib.cpp':\n"}
+[1.430786] (andromeda_proximity_filter) StdoutLine: {'line': b'6: \n'}
+[1.431512] (andromeda_proximity_filter) StdoutLine: {'line': b'6: --- src/proximity_filter_lib.cpp\n'}
+[1.432126] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +++ src/proximity_filter_lib.cpp.uncrustify\n'}
+[1.432788] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -5,2 +5,2 @@\n'}
+[1.433496] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    : max_range_(1.5), max_range_sq_(2.25),\n'}
+[1.434131] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -      fov_center_rad_(0.0), fov_half_width_rad_(M_PI)\n'}
+[1.434826] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +: max_range_(1.5), max_range_sq_(2.25),\n'}
+[1.435602] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  fov_center_rad_(0.0), fov_half_width_rad_(M_PI)\n'}
+[1.436469] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -8,2 +8,2 @@\n'}
+[1.437396] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    polygon_x_ = {0.5, 0.25, -0.25, -0.5, -0.25, 0.25};\n'}
+[1.438097] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    polygon_y_ = {0.0, 0.433, 0.433, 0.0, -0.433, -0.433};\n'}
+[1.438745] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  polygon_x_ = {0.5, 0.25, -0.25, -0.5, -0.25, 0.25};\n'}
+[1.439456] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  polygon_y_ = {0.0, 0.433, 0.433, 0.0, -0.433, -0.433};\n'}
+[1.440146] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -12 +12 @@\n'}
+[1.440820] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -void ProximityFilterLib::setPolygon(const std::vector<double>& x, const std::vector<double>& y)\n'}
+[1.441426] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +void ProximityFilterLib::setPolygon(const std::vector<double> & x, const std::vector<double> & y)\n'}
+[1.442049] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -14,2 +14,2 @@\n'}
+[1.442603] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    polygon_x_ = x;\n'}
+[1.443233] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    polygon_y_ = y;\n'}
+[1.443927] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  polygon_x_ = x;\n'}
+[1.444569] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  polygon_y_ = y;\n'}
+[1.445211] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -20,2 +20,2 @@\n'}
+[1.445794] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    max_range_ = range;\n'}
+[1.446471] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    max_range_sq_ = range * range;\n'}
+[1.447095] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  max_range_ = range;\n'}
+[1.447774] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  max_range_sq_ = range * range;\n'}
+[1.448414] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -26,2 +26,2 @@\n'}
+[1.449139] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    fov_center_rad_ = center_deg * M_PI / 180.0;\n'}
+[1.449808] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    fov_half_width_rad_ = width_deg * M_PI / 180.0 / 2.0;\n'}
+[1.450414] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  fov_center_rad_ = center_deg * M_PI / 180.0;\n'}
+[1.451096] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  fov_half_width_rad_ = width_deg * M_PI / 180.0 / 2.0;\n'}
+[1.451746] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -30 +30 @@\n'}
+[1.452707] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -void ProximityFilterLib::getPolygon(std::vector<double>& x, std::vector<double>& y) const\n'}
+[1.453582] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +void ProximityFilterLib::getPolygon(std::vector<double> & x, std::vector<double> & y) const\n'}
+[1.454273] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -32,2 +32,2 @@\n'}
+[1.454899] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    x = polygon_x_;\n'}
+[1.455560] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    y = polygon_y_;\n'}
+[1.456199] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  x = polygon_x_;\n'}
+[1.456894] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  y = polygon_y_;\n'}
+[1.457538] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -41,2 +41,2 @@\n'}
+[1.458195] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    bool inside = false;\n'}
+[1.458833] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    size_t n = polygon_x_.size();\n'}
+[1.459501] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  bool inside = false;\n'}
+[1.460163] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  size_t n = polygon_x_.size();\n'}
+[1.460834] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -44,5 +44,5 @@\n'}
+[1.461466] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    for (size_t i = 0, j = n - 1; i < n; j = i++) {\n'}
+[1.462127] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double x1 = polygon_x_[i];\n'}
+[1.462833] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double y1 = polygon_y_[i];\n'}
+[1.463491] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double x2 = polygon_x_[j];\n'}
+[1.464103] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double y2 = polygon_y_[j];\n'}
+[1.464765] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  for (size_t i = 0, j = n - 1; i < n; j = i++) {\n'}
+[1.465394] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double x1 = polygon_x_[i];\n'}
+[1.466028] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double y1 = polygon_y_[i];\n'}
+[1.466709] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double x2 = polygon_x_[j];\n'}
+[1.467438] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double y2 = polygon_y_[j];\n'}
+[1.468089] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -50 +50 @@\n'}
+[1.468747] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        if (y1 == y2) continue;\n'}
+[1.469359] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    if (y1 == y2) {continue;}\n'}
+[1.469954] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -52,2 +52,2 @@\n'}
+[1.470647] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        bool crosses_y = ((y1 > y) != (y2 > y));\n'}
+[1.471290] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        if (!crosses_y) continue;\n'}
+[1.471895] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    bool crosses_y = ((y1 > y) != (y2 > y));\n'}
+[1.472473] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    if (!crosses_y) {continue;}\n'}
+[1.473058] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -55,2 +55,2 @@\n'}
+[1.473638] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        // Linear maths of calculating the gradient and intercept\n'}
+[1.474258] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double x_intersect = x1 + (x2 - x1) * (y - y1) / (y2 - y1);\n'}
+[1.474831] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    // Linear maths of calculating the gradient and intercept\n'}
+[1.475443] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double x_intersect = x1 + (x2 - x1) * (y - y1) / (y2 - y1);\n'}
+[1.475942] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -58,5 +58,17 @@\n'}
+[1.476428] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        // If it shoots from outside to inside, flip it over, if it shoots from inside to outside, flip it over\n'}
+[1.476912] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        // like odd->even, even -> odd , alternatively based on the line intersection.\n'}
+[1.477411] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        if (x < x_intersect) {\n'}
+[1.477913] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -            inside = !inside;\n'}
+[1.478561] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        }\n'}
+[1.479249] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    // If it shoots from outside to inside, flip it over, if it shoots from inside to outside, flip it over\n'}
+[1.479890] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    // like odd->even, even -> odd , alternatively based on the line intersection.\n'}
+[1.480489] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    if (x < x_intersect) {\n'}
+[1.481039] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +      inside = !inside;\n'}
+[1.482330] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    }\n'}
+[1.483052] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  }\n'}
+[1.483702] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +\n'}
+[1.484260] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +\n'}
+[1.484753] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // The points on the edges should be counted too\n'}
+[1.485241] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  for (size_t i = 0; i < n; ++i) {\n'}
+[1.485825] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double x1 = polygon_x_[i];\n'}
+[1.486379] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double y1 = polygon_y_[i];\n'}
+[1.486913] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +\n'}
+[1.487514] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double dx = x - x1;\n'}
+[1.488054] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double dy = y - y1;\n'}
+[1.488567] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    if (std::abs(dx) < 1e-6 && std::abs(dy) < 1e-6) {\n'}
+[1.489068] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +      return false;\n'}
+[1.489557] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -64,0 +77,3 @@\n'}
+[1.490038] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    size_t j = (i + 1) % n;\n'}
+[1.490513] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double x2 = polygon_x_[j];\n'}
+[1.491003] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double y2 = polygon_y_[j];\n'}
+[1.491620] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -66,4 +81,2 @@\n'}
+[1.492187] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // The points on the edges should be counted too\n'}
+[1.492691] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    for (size_t i = 0; i < n; ++i) {\n'}
+[1.493220] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double x1 = polygon_x_[i];\n'}
+[1.493752] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double y1 = polygon_y_[i];\n'}
+[1.494279] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double dx_edge = x2 - x1;\n'}
+[1.494802] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double dy_edge = y2 - y1;\n'}
+[1.495364] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -71,5 +84,9 @@\n'}
+[1.495946] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double dx = x - x1;\n'}
+[1.496447] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double dy = y - y1;\n'}
+[1.497011] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        if (std::abs(dx) < 1e-6 && std::abs(dy) < 1e-6) {\n'}
+[1.497616] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -            return false; \n'}
+[1.498183] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        }\n'}
+[1.498706] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    double cross = dx * dy_edge - dy * dx_edge;\n'}
+[1.499195] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    if (std::abs(cross) < 1e-6) {\n'}
+[1.499793] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +      double dot = dx * dx_edge + dy * dy_edge;\n'}
+[1.500344] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +      double len_sq = dx_edge * dx_edge + dy_edge * dy_edge;\n'}
+[1.500839] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +      if (dot >= 0 && dot <= len_sq) {\n'}
+[1.501318] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +        return false;\n'}
+[1.501805] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +      }\n'}
+[1.502298] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    }\n'}
+[1.502777] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  }\n'}
+[1.503391] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -77,18 +94 @@\n'}
+[1.503952] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        size_t j = (i + 1) % n;\n'}
+[1.504455] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double x2 = polygon_x_[j];\n'}
+[1.504938] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double y2 = polygon_y_[j];\n'}
+[1.505431] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -\n'}
+[1.505920] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double dx_edge = x2 - x1;\n'}
+[1.506403] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double dy_edge = y2 - y1;\n'}
+[1.506887] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -\n'}
+[1.507434] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        double cross = dx * dy_edge - dy * dx_edge;\n'}
+[1.507978] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        if (std::abs(cross) < 1e-6) {\n'}
+[1.508468] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -            double dot = dx * dx_edge + dy * dy_edge;\n'}
+[1.509018] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -            double len_sq = dx_edge * dx_edge + dy_edge * dy_edge;\n'}
+[1.509593] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -            if (dot >= 0 && dot <= len_sq) {\n'}
+[1.510100] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -                return false; \n'}
+[1.510590] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -            }\n'}
+[1.511112] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        }\n'}
+[1.511904] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    }\n'}
+[1.512766] (-) TimerEvent: {}
+[1.513023] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -\n'}
+[1.513585] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    return inside;\n'}
+[1.514143] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  return inside;\n'}
+[1.514779] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -99 +99 @@\n'}
+[1.515440] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    double point_angle = std::atan2(y, x);\n'}
+[1.516024] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  double point_angle = std::atan2(y, x);\n'}
+[1.516526] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -101 +101 @@\n'}
+[1.517018] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    double angle_difference = point_angle - fov_center_rad_;\n'}
+[1.517518] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  double angle_difference = point_angle - fov_center_rad_;\n'}
+[1.518008] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -103,8 +103,8 @@\n'}
+[1.518495] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // Make the angle lands in [-pi,pi]\n'}
+[1.518980] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    while (angle_difference > M_PI) {\n'}
+[1.519600] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        angle_difference -= 2.0 * M_PI;\n'}
+[1.520105] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    }\n'}
+[1.520666] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    while (angle_difference < -M_PI) {\n'}
+[1.521318] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        angle_difference += 2.0 * M_PI;\n'}
+[1.521924] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    }\n'}
+[1.522425] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    bool is_inside_fov = std::fabs(angle_difference) <= fov_half_width_rad_;\n'}
+[1.522924] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // Make the angle lands in [-pi,pi]\n'}
+[1.523515] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  while (angle_difference > M_PI) {\n'}
+[1.524058] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    angle_difference -= 2.0 * M_PI;\n'}
+[1.524630] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  }\n'}
+[1.525128] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  while (angle_difference < -M_PI) {\n'}
+[1.525624] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    angle_difference += 2.0 * M_PI;\n'}
+[1.526111] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  }\n'}
+[1.526672] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  bool is_inside_fov = std::fabs(angle_difference) <= fov_half_width_rad_;\n'}
+[1.527322] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -112 +112 @@\n'}
+[1.528179] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    return is_inside_fov;\n'}
+[1.528912] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  return is_inside_fov;\n'}
+[1.529554] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -116 +116,2 @@\n'}
+[1.530137] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -std::vector<ProximityFilterLib::Point3D> ProximityFilterLib::filterPoints(const std::vector<Point3D>& points) const\n'}
+[1.530695] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +std::vector<ProximityFilterLib::Point3D> ProximityFilterLib::filterPoints(\n'}
+[1.531290] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  const std::vector<Point3D> & points) const\n'}
+[1.531835] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -118,8 +119,8 @@\n'}
+[1.532352] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    std::vector<Point3D> result;\n'}
+[1.533026] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    for (const auto& p : points) {\n'}
+[1.534253] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        if ((p.x*p.x + p.y*p.y + p.z*p.z) > max_range_sq_) continue;\n'}
+[1.534849] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        if (!inFov(p.x, p.y)) continue;\n'}
+[1.535428] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        if (rayCasting(p.x, p.y)) continue;\n'}
+[1.536010] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        result.push_back(p);\n'}
+[1.536566] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    }\n'}
+[1.537148] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    return result;\n'}
+[1.537894] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  std::vector<Point3D> result;\n'}
+[1.538513] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  for (const auto & p : points) {\n'}
+[1.539024] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    if ((p.x * p.x + p.y * p.y + p.z * p.z) > max_range_sq_) {continue;}\n'}
+[1.539578] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    if (!inFov(p.x, p.y)) {continue;}\n'}
+[1.540077] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    if (rayCasting(p.x, p.y)) {continue;}\n'}
+[1.540550] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    result.push_back(p);\n'}
+[1.541043] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  }\n'}
+[1.541519] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  return result;\n'}
+[1.542043] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -129 +130,2 @@\n'}
+[1.542581] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -sensor_msgs::msg::PointCloud2 ProximityFilterLib::filterPointCloud(const sensor_msgs::msg::PointCloud2& cloud) const\n'}
+[1.543155] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +sensor_msgs::msg::PointCloud2 ProximityFilterLib::filterPointCloud(\n'}
+[1.543718] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  const sensor_msgs::msg::PointCloud2 & cloud) const\n'}
+[1.544299] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -131,4 +133,4 @@\n'}
+[1.544812] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    sensor_msgs::msg::PointCloud2 filtered = cloud;\n'}
+[1.545328] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    filtered.data.clear();\n'}
+[1.545812] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    filtered.width = 0;\n'}
+[1.546335] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    filtered.height = 1;\n'}
+[1.546800] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  sensor_msgs::msg::PointCloud2 filtered = cloud;\n'}
+[1.547381] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  filtered.data.clear();\n'}
+[1.547957] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  filtered.width = 0;\n'}
+[1.548473] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  filtered.height = 1;\n'}
+[1.548995] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -136,7 +138,7 @@\n'}
+[1.549536] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    int x_offset = -1, y_offset = -1, z_offset = -1;\n'}
+[1.550186] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    for (const auto& field : cloud.fields) {\n'}
+[1.550857] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        if (field.name == "x") x_offset = field.offset;\n'}
+[1.551486] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        if (field.name == "y") y_offset = field.offset;\n'}
+[1.552085] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        if (field.name == "z") z_offset = field.offset;\n'}
+[1.552673] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    }\n'}
+[1.553309] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    if (x_offset < 0 || y_offset < 0 || z_offset < 0) return filtered;\n'}
+[1.553906] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  int x_offset = -1, y_offset = -1, z_offset = -1;\n'}
+[1.554484] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  for (const auto & field : cloud.fields) {\n'}
+[1.555039] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    if (field.name == "x") {x_offset = field.offset;}\n'}
+[1.555678] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    if (field.name == "y") {y_offset = field.offset;}\n'}
+[1.556270] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    if (field.name == "z") {z_offset = field.offset;}\n'}
+[1.556848] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  }\n'}
+[1.557392] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  if (x_offset < 0 || y_offset < 0 || z_offset < 0) {return filtered;}\n'}
+[1.557936] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -144,2 +146,2 @@\n'}
+[1.558533] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    const size_t point_step = cloud.point_step;\n'}
+[1.559145] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    const size_t num_points = cloud.width * cloud.height;\n'}
+[1.559728] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  const size_t point_step = cloud.point_step;\n'}
+[1.560309] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  const size_t num_points = cloud.width * cloud.height;\n'}
+[1.560877] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -147,4 +149,4 @@\n'}
+[1.561438] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    std::vector<Point3D> points;\n'}
+[1.562064] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    points.reserve(num_points);\n'}
+[1.562623] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    std::vector<const uint8_t*> raw_ptrs;\n'}
+[1.563136] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    raw_ptrs.reserve(num_points);\n'}
+[1.563686] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  std::vector<Point3D> points;\n'}
+[1.564204] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  points.reserve(num_points);\n'}
+[1.564707] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  std::vector<const uint8_t *> raw_ptrs;\n'}
+[1.565254] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  raw_ptrs.reserve(num_points);\n'}
+[1.565839] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -152,8 +154,8 @@\n'}
+[1.566547] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    for (size_t i = 0; i < num_points; ++i) {\n'}
+[1.567225] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        const uint8_t* ptr = &cloud.data[i * point_step];\n'}
+[1.567852] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        float x = *reinterpret_cast<const float*>(ptr + x_offset);\n'}
+[1.568385] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        float y = *reinterpret_cast<const float*>(ptr + y_offset);\n'}
+[1.568921] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        float z = *reinterpret_cast<const float*>(ptr + z_offset);\n'}
+[1.569541] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        points.push_back({static_cast<double>(x), static_cast<double>(y), static_cast<double>(z)});\n'}
+[1.570067] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        raw_ptrs.push_back(ptr);\n'}
+[1.570584] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    }\n'}
+[1.571274] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  for (size_t i = 0; i < num_points; ++i) {\n'}
+[1.571895] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    const uint8_t * ptr = &cloud.data[i * point_step];\n'}
+[1.572400] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    float x = *reinterpret_cast<const float *>(ptr + x_offset);\n'}
+[1.572900] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    float y = *reinterpret_cast<const float *>(ptr + y_offset);\n'}
+[1.573484] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    float z = *reinterpret_cast<const float *>(ptr + z_offset);\n'}
+[1.574121] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    points.push_back({static_cast<double>(x), static_cast<double>(y), static_cast<double>(z)});\n'}
+[1.574747] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    raw_ptrs.push_back(ptr);\n'}
+[1.575283] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  }\n'}
+[1.575971] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -161 +163 @@\n'}
+[1.576646] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    auto filtered_points = filterPoints(points);\n'}
+[1.577130] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  auto filtered_points = filterPoints(points);\n'}
+[1.577612] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -163,7 +165,7 @@\n'}
+[1.578066] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    for (size_t i = 0; i < filtered_points.size(); ++i) {\n'}
+[1.578547] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        const uint8_t* ptr = raw_ptrs[i];\n'}
+[1.579151] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        filtered.data.insert(filtered.data.end(), ptr, ptr + point_step);\n'}
+[1.579746] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        filtered.width++;\n'}
+[1.580288] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    }\n'}
+[1.580756] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    filtered.row_step = filtered.width * point_step;\n'}
+[1.581233] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    return filtered;\n'}
+[1.581688] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  for (size_t i = 0; i < filtered_points.size(); ++i) {\n'}
+[1.582172] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    const uint8_t * ptr = raw_ptrs[i];\n'}
+[1.582686] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    filtered.data.insert(filtered.data.end(), ptr, ptr + point_step);\n'}
+[1.583258] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    filtered.width++;\n'}
+[1.583897] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  }\n'}
+[1.584435] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  filtered.row_step = filtered.width * point_step;\n'}
+[1.585003] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  return filtered;\n'}
+[1.585554] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -171,5 +172,0 @@\n'}
+[1.586243] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -\n'}
+[1.587139] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -\n'}
+[1.588106] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -\n'}
+[1.588726] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -\n'}
+[1.589433] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -\n'}
+[1.590023] (andromeda_proximity_filter) StdoutLine: {'line': b'6: \n'}
+[1.590571] (andromeda_proximity_filter) StdoutLine: {'line': b"6: Code style divergence in file 'src/proximity_filter_node.cpp':\n"}
+[1.591174] (andromeda_proximity_filter) StdoutLine: {'line': b'6: \n'}
+[1.591782] (andromeda_proximity_filter) StdoutLine: {'line': b'6: --- src/proximity_filter_node.cpp\n'}
+[1.592298] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +++ src/proximity_filter_node.cpp.uncrustify\n'}
+[1.592852] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -4 +4 @@\n'}
+[1.593399] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    : Node("proximity_filter")\n'}
+[1.594041] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +: Node("proximity_filter")\n'}
+[1.594686] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -6,9 +6,11 @@\n'}
+[1.595272] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // Parameters initialisation\n'}
+[1.595878] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    this->declare_parameter<std::vector<double>>("polygon_x", {0.5,0.25,-0.25,-0.5,-0.25,0.25});\n'}
+[1.596455] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    this->declare_parameter<std::vector<double>>("polygon_y", {0.0,0.433,0.433,0.0,-0.433,-0.433});\n'}
+[1.597086] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    this->declare_parameter<double>("max_range", 1.5);\n'}
+[1.597736] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    this->declare_parameter<double>("fov_center_deg", 0.0);\n'}
+[1.598398] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    this->declare_parameter<double>("fov_width_deg", 180.0);\n'}
+[1.598996] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    this->declare_parameter<std::string>("input_topic", "/points/raw");\n'}
+[1.599645] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    this->declare_parameter<std::string>("output_topic", "/points/filtered");\n'}
+[1.600235] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    this->declare_parameter<std::string>("polygon_topic", "/points/filter_polygon");\n'}
+[1.600778] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // Parameters initialisation\n'}
+[1.601312] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  this->declare_parameter<std::vector<double>>("polygon_x", {0.5, 0.25, -0.25, -0.5, -0.25, 0.25});\n'}
+[1.601883] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  this->declare_parameter<std::vector<double>>(\n'}
+[1.602480] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    "polygon_y",\n'}
+[1.603157] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    {0.0, 0.433, 0.433, 0.0, -0.433, -0.433});\n'}
+[1.603762] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  this->declare_parameter<double>("max_range", 1.5);\n'}
+[1.604267] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  this->declare_parameter<double>("fov_center_deg", 0.0);\n'}
+[1.604843] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  this->declare_parameter<double>("fov_width_deg", 180.0);\n'}
+[1.605468] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  this->declare_parameter<std::string>("input_topic", "/points/raw");\n'}
+[1.606030] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  this->declare_parameter<std::string>("output_topic", "/points/filtered");\n'}
+[1.606619] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  this->declare_parameter<std::string>("polygon_topic", "/points/filter_polygon");\n'}
+[1.607256] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -16,3 +18,3 @@\n'}
+[1.607874] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    rcl_interfaces::msg::ParameterDescriptor rate_desc;\n'}
+[1.608508] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    rate_desc.description = "Processing frequency in Hz";\n'}
+[1.609188] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    this->declare_parameter<int>("subscription_rate", 20, rate_desc);\n'}
+[1.609783] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  rcl_interfaces::msg::ParameterDescriptor rate_desc;\n'}
+[1.610362] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  rate_desc.description = "Processing frequency in Hz";\n'}
+[1.610973] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  this->declare_parameter<int>("subscription_rate", 20, rate_desc);\n'}
+[1.611606] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -20,5 +22,5 @@\n'}
+[1.612227] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // Subscription\n'}
+[1.612864] (-) TimerEvent: {}
+[1.613112] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    subscription_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(\n'}
+[1.613680] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        this->get_parameter("input_topic").as_string(),\n'}
+[1.614332] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        rclcpp::SensorDataQoS(),\n'}
+[1.614868] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        std::bind(&ProximityFilterNode::pointcloudCallback, this, std::placeholders::_1));\n'}
+[1.615418] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // Subscription\n'}
+[1.615958] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  subscription_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(\n'}
+[1.616436] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    this->get_parameter("input_topic").as_string(),\n'}
+[1.616915] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    rclcpp::SensorDataQoS(),\n'}
+[1.617387] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    std::bind(&ProximityFilterNode::pointcloudCallback, this, std::placeholders::_1));\n'}
+[1.617862] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -26 +28 @@\n'}
+[1.618353] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // Publishers\n'}
+[1.618820] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // Publishers\n'}
+[1.619308] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -28,13 +30,6 @@\n'}
+[1.619894] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // Filtered point cloud publisher\n'}
+[1.620461] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // Use a queue size of 10 and Reliable QoS to ensure that all filtered points\n'}
+[1.620982] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // are delivered to subscribers. Reliability is important for downstream processing\n'}
+[1.621502] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // where missing points could affect algorithms.\n'}
+[1.622058] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    filtered_pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(\n'}
+[1.622559] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        this->get_parameter("output_topic").as_string(), rclcpp::QoS(10).reliable());\n'}
+[1.623035] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    \n'}
+[1.623512] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // Polygon publisher\n'}
+[1.623997] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // Use a queue size of 1 and Transient Local QoS so that any new subscribers\n'}
+[1.624475] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // immediately receive the latest polygon, even if it was published before\n'}
+[1.624950] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // they connected. This is suitable for low-frequency configuration or visualization data.\n'}
+[1.625421] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    polygon_pub_ = this->create_publisher<geometry_msgs::msg::PolygonStamped>(\n'}
+[1.626013] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        this->get_parameter("polygon_topic").as_string(), rclcpp::QoS(1).transient_local());\n'}
+[1.626571] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // Filtered point cloud publisher\n'}
+[1.627166] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // Use a queue size of 10 and Reliable QoS to ensure that all filtered points\n'}
+[1.627792] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // are delivered to subscribers. Reliability is important for downstream processing\n'}
+[1.628323] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // where missing points could affect algorithms.\n'}
+[1.628854] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  filtered_pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(\n'}
+[1.629355] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    this->get_parameter("output_topic").as_string(), rclcpp::QoS(10).reliable());\n'}
+[1.629887] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -42 +37,6 @@\n'}
+[1.630412] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    last_processed_time_ = this->now();\n'}
+[1.630870] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // Polygon publisher\n'}
+[1.631389] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // Use a queue size of 1 and Transient Local QoS so that any new subscribers\n'}
+[1.631960] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // immediately receive the latest polygon, even if it was published before\n'}
+[1.632545] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // they connected. This is suitable for low-frequency configuration or visualization data.\n'}
+[1.633129] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  polygon_pub_ = this->create_publisher<geometry_msgs::msg::PolygonStamped>(\n'}
+[1.633744] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    this->get_parameter("polygon_topic").as_string(), rclcpp::QoS(1).transient_local());\n'}
+[1.634306] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -44,8 +44,11 @@\n'}
+[1.634989] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    param_handle_ = this->add_on_set_parameters_callback(\n'}
+[1.635574] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    [this](const std::vector<rclcpp::Parameter>& params){\n'}
+[1.636112] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        bool updated = false;\n'}
+[1.636692] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        for (const auto& p : params) {\n'}
+[1.637204] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -            if (p.get_name() == "polygon_x" || p.get_name() == "polygon_y" ||\n'}
+[1.637832] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -                p.get_name() == "max_range" || p.get_name() == "fov_center_deg" || p.get_name() == "fov_width_deg") {\n'}
+[1.638392] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -                updated = true;\n'}
+[1.638991] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -            }\n'}
+[1.639600] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  last_processed_time_ = this->now();\n'}
+[1.640130] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +\n'}
+[1.640657] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  param_handle_ = this->add_on_set_parameters_callback(\n'}
+[1.641187] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    [this](const std::vector<rclcpp::Parameter> & params) {\n'}
+[1.641762] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +      bool updated = false;\n'}
+[1.642300] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +      for (const auto & p : params) {\n'}
+[1.642819] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +        if (p.get_name() == "polygon_x" || p.get_name() == "polygon_y" ||\n'}
+[1.643380] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +        p.get_name() == "max_range" || p.get_name() == "fov_center_deg" ||\n'}
+[1.643944] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +        p.get_name() == "fov_width_deg")\n'}
+[1.644576] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +        {\n'}
+[1.645121] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +          updated = true;\n'}
+[1.645645] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -53,9 +56,12 @@\n'}
+[1.646179] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        if (updated) {\n'}
+[1.646693] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -            // Live update\n'}
+[1.647166] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -            filter_lib_.setPolygon(this->get_parameter("polygon_x").as_double_array(),\n'}
+[1.647675] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -                                   this->get_parameter("polygon_y").as_double_array());\n'}
+[1.648154] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -            filter_lib_.setMaxRange(this->get_parameter("max_range").as_double());\n'}
+[1.648624] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -            filter_lib_.setFov(this->get_parameter("fov_center_deg").as_double(),\n'}
+[1.649147] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -                               this->get_parameter("fov_width_deg").as_double());\n'}
+[1.649647] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -            RCLCPP_INFO(this->get_logger(), "Parameters updated live.");\n'}
+[1.650225] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        }\n'}
+[1.651182] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +      }\n'}
+[1.651798] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +      if (updated) {\n'}
+[1.652320] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +        // Live update\n'}
+[1.652845] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +        filter_lib_.setPolygon(\n'}
+[1.653355] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +          this->get_parameter("polygon_x").as_double_array(),\n'}
+[1.653913] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +          this->get_parameter("polygon_y").as_double_array());\n'}
+[1.654464] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +        filter_lib_.setMaxRange(this->get_parameter("max_range").as_double());\n'}
+[1.655079] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +        filter_lib_.setFov(\n'}
+[1.655672] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +          this->get_parameter("fov_center_deg").as_double(),\n'}
+[1.656219] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +          this->get_parameter("fov_width_deg").as_double());\n'}
+[1.656721] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +        RCLCPP_INFO(this->get_logger(), "Parameters updated live.");\n'}
+[1.657259] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +      }\n'}
+[1.657768] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -63,3 +69,3 @@\n'}
+[1.658330] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        rcl_interfaces::msg::SetParametersResult result;\n'}
+[1.658861] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        result.successful = true;\n'}
+[1.659400] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        return result;\n'}
+[1.659946] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +      rcl_interfaces::msg::SetParametersResult result;\n'}
+[1.660512] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +      result.successful = true;\n'}
+[1.661097] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +      return result;\n'}
+[1.661583] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -69,2 +75 @@\n'}
+[1.662104] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -\n'}
+[1.662615] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    RCLCPP_INFO(this->get_logger(), "ProximityFilterNode started");\n'}
+[1.663102] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  RCLCPP_INFO(this->get_logger(), "ProximityFilterNode started");\n'}
+[1.663624] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -76,6 +81,6 @@\n'}
+[1.664140] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // Throttle\n'}
+[1.664649] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    int rate_hz = this->get_parameter("subscription_rate").as_int();\n'}
+[1.665221] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    double min_dt = 1.0 / rate_hz;\n'}
+[1.665830] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    rclcpp::Time now = this->now();\n'}
+[1.666306] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    if ((now - last_processed_time_).seconds() < min_dt) return;\n'}
+[1.666799] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    last_processed_time_ = now;\n'}
+[1.667322] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // Throttle\n'}
+[1.667855] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  int rate_hz = this->get_parameter("subscription_rate").as_int();\n'}
+[1.668403] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  double min_dt = 1.0 / rate_hz;\n'}
+[1.668957] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  rclcpp::Time now = this->now();\n'}
+[1.669474] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  if ((now - last_processed_time_).seconds() < min_dt) {return;}\n'}
+[1.670028] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  last_processed_time_ = now;\n'}
+[1.670604] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -83,6 +88,8 @@\n'}
+[1.671145] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // Update lib parameters\n'}
+[1.671666] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    filter_lib_.setPolygon(this->get_parameter("polygon_x").as_double_array(),\n'}
+[1.672134] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -                           this->get_parameter("polygon_y").as_double_array());\n'}
+[1.672706] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    filter_lib_.setMaxRange(this->get_parameter("max_range").as_double());\n'}
+[1.673164] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    filter_lib_.setFov(this->get_parameter("fov_center_deg").as_double(),\n'}
+[1.673600] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -                       this->get_parameter("fov_width_deg").as_double());\n'}
+[1.674055] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // Update lib parameters\n'}
+[1.674527] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  filter_lib_.setPolygon(\n'}
+[1.675035] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    this->get_parameter("polygon_x").as_double_array(),\n'}
+[1.675647] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    this->get_parameter("polygon_y").as_double_array());\n'}
+[1.676214] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  filter_lib_.setMaxRange(this->get_parameter("max_range").as_double());\n'}
+[1.676726] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  filter_lib_.setFov(\n'}
+[1.677219] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    this->get_parameter("fov_center_deg").as_double(),\n'}
+[1.677785] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    this->get_parameter("fov_width_deg").as_double());\n'}
+[1.678669] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -90,11 +97,11 @@\n'}
+[1.679504] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // Publish polygon for visualization\n'}
+[1.680322] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    std::vector<double> poly_x, poly_y;\n'}
+[1.680886] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    filter_lib_.getPolygon(poly_x, poly_y);\n'}
+[1.681461] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    geometry_msgs::msg::PolygonStamped poly_msg;\n'}
+[1.681990] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    poly_msg.header = msg->header;\n'}
+[1.682520] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    for (size_t i=0;i<poly_x.size();++i){\n'}
+[1.683020] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        geometry_msgs::msg::Point32 p;\n'}
+[1.683555] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        p.x = poly_x[i]; p.y = poly_y[i]; p.z = 0.0f;\n'}
+[1.684106] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        poly_msg.polygon.points.push_back(p);\n'}
+[1.684684] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    }\n'}
+[1.685227] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    polygon_pub_->publish(poly_msg);\n'}
+[1.685748] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // Publish polygon for visualization\n'}
+[1.686260] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  std::vector<double> poly_x, poly_y;\n'}
+[1.686817] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  filter_lib_.getPolygon(poly_x, poly_y);\n'}
+[1.687399] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  geometry_msgs::msg::PolygonStamped poly_msg;\n'}
+[1.687920] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  poly_msg.header = msg->header;\n'}
+[1.688435] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  for (size_t i = 0; i < poly_x.size(); ++i) {\n'}
+[1.688961] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    geometry_msgs::msg::Point32 p;\n'}
+[1.689498] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    p.x = poly_x[i]; p.y = poly_y[i]; p.z = 0.0f;\n'}
+[1.690076] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    poly_msg.polygon.points.push_back(p);\n'}
+[1.690605] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  }\n'}
+[1.691092] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  polygon_pub_->publish(poly_msg);\n'}
+[1.691631] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -102,3 +109,3 @@\n'}
+[1.692130] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    // Filter point cloud\n'}
+[1.692623] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    sensor_msgs::msg::PointCloud2 filtered = filter_lib_.filterPointCloud(*msg);\n'}
+[1.693115] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    filtered_pub_->publish(filtered);\n'}
+[1.693603] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  // Filter point cloud\n'}
+[1.694093] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  sensor_msgs::msg::PointCloud2 filtered = filter_lib_.filterPointCloud(*msg);\n'}
+[1.694834] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  filtered_pub_->publish(filtered);\n'}
+[1.695414] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -106,3 +113,4 @@\n'}
+[1.696140] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 2000,\n'}
+[1.696618] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -                          "Filtered cloud: %zu -> %u points",\n'}
+[1.697089] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -                          msg->width*msg->height, filtered.width);\n'}
+[1.697564] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  RCLCPP_INFO_THROTTLE(\n'}
+[1.698036] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    this->get_logger(), *this->get_clock(), 2000,\n'}
+[1.698507] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    "Filtered cloud: %zu -> %u points",\n'}
+[1.698978] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    msg->width * msg->height, filtered.width);\n'}
+[1.699466] (andromeda_proximity_filter) StdoutLine: {'line': b'6: \n'}
+[1.699949] (andromeda_proximity_filter) StdoutLine: {'line': b"6: Code style divergence in file 'test/test_filter_lib.cpp':\n"}
+[1.700425] (andromeda_proximity_filter) StdoutLine: {'line': b'6: \n'}
+[1.700900] (andromeda_proximity_filter) StdoutLine: {'line': b'6: --- test/test_filter_lib.cpp\n'}
+[1.701371] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +++ test/test_filter_lib.cpp.uncrustify\n'}
+[1.701977] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -5,4 +5,4 @@\n'}
+[1.702496] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    ProximityFilterLib filter;\n'}
+[1.702963] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    filter.setPolygon({0,1,1,0}, {0,0,1,1});\n'}
+[1.703446] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    filter.setMaxRange(2.0);\n'}
+[1.703921] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    filter.setFov(0, 180);\n'}
+[1.704389] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  ProximityFilterLib filter;\n'}
+[1.704863] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  filter.setPolygon({0, 1, 1, 0}, {0, 0, 1, 1});\n'}
+[1.705356] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  filter.setMaxRange(2.0);\n'}
+[1.706148] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  filter.setFov(0, 180);\n'}
+[1.706887] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -10,3 +10,3 @@\n'}
+[1.707567] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    std::vector<ProximityFilterLib::Point3D> points = {\n'}
+[1.708083] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -        {0.5,0.5,0}, {1.5,0.5,0}, {0.2,-0.2,0}, {2.0,0,0}\n'}
+[1.708561] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    };\n'}
+[1.709036] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  std::vector<ProximityFilterLib::Point3D> points = {\n'}
+[1.709511] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +    {0.5, 0.5, 0}, {1.5, 0.5, 0}, {0.2, -0.2, 0}, {2.0, 0, 0}\n'}
+[1.710157] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  };\n'}
+[1.710644] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -14,4 +14,4 @@\n'}
+[1.711112] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    auto filtered = filter.filterPoints(points);\n'}
+[1.711851] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    ASSERT_EQ(filtered.size(), 2);\n'}
+[1.712587] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    EXPECT_DOUBLE_EQ(filtered[0].x, 1.5);\n'}
+[1.713293] (-) TimerEvent: {}
+[1.713667] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    EXPECT_DOUBLE_EQ(filtered[1].x, 2.0);\n'}
+[1.714440] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  auto filtered = filter.filterPoints(points);\n'}
+[1.714929] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  ASSERT_EQ(filtered.size(), 2);\n'}
+[1.715430] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  EXPECT_DOUBLE_EQ(filtered[0].x, 1.5);\n'}
+[1.716084] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  EXPECT_DOUBLE_EQ(filtered[1].x, 2.0);\n'}
+[1.716569] (andromeda_proximity_filter) StdoutLine: {'line': b'6: @@ -20,3 +20,4 @@\n'}
+[1.717055] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -int main(int argc, char **argv) {\n'}
+[1.717539] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    ::testing::InitGoogleTest(&argc, argv);\n'}
+[1.718023] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -    return RUN_ALL_TESTS();\n'}
+[1.718507] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +int main(int argc, char ** argv)\n'}
+[1.719077] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +{\n'}
+[1.719775] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  ::testing::InitGoogleTest(&argc, argv);\n'}
+[1.720273] (andromeda_proximity_filter) StdoutLine: {'line': b'6: +  return RUN_ALL_TESTS();\n'}
+[1.720751] (andromeda_proximity_filter) StdoutLine: {'line': b'6: \n'}
+[1.721230] (andromeda_proximity_filter) StdoutLine: {'line': b'6: 6 files with code style divergence\n'}
+[1.721715] (andromeda_proximity_filter) StdoutLine: {'line': b'6: -- run_test.py: return code 1\n'}
+[1.722349] (andromeda_proximity_filter) StdoutLine: {'line': b"6: -- run_test.py: verify result file '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/uncrustify.xunit.xml'\n"}
+[1.722833] (andromeda_proximity_filter) StdoutLine: {'line': b'6/7 Test #6: uncrustify .......................***Failed    0.30 sec\n'}
+[1.723323] (andromeda_proximity_filter) StdoutLine: {'line': b'test 7\n'}
+[1.723828] (andromeda_proximity_filter) StdoutLine: {'line': b'    Start 7: xmllint\n'}
+[1.724274] (andromeda_proximity_filter) StdoutLine: {'line': b'\n'}
+[1.724720] (andromeda_proximity_filter) StdoutLine: {'line': b'7: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/xmllint.xunit.xml" "--package-name" "andromeda_proximity_filter" "--output-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/xmllint.xunit.xml"\n'}
+[1.725402] (andromeda_proximity_filter) StdoutLine: {'line': b'7: Test timeout computed to be: 60\n'}
+[1.726551] (andromeda_proximity_filter) StdoutLine: {'line': b"7: -- run_test.py: invoking following command in '/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter':\n"}
+[1.727054] (andromeda_proximity_filter) StdoutLine: {'line': b'7:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/xmllint.xunit.xml\n'}
+[1.813404] (-) TimerEvent: {}
+[1.913977] (-) TimerEvent: {}
+[2.014798] (-) TimerEvent: {}
+[2.115439] (-) TimerEvent: {}
+[2.216209] (-) TimerEvent: {}
+[2.316773] (-) TimerEvent: {}
+[2.354895] (andromeda_proximity_filter) StdoutLine: {'line': b"7: File 'package.xml' is valid\n"}
+[2.355887] (andromeda_proximity_filter) StdoutLine: {'line': b'7: \n'}
+[2.356400] (andromeda_proximity_filter) StdoutLine: {'line': b'7: No problems found\n'}
+[2.362713] (andromeda_proximity_filter) StdoutLine: {'line': b'7: -- run_test.py: return code 0\n'}
+[2.367381] (andromeda_proximity_filter) StdoutLine: {'line': b"7: -- run_test.py: verify result file '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_results/andromeda_proximity_filter/xmllint.xunit.xml'\n"}
+[2.381671] (andromeda_proximity_filter) StdoutLine: {'line': b'7/7 Test #7: xmllint ..........................   Passed    0.90 sec\n'}
+[2.394703] (andromeda_proximity_filter) StdoutLine: {'line': b'\n'}
+[2.396216] (andromeda_proximity_filter) StdoutLine: {'line': b'57% tests passed\x1b[0;0m, \x1b[0;31m3 tests failed\x1b[0;0m out of 7\n'}
+[2.397192] (andromeda_proximity_filter) StdoutLine: {'line': b'\n'}
+[2.398445] (andromeda_proximity_filter) StdoutLine: {'line': b'Label Time Summary:\n'}
+[2.399424] (andromeda_proximity_filter) StdoutLine: {'line': b'cppcheck      =   0.18 sec*proc (1 test)\n'}
+[2.400268] (andromeda_proximity_filter) StdoutLine: {'line': b'flake8        =   0.33 sec*proc (1 test)\n'}
+[2.401119] (andromeda_proximity_filter) StdoutLine: {'line': b'lint_cmake    =   0.14 sec*proc (1 test)\n'}
+[2.402177] (andromeda_proximity_filter) StdoutLine: {'line': b'linter        =   2.11 sec*proc (6 tests)\n'}
+[2.403212] (andromeda_proximity_filter) StdoutLine: {'line': b'pep257        =   0.28 sec*proc (1 test)\n'}
+[2.404287] (andromeda_proximity_filter) StdoutLine: {'line': b'uncrustify    =   0.30 sec*proc (1 test)\n'}
+[2.405230] (andromeda_proximity_filter) StdoutLine: {'line': b'xmllint       =   0.90 sec*proc (1 test)\n'}
+[2.406071] (andromeda_proximity_filter) StdoutLine: {'line': b'\n'}
+[2.407281] (andromeda_proximity_filter) StdoutLine: {'line': b'Total Test time (real) =   2.17 sec\n'}
+[2.408211] (andromeda_proximity_filter) StdoutLine: {'line': b'\n'}
+[2.409069] (andromeda_proximity_filter) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[2.409895] (andromeda_proximity_filter) StdoutLine: {'line': b'\t\x1b[0;31m  1 - FilterLibTest (Failed)\x1b[0;0m\n'}
+[2.410824] (andromeda_proximity_filter) StdoutLine: {'line': b'\t\x1b[0;31m  3 - flake8 (Failed)\x1b[0;0m\n'}
+[2.411608] (andromeda_proximity_filter) StdoutLine: {'line': b'\t\x1b[0;31m  6 - uncrustify (Failed)\x1b[0;0m\n'}
+[2.416875] (-) TimerEvent: {}
+[2.428356] (andromeda_proximity_filter) StderrLine: {'line': b'Errors while running CTest\n'}
+[2.429593] (andromeda_proximity_filter) StderrLine: {'line': b'Output from these tests are in: /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/Testing/Temporary/LastTest.log\n'}
+[2.430568] (andromeda_proximity_filter) StderrLine: {'line': b'Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.\n'}
+[2.432070] (andromeda_proximity_filter) CommandEnded: {'returncode': 8}
+[2.433091] (andromeda_proximity_filter) TestFailure: {'identifier': 'andromeda_proximity_filter'}
+[2.433315] (andromeda_proximity_filter) JobEnded: {'identifier': 'andromeda_proximity_filter', 'rc': 0}
+[2.445430] (-) EventReactorShutdown: {}

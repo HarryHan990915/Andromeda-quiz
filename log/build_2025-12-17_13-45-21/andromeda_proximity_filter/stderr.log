@@ -1,0 +1,7 @@
+[01m[K/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter/src/proximity_filter_lib.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kandromeda_proximity_filter/proximity_filter_lib.hpp: No such file or directory
+    1 | #include [01;31m[K"andromeda_proximity_filter/proximity_filter_lib.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/proximity_filter_lib.dir/build.make:76: CMakeFiles/proximity_filter_lib.dir/src/proximity_filter_lib.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/proximity_filter_lib.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

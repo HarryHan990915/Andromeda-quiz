@@ -1,0 +1,36 @@
+UpdateCTestConfiguration  from :/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/CTestConfiguration.ini
+Parse Config file:/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/CTestConfiguration.ini
+   Site: DESKTOP-P55GQSG
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20251217-0331 - Experimental
+UpdateCTestConfiguration  from :/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/CTestConfiguration.ini
+Parse Config file:/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/CTestConfiguration.ini
+Test project /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: FilterLibTest
+
+1: Test command: /mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter/test_filter_lib
+1: Test timeout computed to be: 10000000
+1: Running main() from ./googletest/src/gtest_main.cc
+1: [==========] Running 1 test from 1 test suite.
+1: [----------] Global test environment set-up.
+1: [----------] 1 test from ProximityFilterLibTest
+1: [ RUN      ] ProximityFilterLibTest.SimplePolygon
+1: [       OK ] ProximityFilterLibTest.SimplePolygon (0 ms)
+1: [----------] 1 test from ProximityFilterLibTest (0 ms total)
+1: 
+1: [----------] Global test environment tear-down
+1: [==========] 1 test from 1 test suite ran. (0 ms total)
+1: [  PASSED  ] 1 test.
+1/1 Test #1: FilterLibTest ....................   Passed    0.01 sec
+
+[0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 1
+
+Total Test time (real) =   0.03 sec

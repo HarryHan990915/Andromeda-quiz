@@ -1,0 +1,199 @@
+[0.000000] (-) TimerEvent: {}
+[0.000755] (andromeda_proximity_filter) JobQueued: {'identifier': 'andromeda_proximity_filter', 'dependencies': OrderedDict()}
+[0.001092] (andromeda_proximity_filter) JobStarted: {'identifier': 'andromeda_proximity_filter'}
+[0.044359] (andromeda_proximity_filter) JobProgress: {'identifier': 'andromeda_proximity_filter', 'progress': 'cmake'}
+[0.061201] (andromeda_proximity_filter) JobProgress: {'identifier': 'andromeda_proximity_filter', 'progress': 'build'}
+[0.065034] (andromeda_proximity_filter) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter', '--', '-j16', '-l16'], 'cwd': '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'harry'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/harry'), ('OLDPWD', '/mnt/c/Users/harry/ros_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/mnt/c/Users/harry/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'harry'), ('NAME', 'DESKTOP-P55GQSG'), ('WSL_INTEROP', '/run/WSL/568_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/ProgramData/LLVM for Renesas RISC-V 17.0.2.202407/bin:/mnt/c/ProgramData/LLVM for Renesas RL78 17.0.1.202412/bin:/mnt/c/ProgramData/GCC for Renesas RX 8.3.0.202411-GNURX-ELF/rx-elf/rx-elf/bin:/mnt/c/Program Files (x86)/Microchip/mplabc18/v3.46/mpasm:/mnt/c/Program Files (x86)/Microchip/mplabc18/v3.46/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2021b/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/IVI Foundation/IVI/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Microsoft SQL Server/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/ProgramData/LLVM for Renesas RISC-V 17.0.2.202407/bin:/mnt/c/ProgramData/LLVM for Renesas RL78 17.0.1.202412/bin:/mnt/c/ProgramData/GCC for Renesas RX 8.3.0.202411-GNURX-ELF/rx-elf/rx-elf/bin:/mnt/c/Users/harry/.cargo/bin:/mnt/c/Python/Python310/Scripts/:/mnt/c/Python/Python310/:/mnt/c/Program Files (x86)/Microchip/mplabc18/v3.46/mpasm:/mnt/c/Program Files (x86)/Microchip/mplabc18/v3.46/bin:/mnt/c/Users/harry/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/harry/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/harry/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/harry/AppData/Roaming/npm:/mnt/c/Users/harry/.dotnet/tools:/mnt/c/Program Files/JetBrains/PyCharm 2025.2.4/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.098176] (-) TimerEvent: {}
+[0.195823] (andromeda_proximity_filter) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target proximity_filter_lib\x1b[0m\n'}
+[0.198234] (-) TimerEvent: {}
+[0.298652] (-) TimerEvent: {}
+[0.349347] (andromeda_proximity_filter) StdoutLine: {'line': b'[ 28%] Built target proximity_filter_lib\n'}
+[0.388530] (andromeda_proximity_filter) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_filter_lib\x1b[0m\n'}
+[0.398561] (andromeda_proximity_filter) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target proximity_filter_node\x1b[0m\n'}
+[0.399130] (-) TimerEvent: {}
+[0.499410] (-) TimerEvent: {}
+[0.561039] (andromeda_proximity_filter) StdoutLine: {'line': b'[ 57%] Built target test_filter_lib\n'}
+[0.599559] (-) TimerEvent: {}
+[0.700204] (-) TimerEvent: {}
+[0.800689] (-) TimerEvent: {}
+[0.805405] (andromeda_proximity_filter) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/proximity_filter_node.dir/src/proximity_filter_node.cpp.o\x1b[0m\n'}
+[0.808268] (andromeda_proximity_filter) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/proximity_filter_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.900801] (-) TimerEvent: {}
+[1.001382] (-) TimerEvent: {}
+[1.102048] (-) TimerEvent: {}
+[1.202520] (-) TimerEvent: {}
+[1.302997] (-) TimerEvent: {}
+[1.403591] (-) TimerEvent: {}
+[1.504350] (-) TimerEvent: {}
+[1.605360] (-) TimerEvent: {}
+[1.705954] (-) TimerEvent: {}
+[1.806951] (-) TimerEvent: {}
+[1.907920] (-) TimerEvent: {}
+[2.008878] (-) TimerEvent: {}
+[2.109852] (-) TimerEvent: {}
+[2.210788] (-) TimerEvent: {}
+[2.311499] (-) TimerEvent: {}
+[2.412563] (-) TimerEvent: {}
+[2.513156] (-) TimerEvent: {}
+[2.613995] (-) TimerEvent: {}
+[2.714736] (-) TimerEvent: {}
+[2.815676] (-) TimerEvent: {}
+[2.917334] (-) TimerEvent: {}
+[3.018195] (-) TimerEvent: {}
+[3.119090] (-) TimerEvent: {}
+[3.220290] (-) TimerEvent: {}
+[3.321489] (-) TimerEvent: {}
+[3.422498] (-) TimerEvent: {}
+[3.523208] (-) TimerEvent: {}
+[3.558275] (andromeda_proximity_filter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.559636] (andromeda_proximity_filter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.560560] (andromeda_proximity_filter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.561333] (andromeda_proximity_filter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.561895] (andromeda_proximity_filter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.562497] (andromeda_proximity_filter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.562995] (andromeda_proximity_filter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.563483] (andromeda_proximity_filter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.564131] (andromeda_proximity_filter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.564608] (andromeda_proximity_filter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.565083] (andromeda_proximity_filter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.565579] (andromeda_proximity_filter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter/include/andromeda_proximity_filter/proximity_filter_node.hpp:2\x1b[m\x1b[K,\n'}
+[3.566248] (andromeda_proximity_filter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter/src/proximity_filter_node.cpp:1\x1b[m\x1b[K:\n'}
+[3.566972] (andromeda_proximity_filter) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter/src/proximity_filter_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ProximityFilterNode::pointcloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.567635] (andromeda_proximity_filter) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter/src/proximity_filter_node.cpp:107:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%zu\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >::_width_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.568250] (andromeda_proximity_filter) StderrLine: {'line': b'  107 |                           \x1b[01;35m\x1b[K"Filtered cloud: %zu -> %u points"\x1b[m\x1b[K,\n'}
+[3.568741] (andromeda_proximity_filter) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.569237] (andromeda_proximity_filter) StderrLine: {'line': b'  108 |                           \x1b[32m\x1b[Kmsg->width*msg->height\x1b[m\x1b[K, filtered.width);\n'}
+[3.569736] (andromeda_proximity_filter) StderrLine: {'line': b'      |                           \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.570243] (andromeda_proximity_filter) StderrLine: {'line': b'      |                                     \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[3.570732] (andromeda_proximity_filter) StderrLine: {'line': b'      |                                     \x1b[32m\x1b[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >::_width_type {aka unsigned int}\x1b[m\x1b[K\n'}
+[3.571227] (andromeda_proximity_filter) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/c/Users/harry/ros_ws/src/andromeda_proximity_filter/src/proximity_filter_node.cpp:107:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[3.571802] (andromeda_proximity_filter) StderrLine: {'line': b'  107 |                           "Filtered cloud: \x1b[01;36m\x1b[K%zu\x1b[m\x1b[K -> %u points",\n'}
+[3.572298] (andromeda_proximity_filter) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K~~^\x1b[m\x1b[K\n'}
+[3.572787] (andromeda_proximity_filter) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[3.573305] (andromeda_proximity_filter) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[Klong unsigned int\x1b[m\x1b[K\n'}
+[3.573829] (andromeda_proximity_filter) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[K%u\x1b[m\x1b[K\n'}
+[3.623318] (-) TimerEvent: {}
+[3.724144] (-) TimerEvent: {}
+[3.824771] (-) TimerEvent: {}
+[3.925586] (-) TimerEvent: {}
+[4.026250] (-) TimerEvent: {}
+[4.127170] (-) TimerEvent: {}
+[4.227865] (-) TimerEvent: {}
+[4.328999] (-) TimerEvent: {}
+[4.429858] (-) TimerEvent: {}
+[4.530749] (-) TimerEvent: {}
+[4.631345] (-) TimerEvent: {}
+[4.732355] (-) TimerEvent: {}
+[4.833080] (-) TimerEvent: {}
+[4.934662] (-) TimerEvent: {}
+[5.036546] (-) TimerEvent: {}
+[5.138261] (-) TimerEvent: {}
+[5.240530] (-) TimerEvent: {}
+[5.341438] (-) TimerEvent: {}
+[5.442983] (-) TimerEvent: {}
+[5.545191] (-) TimerEvent: {}
+[5.646211] (-) TimerEvent: {}
+[5.748240] (-) TimerEvent: {}
+[5.850220] (-) TimerEvent: {}
+[5.952560] (-) TimerEvent: {}
+[6.054456] (-) TimerEvent: {}
+[6.156702] (-) TimerEvent: {}
+[6.258714] (-) TimerEvent: {}
+[6.360524] (-) TimerEvent: {}
+[6.462540] (-) TimerEvent: {}
+[6.564645] (-) TimerEvent: {}
+[6.665994] (-) TimerEvent: {}
+[6.768113] (-) TimerEvent: {}
+[6.868792] (-) TimerEvent: {}
+[6.970006] (-) TimerEvent: {}
+[7.070750] (-) TimerEvent: {}
+[7.171812] (-) TimerEvent: {}
+[7.273416] (-) TimerEvent: {}
+[7.375531] (-) TimerEvent: {}
+[7.476540] (-) TimerEvent: {}
+[7.578670] (-) TimerEvent: {}
+[7.680080] (-) TimerEvent: {}
+[7.782326] (-) TimerEvent: {}
+[7.884174] (-) TimerEvent: {}
+[7.985634] (-) TimerEvent: {}
+[8.086445] (-) TimerEvent: {}
+[8.188572] (-) TimerEvent: {}
+[8.289542] (-) TimerEvent: {}
+[8.390654] (-) TimerEvent: {}
+[8.491763] (-) TimerEvent: {}
+[8.593093] (-) TimerEvent: {}
+[8.694587] (-) TimerEvent: {}
+[8.796638] (-) TimerEvent: {}
+[8.897540] (-) TimerEvent: {}
+[8.998028] (-) TimerEvent: {}
+[9.098516] (-) TimerEvent: {}
+[9.198987] (-) TimerEvent: {}
+[9.299502] (-) TimerEvent: {}
+[9.306637] (andromeda_proximity_filter) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable proximity_filter_node\x1b[0m\n'}
+[9.399642] (-) TimerEvent: {}
+[9.500088] (-) TimerEvent: {}
+[9.600491] (-) TimerEvent: {}
+[9.701037] (-) TimerEvent: {}
+[9.801497] (-) TimerEvent: {}
+[9.901933] (-) TimerEvent: {}
+[10.002424] (-) TimerEvent: {}
+[10.103302] (-) TimerEvent: {}
+[10.203980] (-) TimerEvent: {}
+[10.304848] (-) TimerEvent: {}
+[10.405391] (-) TimerEvent: {}
+[10.505820] (-) TimerEvent: {}
+[10.606239] (-) TimerEvent: {}
+[10.706684] (-) TimerEvent: {}
+[10.807139] (-) TimerEvent: {}
+[10.907529] (-) TimerEvent: {}
+[11.007996] (-) TimerEvent: {}
+[11.108416] (-) TimerEvent: {}
+[11.208865] (-) TimerEvent: {}
+[11.309347] (-) TimerEvent: {}
+[11.409886] (-) TimerEvent: {}
+[11.510406] (-) TimerEvent: {}
+[11.610901] (-) TimerEvent: {}
+[11.711511] (-) TimerEvent: {}
+[11.806663] (andromeda_proximity_filter) StdoutLine: {'line': b'[100%] Built target proximity_filter_node\n'}
+[11.811638] (-) TimerEvent: {}
+[11.851162] (andromeda_proximity_filter) CommandEnded: {'returncode': 0}
+[11.866514] (andromeda_proximity_filter) JobProgress: {'identifier': 'andromeda_proximity_filter', 'progress': 'install'}
+[11.879002] (andromeda_proximity_filter) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter'], 'cwd': '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'harry'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/harry'), ('OLDPWD', '/mnt/c/Users/harry/ros_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/mnt/c/Users/harry/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'harry'), ('NAME', 'DESKTOP-P55GQSG'), ('WSL_INTEROP', '/run/WSL/568_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/ProgramData/LLVM for Renesas RISC-V 17.0.2.202407/bin:/mnt/c/ProgramData/LLVM for Renesas RL78 17.0.1.202412/bin:/mnt/c/ProgramData/GCC for Renesas RX 8.3.0.202411-GNURX-ELF/rx-elf/rx-elf/bin:/mnt/c/Program Files (x86)/Microchip/mplabc18/v3.46/mpasm:/mnt/c/Program Files (x86)/Microchip/mplabc18/v3.46/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/MATLAB/R2021b/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/IVI Foundation/IVI/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Microsoft SQL Server/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/ProgramData/LLVM for Renesas RISC-V 17.0.2.202407/bin:/mnt/c/ProgramData/LLVM for Renesas RL78 17.0.1.202412/bin:/mnt/c/ProgramData/GCC for Renesas RX 8.3.0.202411-GNURX-ELF/rx-elf/rx-elf/bin:/mnt/c/Users/harry/.cargo/bin:/mnt/c/Python/Python310/Scripts/:/mnt/c/Python/Python310/:/mnt/c/Program Files (x86)/Microchip/mplabc18/v3.46/mpasm:/mnt/c/Program Files (x86)/Microchip/mplabc18/v3.46/bin:/mnt/c/Users/harry/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/harry/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/harry/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/harry/AppData/Roaming/npm:/mnt/c/Users/harry/.dotnet/tools:/mnt/c/Program Files/JetBrains/PyCharm 2025.2.4/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/c/Users/harry/ros_ws/build/andromeda_proximity_filter'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[11.890700] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.896614] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter//launch\n'}
+[11.911662] (-) TimerEvent: {}
+[11.913834] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter//launch/proximity_filter_launch.py\n'}
+[11.945921] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Installing: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/lib/andromeda_proximity_filter/proximity_filter_node\n'}
+[12.011805] (-) TimerEvent: {}
+[12.112277] (-) TimerEvent: {}
+[12.173188] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Set runtime path of "/mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/lib/andromeda_proximity_filter/proximity_filter_node" to ""\n'}
+[12.184279] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Installing: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/lib/andromeda_proximity_filter/libproximity_filter_lib.a\n'}
+[12.212337] (-) TimerEvent: {}
+[12.243651] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/lib/andromeda_proximity_filter/test_pointcloud_pub.py\n'}
+[12.272651] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/ament_index/resource_index/package_run_dependencies/andromeda_proximity_filter\n'}
+[12.300888] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/ament_index/resource_index/parent_prefix_path/andromeda_proximity_filter\n'}
+[12.312401] (-) TimerEvent: {}
+[12.312819] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/environment/ament_prefix_path.sh\n'}
+[12.327519] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Installing: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/environment/ament_prefix_path.dsv\n'}
+[12.379690] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/environment/path.sh\n'}
+[12.395306] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Installing: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/environment/path.dsv\n'}
+[12.412465] (-) TimerEvent: {}
+[12.451097] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/local_setup.bash\n'}
+[12.465127] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/local_setup.sh\n'}
+[12.478535] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/local_setup.zsh\n'}
+[12.500966] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Installing: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/local_setup.dsv\n'}
+[12.512538] (-) TimerEvent: {}
+[12.546873] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Installing: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/package.dsv\n'}
+[12.606722] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/ament_index/resource_index/packages/andromeda_proximity_filter\n'}
+[12.612616] (-) TimerEvent: {}
+[12.625224] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/cmake/andromeda_proximity_filterConfig.cmake\n'}
+[12.637333] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/cmake/andromeda_proximity_filterConfig-version.cmake\n'}
+[12.649478] (andromeda_proximity_filter) StdoutLine: {'line': b'-- Up-to-date: /mnt/c/Users/harry/ros_ws/install/andromeda_proximity_filter/share/andromeda_proximity_filter/package.xml\n'}
+[12.657895] (andromeda_proximity_filter) CommandEnded: {'returncode': 0}
+[12.712670] (-) TimerEvent: {}
+[12.813114] (-) TimerEvent: {}
+[12.913564] (-) TimerEvent: {}
+[13.014110] (-) TimerEvent: {}
+[13.103753] (andromeda_proximity_filter) JobEnded: {'identifier': 'andromeda_proximity_filter', 'rc': 0}
+[13.112897] (-) EventReactorShutdown: {}
