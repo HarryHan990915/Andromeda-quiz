@@ -29,7 +29,7 @@ separated from ROS. Without ROS, we can test that. The tested report is screensh
 colcon test --packages-select andromeda_proximity_filter
 colcon test-result --verbose
 ```
-![Proximity Filter Demo](test_result.png)
+<img src="test_result.png" alt="Test result" width="600"/>
 
 ## Design Notes
 
