@@ -101,6 +101,7 @@ bool ProximityFilterLib::rayCasting(double x, double y) const
 
 bool ProximityFilterLib::inFov(double x, double y) const
 {
+    // Calculate the angle of fov
     double angle = std::atan2(y, x);
 
     double diff = angle - fov_center_rad_;

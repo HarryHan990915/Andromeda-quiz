@@ -6,6 +6,10 @@ import struct
 import math
 import random
 
+
+
+# A test scripts of generating a realistic pointcloud by simulating
+# the pointclouds incoming when the robot on the way
 class RealisticLidarPublisher(Node):
     def __init__(self):
         super().__init__('realistic_lidar_publisher')
@@ -24,6 +28,8 @@ class RealisticLidarPublisher(Node):
 
         
         self.hex_center = (0, 0)  
+        
+        # Define hextagon's vertices
         self.hex_vertices = [
             ( 0.5,   0.0),
             ( 0.25,  0.433),

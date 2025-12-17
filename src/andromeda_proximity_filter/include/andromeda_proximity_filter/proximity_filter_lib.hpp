@@ -9,7 +9,7 @@ class ProximityFilterLib
 {
 public:
 
-    // self design a pointcloud struct instead of using Ros message,
+    // Self-designed pointcloud struct instead of using Ros message,
     // So that non-ROS google testing can be used to check the method works or not
     struct Point3D
     {

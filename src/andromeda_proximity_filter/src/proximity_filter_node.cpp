@@ -73,7 +73,7 @@ ProximityFilterNode::ProximityFilterNode()
 // Receieve the pointcloud and filter the pointcloud
 void ProximityFilterNode::pointcloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg)
 {
-    // Throttle
+    // Live update the subscription
     int rate_hz = this->get_parameter("subscription_rate").as_int();
     double min_dt = 1.0 / rate_hz;
     rclcpp::Time now = this->now();
