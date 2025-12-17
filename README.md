@@ -108,3 +108,11 @@ Ray-casting polygon check: efficient and general solution for footprint-based fi
 
 ROS I/O handling: ensures reliable QoS for output and latched visualization of the footprint.
 
+### 3. What's next?
+
+I focused on completing Part A properly first, because it’s the core perception component and closest to real robotics work I’ve done before. Besides, I currently do not have a Linux system. With Windows system, I tried virtual machine and found its too laggy with Rviz, and made my debugging really slow and then I ended up with using WSL in Windows system. I spent about 5 hours on environment, so that I may only focus on Part A. I made sure the filtering logic was clean, testable outside ROS, supported live parameter updates, and followed reasonable ROS 2 QoS and node design patterns.
+
+I didn’t get to Part B due to time, but the next thing I’d do is implement it as a small ROS-agnostic C++ utility with a simple state machine. I’d track how long the current stays over the limit using the provided timestep, enter a degraded state after a configurable duration, and reduce the effective limit. Once the load clears, I’d add a cooldown and gradually restore the limit step by step to avoid oscillation. I’d keep it deterministic and cover it with Catch2 tests for overload, recovery, and edge cases.
+
+I chose this order because Part A touches more on system integration and runtime behavior, while Part B is self-contained and can be added cleanly afterward without affecting the rest of the system. But if I have linux system, I would finish Part B with more depth and potentially made this application more realistic which can be used in our life.
+
