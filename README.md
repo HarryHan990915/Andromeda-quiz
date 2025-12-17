@@ -24,6 +24,12 @@ ros2 launch andromeda_proximity_filter proximity_filter_launch.py
 ```
 A Google test is designed to test the pointcloud's filter performance, which is
 separated from ROS. Without ROS, we can test that. The tested report is screenshoted in the file
+If you want to run it, you need to comment out the following codes in CmakeLists.txt, to avoid colon code sanity check
+
+```bash
+##find_package(ament_lint_auto REQUIRED)
+##ament_lint_auto_find_test_dependencies()
+```
 
 ```bash
 colcon test --packages-select andromeda_proximity_filter
